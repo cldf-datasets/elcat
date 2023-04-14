@@ -1,0 +1,25 @@
+ID,Parameter_ID,Name,Description
+speaker_number-0,speaker_number,Safe,100000
+speaker_number-1,speaker_number,Vulnerable,10000-99999
+speaker_number-2,speaker_number,Threatened,1000-9999
+speaker_number-3,speaker_number,Endangered,100-999
+speaker_number-4,speaker_number,Severely Endangered,10-99
+speaker_number-5,speaker_number,Critically Endangered,1-9
+speaker_number_trends-0,speaker_number_trends,Safe,"Almost all community members or members of the ethnic group speak the language, and speaker numbers are stable or increasing."
+speaker_number_trends-1,speaker_number_trends,Vulnerable,"Most members of the community or ethnic group speak the language. Speaker numbers may be decreasing, but very slowly."
+speaker_number_trends-2,speaker_number_trends,Threatened,A majority of community members speak the language. Speaker numbers are gradually decreasing.
+speaker_number_trends-3,speaker_number_trends,Endangered,"Only about half of community members speak the language. Speaker numbers are decreasing steadily, but not at an accelerated pace."
+speaker_number_trends-4,speaker_number_trends,Severely Endangered,"Less than half of the community speaks the language, and speaker numbers are decreasing at an accelerated pace."
+speaker_number_trends-5,speaker_number_trends,Critically Endangered,"A small percentage of the community speaks the language, and speaker numbers are decreasing very rapidly."
+transmission-0,transmission,Safe,"All members of the community, including children, speak the language."
+transmission-1,transmission,Vulnerable,Most adults and some children are speakers.
+transmission-2,transmission,Threatened,"Most adults in the community are speakers, but children generally are not."
+transmission-3,transmission,Endangered,"Some adults in the community are speakers, but the language is not spoken by children."
+transmission-4,transmission,Severely Endangered,"Many of the grandparent generation speak the language, but younger people generally do not."
+transmission-5,transmission,Critically Endangered,There are only a few elderly speakers.
+domains_of_use-0,domains_of_use,Safe,"Used in most domains, including official ones such as government, mass media, education, etc."
+domains_of_use-1,domains_of_use,Vulnerable,"Used in most domains, including official ones such as government, mass media, education, etc."
+domains_of_use-2,domains_of_use,Threatened,"Used in some non-official domains along with other languages, and remains the primary language used in the home for many community members."
+domains_of_use-3,domains_of_use,Endangered,"Used mainly just in the home and/or with family, but remains the primary language of these domains for many community members."
+domains_of_use-4,domains_of_use,Severely Endangered,"Used mainly just in the home and/or with family, and may not be the primary language even in these domains for many community members."
+domains_of_use-5,domains_of_use,Critically Endangered,"Used only in a few very specific domains, such as in ceremonies, songs, prayer, proverbs, or certain limited domestic activities."
