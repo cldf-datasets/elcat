@@ -2,6 +2,7 @@ import re
 import json
 import pathlib
 import subprocess
+import collections
 
 from cldfbench import Dataset as BaseDataset
 from cldfbench import CLDFSpec
@@ -9,7 +10,7 @@ from pycldf.sources import Source
 from clldutils.misc import nfilter
 from clldutils.coordinates import Coordinates
 
-from parse import iter_langs, SCORED_PARAMETERS, split
+from parse import iter_langs, SCORED_PARAMETERS, split, iter_other_sources
 
 COMPOSITE_PARAMETERS = [
     (
@@ -105,7 +106,7 @@ COMPOSITE_PARAMETERS = [
 ]
 
 
-def norm_comment(s):
+def norm_text(s):
     if s.startswith('"') and s.endswith('"'):
         s = s[1:-1]
     return s or None
@@ -160,19 +161,44 @@ class Dataset(BaseDataset):
 
         >>> self.raw_dir.download(url, fname)
         """
-        pass
+        i = 0
+        srcs = collections.defaultdict(list)
+        for lid, t in iter_other_sources(self.raw_dir / 'html'):
+            i += 1
+            srcs[t].append(lid)
+        for t, lids in sorted(srcs.items(), key=lambda i: i[0]):
+            print(t)
+            #break
 
     def cmd_makecldf(self, args):
-        #
-        # FIXME: add synthetic parameters:
-        #
         args.writer.cldf.add_component(
             'LanguageTable',
-            'classification',
-            'endangerment',
-            'code_authorities',
-            'codes',
-            {'name': 'alt_names', 'separator': '; '},
+            {
+                'name': 'classification',
+                'dc:description': 'Top-level genealogical unit the language belongs to.',
+            },
+            {
+                'name': 'endangerment',
+                'dc:description': "ElCat's aggregated endangerment assessment.",
+                'datatype': {
+                    'base': 'string',
+                    'format': 'at risk|awakening|critically endangered|dormant|endangered|endangerment|severely endangered|threatened|vulnerable'},
+            },
+            {
+                'name': 'code_authorities',
+                'dc:description': 'Other language catalogs which have assigned codes to the language.',
+                'separator': '; ',
+                'datatype': {'base': 'string', 'format': 'ISO 639-3|Glottolog|LINGUIST List'},
+            },
+            {
+                'name': 'codes',
+                'dc:description': 'Codes assigned to the language by other language catalogs.',
+                'separator': '; ',
+            },
+            {
+                'name': 'alt_names',
+                'dc:description': 'Alternative names used for the language.',
+                'separator': '; '},
         )
         args.writer.cldf.add_component('ParameterTable')
         args.writer.cldf.add_component('CodeTable')
@@ -232,28 +258,34 @@ class Dataset(BaseDataset):
             lang = obj
             iso_codes, glottocodes = [], []
             for code in lang.metadata.language_code:
-                if len(code) == 3 and 'ISO 639-3' in lang.metadata.code_authority:
+                code = code.replace('\ufeff', '')
+                if len(code) == 3 and (
+                        ('ISO 639-3' in lang.metadata.code_authority) or
+                        (not lang.metadata.code_authority)):
                     iso_codes.append(code)
-                elif len(code) == 8 and 'Glottolog' in lang.metadata.code_authority:
+                if len(code) == 8 and ('Glottolog' in lang.metadata.code_authority):
                     glottocodes.append(code)
 
-                if iso_codes and not glottocodes:
-                    glottocodes = [iso2gc[iso] for iso in iso_codes if iso in iso2gc]
+            if iso_codes and not glottocodes:
+                glottocodes = [iso2gc[iso] for iso in iso_codes if iso in iso2gc]
 
-                if glottocodes and lang.id in id2gc:
+            if lang.id in id2gc:
+                if glottocodes:
                     if [id2gc[lang.id]] != glottocodes:
                         assert lang.id == '2896'
                         glottocodes = [id2gc[lang.id]]
+                else:
+                    glottocodes = [id2gc[lang.id]]
 
             args.writer.objects['LanguageTable'].append(dict(
                 ID=lang.id,
-                Name=lang.name,
+                Name=lang.name.strip(),
                 Glottocode=glottocodes[0] if len(glottocodes) == 1 else None,
-                ISO639P3Code=iso_codes[0] if len(iso_codes) == 1 else None,
+                ISO639P3code=iso_codes[0] if len(iso_codes) == 1 else None,
                 classification=lang.classification,
                 endangerment=lang.endangerment,
-                code_authorities='|'.join(lang.metadata.code_authority),
-                codes='|'.join(lang.metadata.language_code),
+                code_authorities=lang.metadata.code_authority,
+                codes=lang.metadata.language_code,
                 alt_names=nfilter(lang.metadata.also_known_as),
             ))
 
@@ -267,35 +299,32 @@ class Dataset(BaseDataset):
                             Parameter_ID='LEI',
                             Value=d['Endangerment Level'],
                             Source=[sid] if sid else [],
-                            Comment=norm_comment(comment.strip()) if comment else None,
+                            Comment=norm_text(comment.strip()) if comment else None,
                         ))
                         level, _, certainty = d.pop('Endangerment Level').partition('(')
                         d['Endangerment'] = dict(Level=level.strip().lower())
                         m = re.match('([0-9]+)', certainty)
                         if m:
                             d['Endangerment']['Certainty'] = float(m.groups()[0]) / 100
-                    #
-                    # FIXME: normalize "Speaker Number Trends" and "Transmission"
-                    #
                     if "Places" in d:
                         d["Places"] = split(d["Places"])
+                    for key in [
+                        'Description',
+                        'Speaker Number Text',
+                        'Speaker Attitude',
+                        'Second Language Speakers',
+                        'Number Speaker Other Languages'
+                    ]:
+                        if key in d:
+                            d[key] = norm_text(d[key])
                     if "Domains Other Langs" in d:
-                        d["Domains Other Langs"] = split(d["Domains Other Langs"])
+                        d["Domains Other Langs"] = [norm_text(x) for x in split(d["Domains Other Langs"])]
                     if 'Coordinates' in d:
                         d['Coordinates'] = norm_coords(d['Coordinates'])
                         if not d['Coordinates']:
                             del d['Coordinates']
                         else:
                             coords[lang.id] = d['Coordinates'][0]
-                    if d:
-                        args.writer.objects['ValueTable'].append(dict(
-                            ID='{}-{}-{}'.format(lang.id, param, i),
-                            Language_ID=lang.id,
-                            Parameter_ID=param,
-                            Value=json.dumps(d),
-                            Source=[sid] if sid else [],
-                            Comment=norm_comment(comment.strip()) if comment else None,
-                        ))
 
                     for k, v in d.items():
                         levels = SCORED_PARAMETERS.get((param, k))
@@ -315,8 +344,25 @@ class Dataset(BaseDataset):
                                 Value=score,
                                 Code_ID='{}-{}'.format(k.lower().replace(' ', '_'), score),
                                 Source=[sid] if sid else [],
-                                Comment=norm_comment(comment.strip()) if comment else None,
+                                Comment=norm_text(comment.strip()) if comment else None,
                             ))
+                    for key in ['Speaker Number Trends', 'Transmission', 'Domains Of Use']:
+                        if key in d:
+                            try:
+                                score = int(d[key]) - 10
+                                d[key] = SCORED_PARAMETERS[('vitality', key)][score]
+                            except ValueError:
+                                del d[key]
+                    if d:
+                        args.writer.objects['ValueTable'].append(dict(
+                            ID='{}-{}-{}'.format(lang.id, param, i),
+                            Language_ID=lang.id,
+                            Parameter_ID=param,
+                            Value=json.dumps(d),
+                            Source=[sid] if sid else [],
+                            Comment=norm_text(comment.strip()) if comment else None,
+                        ))
+
         for lang in args.writer.objects['LanguageTable']:
             if lang['ID'] in coords:
                 lang['Latitude'], lang['Longitude'] = coords[lang['ID']]

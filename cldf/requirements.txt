@@ -3,7 +3,7 @@ Babel==2.12.1
 bs4==0.0.1
 certifi==2022.12.7
 cldfbench==1.13.0
--e git+https://github.com/cldf-datasets/elcat@8d16c29f28870aab48d17d4a734430a3eee08d90#egg=cldfbench_elcat
+-e git+https://github.com/cldf-datasets/elcat@e0ed5e931163fde4d89156038a4ce52a10f39a8e#egg=cldfbench_elcat
 cldfcatalog==1.5.1
 cldfzenodo==1.1.0
 clldutils==3.19.0

@@ -16,13 +16,13 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/elcat",
             "rdf:type": "prov:Entity",
-            "dc:created": "8d16c29",
+            "dc:created": "e0ed5e9",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.6",
+            "dc:created": "v4.7",
             "dc:title": "Glottolog"
         }
     ],
@@ -206,22 +206,33 @@
                         "name": "ISO639P3code"
                     },
                     {
-                        "datatype": "string",
+                        "dc:description": "Top-level genealogical unit the language belongs to.",
                         "name": "classification"
                     },
                     {
-                        "datatype": "string",
+                        "dc:description": "ElCat's aggregated endangerment assessment.",
+                        "datatype": {
+                            "base": "string",
+                            "format": "at risk|awakening|critically endangered|dormant|endangered|endangerment|severely endangered|threatened|vulnerable"
+                        },
                         "name": "endangerment"
                     },
                     {
-                        "datatype": "string",
+                        "dc:description": "Other language catalogs which have assigned codes to the language.",
+                        "datatype": {
+                            "base": "string",
+                            "format": "ISO 639-3|Glottolog|LINGUIST List"
+                        },
+                        "separator": "; ",
                         "name": "code_authorities"
                     },
                     {
-                        "datatype": "string",
+                        "dc:description": "Codes assigned to the language by other language catalogs.",
+                        "separator": "; ",
                         "name": "codes"
                     },
                     {
+                        "dc:description": "Alternative names used for the language.",
                         "separator": "; ",
                         "name": "alt_names"
                     }

@@ -13,7 +13,7 @@ property | value
 [dc:identifier](http://purl.org/dc/terms/identifier) | https://endangeredlanguages.com
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/cldf-datasets/elcat
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/cldf-datasets/elcat/tree/8d16c29">cldf-datasets/elcat 8d16c29</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.6">Glottolog v4.6</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/cldf-datasets/elcat/tree/e0ed5e9">cldf-datasets/elcat e0ed5e9</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.7">Glottolog v4.7</a></li></ol>
 [prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.10.6</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | elcat
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
@@ -58,11 +58,11 @@ Name/Property | Datatype | Description
 [Longitude](http://cldf.clld.org/v1.0/terms.rdf#longitude) | `decimal` | 
 [Glottocode](http://cldf.clld.org/v1.0/terms.rdf#glottocode) | `string` | 
 [ISO639P3code](http://cldf.clld.org/v1.0/terms.rdf#iso639P3code) | `string` | 
-`classification` | `string` | 
-`endangerment` | `string` | 
-`code_authorities` | `string` | 
-`codes` | `string` | 
-`alt_names` | list of `string` (separated by `; `) | 
+`classification` | `string` | Top-level genealogical unit the language belongs to.
+`endangerment` | `string` | ElCat's aggregated endangerment assessment.
+`code_authorities` | list of `string` (separated by `; `) | Other language catalogs which have assigned codes to the language.
+`codes` | list of `string` (separated by `; `) | Codes assigned to the language by other language catalogs.
+`alt_names` | list of `string` (separated by `; `) | Alternative names used for the language.
 
 ## <a name="table-parameterscsv"></a>Table [parameters.csv](./parameters.csv)
 

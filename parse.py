@@ -111,7 +111,21 @@ class Metadata:
 
     @classmethod
     def from_html(cls, doc):
-        return cls(**{k.lower().replace(' ', '_').replace('&', 'and'): v for k, v in iter_language_metadata(doc)})
+        return cls(**{
+            k.lower().replace(' ', '_').replace('&', 'and'): v.replace('xkwkemb1250', 'xkw; kemb1250')
+            for k, v in iter_language_metadata(doc)})
+
+
+def norm_classification(s):
+    s = (s or '').replace('Classification:', '').strip()
+    m = {
+        'Austroasiatic': 'Austro-Asiatic',
+        'North Halmahera': 'North Halmaheran',
+        'Sino-Tibetan > Trans-Himalayan > Gyalrong': 'Sino-Tibetan',
+        'Trans–New Guinea': 'Trans-New Guinea',
+        'Unclassified': None,
+    }
+    return m.get(s, s) or None
 
 
 @attr.s
@@ -119,7 +133,7 @@ class Language:
     id = attr.ib(validator=attr.validators.matches_re('[0-9]+'))
     name = attr.ib(validator=attr.validators.matches_re('.+'))
     metadata = attr.ib()
-    classification = attr.ib(default=None, converter=lambda s: s.replace('Classification:', '').strip() or None if s else None)
+    classification = attr.ib(default=None, converter=norm_classification)
     endangerment = attr.ib(
         default=None,
         validator=attr.validators.in_([
@@ -154,7 +168,16 @@ class Language:
 class Source(BaseSource):
     @classmethod
     def from_dict(cls, sid, d):
-        d = {k.lower().replace(' ', '_'): v for k, v in d.items() if v}
+        def fix(s):
+            for x, y in {
+                "Lyle Campbell (Principal Investigator)": "Lyle Campbell",
+                "Julien Meyer. (2014. ": "Julien Meyer. (2014). ",
+                "o Maranungku (Northern Australia": "o Maranungku (Northern Australia)",
+            }.items():
+                s = s.replace(x, y)
+            return s
+
+        d = {k.lower().replace(' ', '_'): fix(v) for k, v in d.items() if v}
         if 'journal' in d:
             genre = 'article'
         elif 'booktitle' in d:
@@ -162,9 +185,10 @@ class Source(BaseSource):
         elif 'publisher' in d:
             genre = 'book'
         elif 'school' in d:
-            if 'phd' in d.get('free_text_citation'.lower(), ''):
+            txt = d.get('free_text_citation', '').lower()
+            if 'phd' in txt:
                 genre = 'phdthesis'
-            elif 'master' in d.get('free_text_citation'.lower(), ''):
+            elif 'master' in txt:
                 genre = 'mastersthesis'
             else:
                 genre = 'misc'
@@ -243,3 +267,11 @@ def iter_langs(dir):
                         if dd:
                             getattr(lang, k).append((sid or None, dd))
             yield lang
+
+
+def iter_other_sources(dir):
+    for p in dir.glob('lang_*_bibliography'):
+        lid = p.stem.split('_')[1]
+        doc = parse(io.StringIO(p.read_text(encoding='utf8')), HTMLParser())
+        for para in doc.findall('.//ul[@id="other_sources"]/li'):
+            yield lid, re.sub(r'\s+', ' ', ''.join(para.itertext()).strip())
