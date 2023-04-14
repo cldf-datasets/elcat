@@ -385,17 +385,18 @@ class Dataset(BaseDataset):
         #    '--pacific-centered'])
         desc = [
             '\n![](map.png)\n\n### Parameters\n',
-            'This dataset contains some parameters with composite JSON values. Below is a list of '
-            'these parameters and the [JSON schema](https://json-schema.org/) describing their '
-            'values.\n'
+            'This dataset contains three sets of [parameters](cldf/parameters.csv).',
+            '- The four categories from which the Language Endangerment Index is derived.',
+            '- The computed Language Endangerment Index.',
+            '- Parameters with composite JSON values. Below is a list of '
+            '[JSON schemas](https://json-schema.org/) describing the values of these parameters.\n'
         ]
         for param in self.cldf_reader()['ParameterTable']:
             if param['ColumnSpec']:
-                desc.append('- **{}**'.format(param['Name']))
-                d = ['```json']
+                desc.append('#### {}\n'.format(param['Name']))
+                desc.append('```json')
                 schema = json.loads(param['ColumnSpec']['datatype']['format'])
-                d.extend(json.dumps(schema, indent=4).split('\n'))
-                d.append('```')
-                desc.extend(['  ' + line for line in d])
+                desc.extend(json.dumps(schema, indent=4).split('\n'))
+                desc.append('```\n')
         pre, head, post = super().cmd_readme(args).partition('## CLDF ')
         return pre + '\n'.join(desc) + head + post
