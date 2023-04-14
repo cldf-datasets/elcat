@@ -203,6 +203,20 @@ class Dataset(BaseDataset):
         args.writer.cldf.add_component('ParameterTable')
         args.writer.cldf.add_component('CodeTable')
 
+        for pname, levels in SCORED_PARAMETERS.items():
+            if isinstance(pname, tuple):
+                pname = pname[1]
+                pid = pname.lower().replace(' ', '_')
+                args.writer.objects['ParameterTable'].append(dict(ID=pid, Name=pname))
+
+                for score, level in enumerate(levels):
+                    args.writer.objects['CodeTable'].append(dict(
+                        ID='{}-{}'.format(pid, score),
+                        Parameter_ID=pid,
+                        Name=SCORED_PARAMETERS['Score'][score],
+                        Description=level,
+                    ))
+
         args.writer.objects['ParameterTable'].append(dict(
             ID='LEI',
             Name='Language Endangerment Index',
@@ -225,20 +239,6 @@ class Dataset(BaseDataset):
                 Description=desc,
                 ColumnSpec=dict(datatype=dict(base='json', format=json.dumps(schema))),
             ))
-
-        for pname, levels in SCORED_PARAMETERS.items():
-            if isinstance(pname, tuple):
-                pname = pname[1]
-                pid = pname.lower().replace(' ', '_')
-                args.writer.objects['ParameterTable'].append(dict(ID=pid, Name=pname))
-
-                for score, level in enumerate(levels):
-                    args.writer.objects['CodeTable'].append(dict(
-                        ID='{}-{}'.format(pid, score),
-                        Parameter_ID=pid,
-                        Name=SCORED_PARAMETERS['Score'][score],
-                        Description=level,
-                    ))
 
         coords = {}
         iso2gc = {}
@@ -388,7 +388,8 @@ class Dataset(BaseDataset):
             'This dataset contains three sets of [parameters](cldf/parameters.csv).',
             '- The four categories from which the Language Endangerment Index is derived.',
             '- The computed Language Endangerment Index.',
-            '- Parameters with composite JSON values. Below is a list of '
+            '- Parameters with composite JSON values, aggregating information from a specific '
+            'source on a particular topic. Below is a list of '
             '[JSON schemas](https://json-schema.org/) describing the values of these parameters.\n'
         ]
         for param in self.cldf_reader()['ParameterTable']:

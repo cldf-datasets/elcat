@@ -21,7 +21,7 @@ Available online at https://endangeredlanguages.com
 This dataset contains three sets of [parameters](cldf/parameters.csv).
 - The four categories from which the Language Endangerment Index is derived.
 - The computed Language Endangerment Index.
-- Parameters with composite JSON values. Below is a list of [JSON schemas](https://json-schema.org/) describing the values of these parameters.
+- Parameters with composite JSON values, aggregating information from a specific source on a particular topic. Below is a list of [JSON schemas](https://json-schema.org/) describing the values of these parameters.
 
 #### context
 
