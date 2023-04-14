@@ -384,7 +384,18 @@ class Dataset(BaseDataset):
         #    '--format', 'jpg',
         #    '--pacific-centered'])
         desc = [
-            '\n![](map.png)\n'
+            '\n![](map.png)\n\n### Parameters\n',
+            'This dataset contains some parameters with composite JSON values. Below is a list of '
+            'these parameters and the [JSON schema](https://json-schema.org/) describing their '
+            'values.\n'
         ]
+        for param in self.cldf_reader()['ParameterTable']:
+            if param['ColumnSpec']:
+                desc.append('- **{}**'.format(param['Name']))
+                d = ['```json']
+                schema = json.loads(param['ColumnSpec']['datatype']['format'])
+                d.extend(json.dumps(schema, indent=4).split('\n'))
+                d.append('```')
+                desc.extend(['  ' + line for line in d])
         pre, head, post = super().cmd_readme(args).partition('## CLDF ')
         return pre + '\n'.join(desc) + head + post
