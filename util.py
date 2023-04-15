@@ -1,18 +1,3 @@
-# h2 -> name
-
-# div.inner div p "critically endangered"
-
-# section [*/h4 = Language metadata] table tbody
-   # tr td label -> text
-   #    td p -> text
-   # or: td ul li p
-
-# table#columns_header
-# <th class="source_type source">Isbn</th>
-
-# <tr class="source-row" data-source-id="96340">
-  # td matching column  headers above!
-
 import io
 import re
 import functools
@@ -22,6 +7,7 @@ import collections
 import attr
 from lxml.etree import HTMLParser, parse
 from pycldf.sources import Source as BaseSource
+from clldutils.coordinates import Coordinates
 
 SCORED_PARAMETERS = {
     'Score': [
@@ -65,6 +51,144 @@ SCORED_PARAMETERS = {
         'Used only in a few very specific domains, such as in ceremonies, songs, prayer, proverbs, or certain limited domestic activities.',
     ]
 }
+COMPOSITE_PARAMETERS = [
+    (
+        'context',
+        "Composite information pertaining to the context a language is spoken in.",
+        {
+            "type": "object",
+            "properties": {
+                "Domains Other Langs": {"type": "array", "items": {"type": "string"}},
+                "Government Support": {"type": "string"},
+                "Institutional Support": {"type": "string"},
+                "Number Speaker Other Languages": {"type": "string"},
+                "Other Languages Used": {"type": "string"},
+                "Speaker Attitude": {"type": "string"}}
+        },
+    ),
+    (
+        'location',
+        "Composite information pertaining to the location(s) a language is spoken at.",
+        {
+            "type": "object",
+            "properties": {
+                "Coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "prefixItems": [
+                            {
+                                "title": "latitude",
+                                "type": "number",
+                                "minimum": -90,
+                                "maximum": 90},
+                            {
+                                "title": "longitude",
+                                "type": "number",
+                                "minimum": -180,
+                                "maximum": 180},
+                        ]
+                    }
+                },
+                "Description": {"type": "string"},
+                "Places": {"type": "array", "items": {"type": "string"}},
+            }
+        },
+    ),
+    (
+        'speakers',
+        "Composite information pertaining to the speakers of a language.",
+        {
+            "type": "object",
+            "properties": {
+                "Speaker Number Text": {"type": "string"}, # 11174
+                "Speaker Number": {"type": "string"}, # 10800
+                "Elders": {"type": "string"}, # 121
+                "Ethnic Population": {"type": "string"}, # 2180
+                "Older Adults": {"type": "string"}, # 89
+                "Second Language Speakers": {"type": "string"}, # 167
+                "Semi Speakers": {"type": "string"}, # 292
+                "Young Adults": {"type": "string"}, # 118
+                "Date Of Info": {"type": "string"}, # 3927
+            }
+        },
+    ),
+    (
+        'vitality',
+        "Composite information pertaining to the vitality of a language.",
+        {
+            "type": "object",
+            "properties": {
+                "Endangerment": {
+                    "type": "object",
+                    "properties": {
+                        "Level": {"enum": [
+                            "safe",
+                            "at risk",
+                            "vulnerable",
+                            "threatened",
+                            "endangered",
+                            "severely endangered",
+                            "critically endangered",
+                            "awakening",
+                            "dormant",
+                        ]},
+                        "Certainty": {"type": "number", "minimum": 0, "maximum": 1}
+                    }
+                }, #  11386
+                "Domains Of Use": {"type": "string"}, #  879
+                "Speaker Number Trends": {"type": "string"}, #  1465
+                "Transmission": {"type": "string"}, #  1794
+            }
+        },
+    ),
+]
+
+
+def norm_text(s):
+    if s.startswith('"') and s.endswith('"'):
+        s = s[1:-1]
+    return s or None
+
+
+def norm_coords(s):
+    s = s.strip()
+    res = []
+    if s in {
+        'Canada',
+        'Canada;',
+        'USA',
+        'Papua New Guinea; Indonesia',
+        'Papua New Guinea',
+    }:
+        return res
+    if s.count(',') == 0 and s.count(';') == 1:
+        s = s.replace(';', ',')
+
+    for point in s.split(';'):
+        if point.strip():
+            lat, lon = point.split(',')
+            lat = lat.strip().replace('\u200e', '').replace(' ', '')
+            lon = lon.strip().replace('\u200e', '').replace(' ', '').replace('23.40.37', '23.406')
+            if '°' in point:
+                c = Coordinates(
+                    lat.replace("'", "\u2032").replace('"', "\u2033"),
+                    lon.replace("'", "\u2032").replace('"', "\u2033"),
+                    format='degminsec')
+                lat, lon = c.latitude, c.longitude
+            else:
+                lat = float(lat)
+                lon = float(lon)
+            if lat < -90 or (lat > 90):
+                lat, lon = lon, lat
+            assert -90 < lat < 90, s
+            assert -180 < lon < 180, s
+            res.append((lat, lon))
+    return res
+
+
+def get_doc(p):
+    return parse(io.StringIO(p.read_text(encoding='utf8')), HTMLParser())
 
 
 def split(s, sep=';'):
@@ -244,7 +368,7 @@ def iter_langs(dir):
         m = re.fullmatch('lang_([0-9]+)', p.stem)
         if m:
             lid = m.groups()[0]
-            doc = parse(io.StringIO(p.read_text(encoding='utf8')), HTMLParser())
+            doc = get_doc(p)
             if lid == '2679':  # A known problem.
                 assert name(doc) is None
                 continue

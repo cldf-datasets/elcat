@@ -12,6 +12,10 @@ setup(
         ]
     },
     install_requires=[
+        'lxml',
+        'requests',
+        'clldutils',
+        'pycldf',
         'cldfbench',
     ],
     extras_require={

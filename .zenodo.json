@@ -1,0 +1,207 @@
+{
+    "title": "The Catalogue of Endangered Languages as CLDF dataset",
+    "access_right": "open",
+    "keywords": [
+        "cldf:StructureDataset",
+        "linguistics"
+    ],
+    "upload_type": "dataset",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Catalogue of Endangered Languages. 2023. University of Hawaii at Manoa. http://www.endangeredlanguages.com</p>\n</blockquote>",
+    "license": {
+        "id": "CC-BY-4.0"
+    },
+    "contributors": [
+        {
+            "name": "Lyle Campbell",
+            "type": "Editor"
+        },
+        {
+            "name": "Lyle Campbell",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Lyle Campbell",
+            "type": "Researcher"
+        },
+        {
+            "name": "Anthony Aristar",
+            "type": "Editor"
+        },
+        {
+            "name": "Anthony Aristar",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Helen Aristar-Dry",
+            "type": "Editor"
+        },
+        {
+            "name": "Helen Aristar-Dry",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Anna Belew",
+            "type": "ProjectManager"
+        },
+        {
+            "name": "Anna Belew",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Sean Simpson",
+            "type": "ProjectManager"
+        },
+        {
+            "name": "Sean Simpson",
+            "type": "DataCollector"
+        },
+        {
+            "name": "John Van Way",
+            "type": "ProjectManager"
+        },
+        {
+            "name": "John Van Way",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Amy Brunett",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Jacob Collard",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Kristen Dunkinson",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Raina Heaton",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Uliana Kazagasheva",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Huiying Nala Lee",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Lwin Moe",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Eve Okura",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Kaori Ueki",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Brent Woo",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Willem F.H. Adelaar",
+            "type": "Researcher"
+        },
+        {
+            "name": "Greg Anderson",
+            "type": "Researcher"
+        },
+        {
+            "name": "I. Wayan Arka",
+            "type": "Researcher"
+        },
+        {
+            "name": "Habib Borjian",
+            "type": "Researcher"
+        },
+        {
+            "name": "Claire Bowern",
+            "type": "Researcher"
+        },
+        {
+            "name": "David Bradley",
+            "type": "Researcher"
+        },
+        {
+            "name": "Matthias Brenzinger",
+            "type": "Researcher"
+        },
+        {
+            "name": "Charles H\u00e4berl",
+            "type": "Researcher"
+        },
+        {
+            "name": "Alice C. Harris",
+            "type": "Researcher"
+        },
+        {
+            "name": "Juha Janhunen",
+            "type": "Researcher"
+        },
+        {
+            "name": "Brian Joseph",
+            "type": "Researcher"
+        },
+        {
+            "name": "Martin Maiden",
+            "type": "Researcher"
+        },
+        {
+            "name": "Bill Palmer",
+            "type": "Researcher"
+        },
+        {
+            "name": "Keren Rice",
+            "type": "Researcher"
+        },
+        {
+            "name": "David Solnit",
+            "type": "Researcher"
+        },
+        {
+            "name": "George Van Driem",
+            "type": "Researcher"
+        },
+        {
+            "name": "James Woodward",
+            "type": "Researcher"
+        },
+        {
+            "name": "Carolina Aragon",
+            "type": "Other"
+        },
+        {
+            "name": "Katie Butler",
+            "type": "Other"
+        },
+        {
+            "name": "Joelle Kirtley",
+            "type": "Other"
+        },
+        {
+            "name": "Stephanie Locke",
+            "type": "Other"
+        },
+        {
+            "name": "Colleen O'Brien",
+            "type": "Other"
+        },
+        {
+            "name": "Melody Ann Ross-Nathaniel",
+            "type": "Other"
+        },
+        {
+            "name": "Sean Simpson",
+            "type": "Other"
+        },
+        {
+            "name": "Robert Forkel",
+            "type": "DataCurator"
+        }
+    ]
+}
