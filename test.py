@@ -1,5 +1,4 @@
 from csvw.metadata import Column
-from cldfbench import metadata
 
 
 def test_valid(cldf_dataset, cldf_logger):
