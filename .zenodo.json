@@ -24,40 +24,24 @@
             "type": "Researcher"
         },
         {
-            "name": "Anthony Aristar",
+            "name": "Gary Holton",
+            "type": "ProjectManager"
+        },
+        {
+            "name": "Gary Holton",
             "type": "Editor"
         },
         {
-            "name": "Anthony Aristar",
-            "type": "DataCollector"
-        },
-        {
-            "name": "Helen Aristar-Dry",
+            "name": "Anna Belew",
             "type": "Editor"
-        },
-        {
-            "name": "Helen Aristar-Dry",
-            "type": "DataCollector"
         },
         {
             "name": "Anna Belew",
             "type": "ProjectManager"
         },
         {
-            "name": "Anna Belew",
-            "type": "DataCollector"
-        },
-        {
-            "name": "Sean Simpson",
-            "type": "ProjectManager"
-        },
-        {
             "name": "Sean Simpson",
             "type": "DataCollector"
-        },
-        {
-            "name": "John Van Way",
-            "type": "ProjectManager"
         },
         {
             "name": "John Van Way",
@@ -193,10 +177,6 @@
         },
         {
             "name": "Melody Ann Ross-Nathaniel",
-            "type": "Other"
-        },
-        {
-            "name": "Sean Simpson",
             "type": "Other"
         },
         {

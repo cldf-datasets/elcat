@@ -5,12 +5,11 @@ See https://endangeredlanguages.com/about_catalogue/ for a detailed description 
 Name | Role
 --- | ---
 Lyle Campbell | Editor, DataCollector, Researcher
-Anthony Aristar | Editor, DataCollector
-Helen Aristar-Dry | Editor, DataCollector
-Anna Belew | ProjectManager, DataCollector
-Sean Simpson | ProjectManager, DataCollector
-John Van Way | ProjectManager, DataCollector
-Amy Brunett	| DataCollector
+Gary Holton | ProjectManager, Editor
+Anna Belew | Editor, ProjectManager
+Sean Simpson | DataCollector
+John Van Way | DataCollector
+Amy Brunett | DataCollector
 Jacob Collard | DataCollector
 Kristen Dunkinson | DataCollector
 Raina Heaton | DataCollector
@@ -37,11 +36,10 @@ Keren Rice | Researcher
 David Solnit | Researcher
 George Van Driem | Researcher
 James Woodward | Researcher
-Carolina Aragon | Other	
+Carolina Aragon | Other
 Katie Butler | Other
-Joelle Kirtley | Other	
+Joelle Kirtley | Other
 Stephanie Locke | Other
-Colleen O'Brien | Other	
+Colleen O'Brien | Other
 Melody Ann Ross-Nathaniel | Other
-Sean Simpson | Other
 Robert Forkel | DataCurator
