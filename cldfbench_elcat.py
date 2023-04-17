@@ -14,7 +14,7 @@ from nameparser import HumanName
 
 from util import (
     iter_langs, SCORED_PARAMETERS, split, bibliography, get_doc, COMPOSITE_PARAMETERS,
-    norm_text, norm_coords,
+    norm_text, norm_coords, Bib
 )
 
 
@@ -102,7 +102,9 @@ class Dataset(BaseDataset):
 
         sources = []
         for obj in iter_langs(self.raw_dir / 'html'):
-            if isinstance(obj, Source):
+            if obj is None:
+                continue
+            if isinstance(obj, Bib):
                 sources.append(obj)
                 continue
             lang = obj
@@ -221,19 +223,24 @@ class Dataset(BaseDataset):
                             Comment=comment,
                         ))
 
-        bib = collections.defaultdict(set)
-        for src, lids in bibliography(self.raw_dir / 'html', sources):
-            for lid in lids:
-                bib[lid].add(src if isinstance(src, str) else src.id)
+        for src in bibliography(self.raw_dir / 'html'):
+            if src:
+                sources.append(src)
 
-        for src in sorted(sources, key=lambda s: (
-            HumanName(s.get('author') or s.get('editor', '')).last,
-            s.get('year', ''),
-            s.get('title', ''),
-        )):
-            args.writer.cldf.sources.add(src)
+        lid2sids = collections.defaultdict(set)
+        local_id2sid = {}
+        for i, m in enumerate(Bib.iter_merged(sources), start=1):
+            sid = 'bib{}'.format(i)
+            args.writer.cldf.sources.add(m.as_source(sid))
+            for local_id in m.local_ids:
+                local_id2sid[local_id] = sid
+            for lid in m.language_ids:
+                lid2sids[lid].add(sid)
 
-        for lid, sources in bib.items():
+        for val in args.writer.objects['ValueTable']:
+            val['Source'] = [local_id2sid[sid] for sid in val['Source']]
+
+        for lid, sources in lid2sids.items():
             args.writer.objects['ValueTable'].append(dict(
                 ID='{}-bib'.format(lid),
                 Language_ID=lid,

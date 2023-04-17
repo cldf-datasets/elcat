@@ -293,45 +293,6 @@ class Language:
         return cls(**kw)
 
 
-class Source(BaseSource):
-    @classmethod
-    def from_dict(cls, sid, d):
-        def fix(s):
-            for x, y in {
-                "Lyle Campbell (Principal Investigator)": "Lyle Campbell",
-                "Julien Meyer. (2014. ": "Julien Meyer. (2014). ",
-                "o Maranungku (Northern Australia": "o Maranungku (Northern Australia)",
-            }.items():
-                s = s.replace(x, y)
-            return s
-
-        d = {k.lower().replace(' ', '_'): fix(v) for k, v in d.items() if v}
-        if 'journal' in d:
-            genre = 'article'
-        elif 'booktitle' in d:
-            genre = 'incollection'
-        elif 'publisher' in d:
-            genre = 'book'
-        elif 'school' in d:
-            txt = d.get('free_text_citation', '').lower()
-            if 'phd' in txt:
-                genre = 'phdthesis'
-            elif 'master' in txt:
-                genre = 'mastersthesis'
-            else:
-                genre = 'misc'
-        else:
-            genre = 'misc'
-        if not sid:
-            assert not d
-            return
-        if set(d.keys()) == {'free_text_citation'}:
-            d['howpublished'] = d.pop('free_text_citation')
-        elif 'free_text_citation' in d:
-            del d['free_text_citation']
-        return BaseSource(genre, sid, **d)
-
-
 def name(doc):
     try:
         return doc.find('.//h2').text
@@ -387,12 +348,12 @@ def iter_langs(dir):
                     lambda i: i[0][0],
                 ):
                     if k == 'source':
-                        s = Source.from_dict(sid, {key[1]: v for key, v in items})
+                        s = Bib.source_from_dict(sid, {key[1]: v for key, v in items})
                         if s:
                             if sid not in sources:
                                 yield s
-                            else:
-                                assert s == sources[sid], '{}\n===\n{}'.format(s.bibtex(), sources[sid].bibtex())
+                            #else:
+                            #    assert s == sources[sid], '{}\n===\n{}'.format(s.bibtex(), sources[sid].bibtex())
                             sources[sid] = s
                     else:
                         dd = {kk[1]: vv for kk, vv in items if vv}
@@ -401,25 +362,15 @@ def iter_langs(dir):
             yield lang
 
 
-def other_sources(dir):
-    res = collections.defaultdict(list)
-    #
-    # Model as parameter "Bibliography"?
-    #
-    for p in dir.glob('lang_*_bibliography'):
-        lid = p.stem.split('_')[1]
-        doc = parse(io.StringIO(p.read_text(encoding='utf8')), HTMLParser())
-        for para in doc.findall('.//ul[@id="other_sources"]/li'):
-            res[re.sub(r'\s+', ' ', ''.join(para.itertext()).strip())].append(lid)
-    return res
-
-
 @attr.s
 class Bib:
-    citation = attr.ib()
+    citation = attr.ib(default=None)
+    local_ids = attr.ib(default=attr.Factory(set))
+    language_ids = attr.ib(default=attr.Factory(set))
+
     title = attr.ib(default='', converter=lambda s: s.strip())
     pages = attr.ib(default='', converter=lambda s: s.replace(')', '').replace('pp.', '').strip())
-    author = attr.ib(default='', converter=lambda s: s.replace('Anonymous,', '').replace('N/A', '').replace('(', '').replace(')', '').strip())
+    author = attr.ib(default='', converter=lambda s: s.strip())
     year = attr.ib(default='', converter=lambda s: s.strip())
     booktitle = attr.ib(default='', converter=lambda s: s.strip())
     publisher = attr.ib(default='', converter=lambda s: s.strip())
@@ -428,23 +379,109 @@ class Bib:
     volume = attr.ib(default='', converter=lambda s: s.replace('Vol.', '').strip())
     number = attr.ib(default='', converter=lambda s: s.strip())
     editor = attr.ib(default='', converter=lambda s: s.strip())
+    edition = attr.ib(default='', converter=lambda s: s.strip())
     series = attr.ib(default='', converter=lambda s: s.strip())
     url = attr.ib(default='', converter=lambda s: s.strip())
+    school = attr.ib(default='', converter=lambda s: s.strip())
+    copied_from = attr.ib(default='', converter=lambda s: s.strip())
+    isbn = attr.ib(default='', converter=lambda s: s.strip())
+    institution = attr.ib(default='', converter=lambda s: s.strip())
+    howpublished = attr.ib(default='', converter=lambda s: s.strip())
+    note = attr.ib(default='', converter=lambda s: s.strip())
+    num = attr.ib(default='', converter=lambda s: s.strip())
+    month = attr.ib(default='', converter=lambda s: s.strip())
+    chapter = attr.ib(default='', converter=lambda s: s.strip())
+    translator = attr.ib(default='', converter=lambda s: s.strip())
 
     def __attrs_post_init__(self):
+        for f, repls in {
+            'title': [
+                ('Indıgenas', 'Indígenas'),
+                ('morfologija', 'Morfologia'),
+                ('Dicionário', 'dictionário'),
+                ('and its Cultural COntext', 'in its Cultural Context'),
+                ('A Dumugat (Casiguran)', 'A Dumagat (Casiguran)'),
+                ('Resıgaro', 'Resígaro'),
+                ('Lehrbuch des saamischen (lappischen) Sprache', 'Lehrbuch der saamischen (lappischen) Sprache'),
+                ('lıngua', 'língua'),
+            ],
+            'author': [
+                ('Anonymous,', ''),
+                ('N/A', ''),
+                ('(', ''),
+                (')', ''),
+            ],
+        }.items():
+            for from_, to_ in repls:
+                setattr(self, f, getattr(self, f, '').replace(from_, to_).strip())
+
         if self.address and not self.publisher:
             self.publisher, self.address = self.address, ''
         if self.author.startswith('http'):
             self.url, self.author = self.author, ''
         if ': ' in self.publisher and not self.address:
             self.address, _, self.publisher = self.publisher.partition(': ')
-        if self.series.startswith('In ') and not self.booktitle:
-            self.booktitle, self.series = ' '.join(self.series.split()[1:]), ''
-        for k, v in {
-            'A Dumugat (Casiguran)': 'A Dumagat (Casiguran)',
-        }.items():
-            self.title = self.title.replace(k, v)
 
+        for f in {'address', 'series', 'journal'}:  # Extract booktitle.
+            if getattr(self, f).startswith('In ') and not self.booktitle:
+                self.booktitle = ' '.join(self.series.split()[1:])
+                setattr(self, f, '')
+
+        for f in {'booktitle', 'author', 'publisher', 'journal', 'isbn'}:  # Extract URL.
+            val = getattr(self, f)
+            m = re.search(r'(?P<url>http(s)?://[^\s]+)$', val)
+            if m:
+                self.url = m.group('url')
+                setattr(self, f, val[:m.start()].strip())
+
+        if self.url and self.url.endswith('Ethnologue: Languages of the World, 17th Edition (2013)'):
+            assert self.title == 'Ethnologue: Languages of the World, 17th Edition (2013)'
+            self.title = 'Ethnologue: Languages of the World, 17th Edition'
+            self.year = '2013'
+            self.url = self.url.split('\n')[0]
+        if '\n' in self.url:
+            for candidate in self.url.split('\n'):
+                if 'doi' in candidate:
+                    self.url = candidate
+                    break
+                if 'handle' in candidate:
+                    self.url = candidate
+                    break
+            else:
+                self.url = candidate
+        for f in self.regular_fields():
+            if '\n' in getattr(self, f, ''):
+                setattr(self, f, getattr(self, f).replace('\n', ' '))
+
+    @classmethod
+    def regular_fields(cls):
+        return [f.name for f in attr.fields(cls) if f.name not in {'citation', 'local_ids', 'language_ids'}]
+
+    @property
+    def sortkey(self):
+        return (
+            HumanName(self.author).last,
+            slug(self.title),
+            self.year,
+            self.url,
+            'a' if self.local_ids else 'z'
+        )
+
+    @property
+    def hashkey(self):
+        return (
+            HumanName(self.author).last or self.url,
+            slug(self.title)[:12],
+            self.year[:4],
+        )
+
+    def __iadd__(self, other):
+        for att in {'local_ids', 'language_ids'}:
+            setattr(self, att, getattr(self, att) | getattr(other, att))
+        for f in self.regular_fields():
+            if getattr(other, f) and not getattr(self, f):
+                setattr(self, f, getattr(other, f))
+        return self
 
     def as_source(self, id):
         if self.journal:
@@ -453,139 +490,151 @@ class Bib:
             genre = 'incollection'
         elif self.publisher or self.series:
             genre = 'book'
+        elif self.school:
+            txt = (self.citation or '').lower()
+            if 'phd' in txt:
+                genre = 'phdthesis'
+            elif 'master' in txt:
+                genre = 'mastersthesis'
+            else:
+                genre = 'misc'
         else:
             genre = 'misc'
         return BaseSource(
             genre,
             id,
-            **{f.name: getattr(self, f.name) for f in attr.fields(self.__class__) if f.name != 'citation' and getattr(self, f.name)})
+            local_ids=' '.join(self.local_ids),
+            **{f: getattr(self, f) for f in self.regular_fields() if getattr(self, f)})
 
-
-def bib(s):
-    """
-    'N Ou Ongepubliceerde Lys Hottentot- en Xhosawoorde ( pp. 157-168 ) . G. S. Nienaber (1960) · African Studies. 19 (3) ·
-    """
-    def is_publisher(s):
-        return any(kw in s.lower() for kw in {'lincom', 'gruyter', 'gryuter', 'press', 'köppe', '&', 'publish', 'verlag', 'brill'})
-
-    rec = types.SimpleNamespace()
-
-    if not s.strip():
-        return
-    title_and_pages, _, rem = s.partition(' . ')
-    if not rem:
-        title_and_pages, rem = None, s
-
-    if title_and_pages:
-        rec.title, _, rec.pages = title_and_pages.partition(' ( ')
-
-    assert rem
-    author_and_year, _, rem = rem.partition(' ·')
-
-    yearp = re.compile(r'\(([0-9\-/, \[\]sx?]+|forthcoming|no date|n\.\s*d\.?)\)$')
-    m = yearp.search(author_and_year.strip())
-    if m:
-        rec.author = author_and_year[:m.start()].strip()
-        rec.year = m.groups()[0]
-    else:
-        rec.author = author_and_year.split('(')[0].strip()
-    rem = rem.strip()
-    if rem:
-        rem = [p.strip() for p in rem.split(' ·') if p.strip()]
-        incollp = re.compile('In\s+(?P<booktitle>.+?)\s+edited by\s+(?P<editor>.+)')
-        m = incollp.match(rem[0])
-        if m:
-            rec.booktitle, rec.editor = m.group('booktitle'), m.group('editor')
-        else:
-            jvnp = re.compile('(?P<journal>.+?)\.\s*(?P<volume>[0-9VXI]+)\s*(\((?P<number>[0-9]+)\))?')
-            m = jvnp.match(rem[0])
-            if m:
-                rec.journal = m.group('journal')
-                rec.volume = m.group('volume')
-                if m.group('number'):
-                    rec.number = m.group('number')
+    @staticmethod
+    def iter_merged(recs):
+        for key, items in itertools.groupby(sorted(recs, key=lambda r: r.sortkey), lambda r: r.hashkey):
+            if not all(key):  # Insufficient data to identify items.
+                yield from items
             else:
-                for i, r in enumerate(rem):
-                    if r.startswith('edited by'):
-                        rec.editor = r.replace('edited by', '').strip()
-                        del rem[i]
-                        break
-                for i, r in enumerate(rem):
-                    if r.strip().startswith('http://') or r.strip().startswith('https://'):
-                        rec.url = r
-                        del rem[i]
-                        break
-
-                if len(rem) == 1:
-                    if ':' in rem[0] and '://' not in rem[0]:
-                        rec.address, _, rec.publisher = rem[0].partition(':')
-                    elif is_publisher(rem[0]):
-                        rec.publisher = rem[0]
-                    elif not rem[0].lower().startswith('in '):
-                        rec.publisher = rem[0]
+                pick = None
+                for item in items:
+                    if not pick:
+                        pick = item
                     else:
-                        rec.booktitle = ' '.join(rem[0].split()[1:]).strip()
-                elif len(rem) == 3 and rem[1].startswith('Vol.'):
-                    rec.series, rec.volume, rec.publisher = rem
-                elif len(rem) == 2 and ':' in rem[1] and '://' not in rem[1]:
-                    rec.series, publisher = rem
-                    rec.address, _, rec.publisher = publisher.partition(':')
-                elif len(rem) == 2 and is_publisher(rem[1]):
-                    rec.series, rec.publisher = rem
-                elif len(rem) == 2 and rem[1].startswith('Vol.'):
-                    rec.series, rec.volume = rem
-                elif len(rem) == 2:
-                    rec.series, rec.publisher = rem
-                else:
-                    assert not rem
-                # series: #[0-9]+ -> volume
-    rec = Bib(citation=s, **{k: v for k, v in rec.__dict__.items() if v and v.strip()})
-    #print(rec.as_source('1').bibtex())
-    return rec
+                        if slug(item.title).startswith(slug(pick.title)):
+                            # pick's title is a prefix of item's title
+                            pick.title = item.title
+                            pick += item
+                        else:
+                            yield pick
+                            pick = item
+                yield pick
 
+    @classmethod
+    def source_from_dict(cls, sid, d):
+        def fix(s):
+            for x, y in {
+                "Lyle Campbell (Principal Investigator)": "Lyle Campbell",
+                "Julien Meyer. (2014. ": "Julien Meyer. (2014). ",
+                "o Maranungku (Northern Australia": "o Maranungku (Northern Australia)",
+            }.items():
+                s = s.replace(x, y)
+            return s
 
-def iter_merged(recs):
-    import itertools
+        d = {k.lower().replace(' ', '_'): fix(v) for k, v in d.items() if v}
+        if not sid:
+            assert not d
+            return
+        if 'free_text_citation' in d:
+            d['citation'] = d.pop('free_text_citation')
 
-    for ayt, items in itertools.groupby(
-            sorted(recs, key=lambda r: (HumanName(r.author).last, r.year, slug(r.title))),
-            lambda r: (HumanName(r.author).last, r.year, slug(r.title))):
-        for i, item in enumerate(items):
-            if i == 0:
-                target = item.citation
-            else:
-                yield item.citation, target
+        if set(d.keys()) == {'citation'}:
+            d['howpublished'] = d.pop('citation')
+        d['local_ids'] = {sid}
+        return cls(**d)
 
+    @classmethod
+    def from_other_sources(cls, s, lids):
+        def is_publisher(s):
+            return any(kw in s.lower() for kw in {'lincom', 'gruyter', 'gryuter', 'press', 'köppe', '&', 'publish', 'verlag', 'brill'})
 
-def bibliography(dir, sources):
-    cited = {}
-    for item in sources:
-        cited[(
-            HumanName(item.get('author', '')).last,
-            item.get('year', ''),
-            slug(item.get('title', '')),
-            item.get('url', '')
-        )] = item.id
-    recs = {}
-    for line, lids in other_sources(dir).items():
-        recs[line] = [bib(line), set(lids)]
-    mergers = 0
-    for cit, target in iter_merged([v[0] for v in recs.values()]):
-        mergers += 1
-        recs[target][1] |= recs[cit][1]
-        del recs[cit]
-    other = 0
-    for rec, lids in sorted(recs.values(), key=lambda i: (HumanName(i[0].author or i[0].editor).last, i[0].year)):
-        hash = (
-            HumanName(rec.author).last,
-            rec.year,
-            slug(rec.title),
-            rec.url
-        )
-        if hash in cited:
-            src = cited[hash]
+        rec = types.SimpleNamespace()
+
+        if not s.strip():
+            return
+        title_and_pages, _, rem = s.partition(' . ')
+        if not rem:
+            title_and_pages, rem = None, s
+
+        if title_and_pages:
+            rec.title, _, rec.pages = title_and_pages.partition(' ( ')
+
+        assert rem
+        author_and_year, _, rem = rem.partition(' ·')
+
+        yearp = re.compile(r'\(([0-9\-/, \[\]sx?]+|forthcoming|no date|n\.\s*d\.?)\)$')
+        m = yearp.search(author_and_year.strip())
+        if m:
+            rec.author = author_and_year[:m.start()].strip()
+            rec.year = m.groups()[0]
         else:
-            other += 1
-            src = 'x{}'.format(other)
-            sources.append(rec.as_source(src))
-        yield src, {lid for lid in lids if lid not in INVALID_LANGUAGE_IDS}
+            rec.author = author_and_year.split('(')[0].strip()
+        rem = rem.strip()
+        if rem:
+            rem = [p.strip() for p in rem.split(' ·') if p.strip()]
+            incollp = re.compile('In\s+(?P<booktitle>.+?)\s+edited by\s+(?P<editor>.+)')
+            m = incollp.match(rem[0])
+            if m:
+                rec.booktitle, rec.editor = m.group('booktitle'), m.group('editor')
+            else:
+                jvnp = re.compile('(?P<journal>.+?)\.\s*(?P<volume>[0-9VXI]+)\s*(\((?P<number>[0-9]+)\))?')
+                m = jvnp.match(rem[0])
+                if m:
+                    rec.journal = m.group('journal')
+                    rec.volume = m.group('volume')
+                    if m.group('number'):
+                        rec.number = m.group('number')
+                else:
+                    for i, r in enumerate(rem):
+                        if r.startswith('edited by'):
+                            rec.editor = r.replace('edited by', '').strip()
+                            del rem[i]
+                            break
+                    for i, r in enumerate(rem):
+                        if r.strip().startswith('http://') or r.strip().startswith('https://'):
+                            rec.url = r
+                            del rem[i]
+                            break
+
+                    if len(rem) == 1:
+                        if ':' in rem[0] and '://' not in rem[0]:
+                            rec.address, _, rec.publisher = rem[0].partition(':')
+                        elif is_publisher(rem[0]):
+                            rec.publisher = rem[0]
+                        elif not rem[0].lower().startswith('in '):
+                            rec.publisher = rem[0]
+                        else:
+                            rec.booktitle = ' '.join(rem[0].split()[1:]).strip()
+                    elif len(rem) == 3 and rem[1].startswith('Vol.'):
+                        rec.series, rec.volume, rec.publisher = rem
+                    elif len(rem) == 2 and ':' in rem[1] and '://' not in rem[1]:
+                        rec.series, publisher = rem
+                        rec.address, _, rec.publisher = publisher.partition(':')
+                    elif len(rem) == 2 and is_publisher(rem[1]):
+                        rec.series, rec.publisher = rem
+                    elif len(rem) == 2 and rem[1].startswith('Vol.'):
+                        rec.series, rec.volume = rem
+                    elif len(rem) == 2:
+                        rec.series, rec.publisher = rem
+                    else:
+                        assert not rem
+                    # series: #[0-9]+ -> volume
+        return cls(citation=s, language_ids=lids, **{k: v for k, v in rec.__dict__.items() if v and v.strip()})
+
+
+def bibliography(dir):
+    res = collections.defaultdict(list)
+    for p in dir.glob('lang_*_bibliography'):
+        lid = p.stem.split('_')[1]
+        doc = parse(io.StringIO(p.read_text(encoding='utf8')), HTMLParser())
+        for para in doc.findall('.//ul[@id="other_sources"]/li'):
+            res[re.sub(r'\s+', ' ', ''.join(para.itertext()).strip())].append(lid)
+
+    for line, lids in res.items():
+        yield Bib.from_other_sources(line, {lid for lid in lids if lid not in INVALID_LANGUAGE_IDS})

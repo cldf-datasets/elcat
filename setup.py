@@ -9,6 +9,9 @@ setup(
     entry_points={
         'cldfbench.dataset': [
             'elcat=cldfbench_elcat:Dataset',
+        ],
+        'cldfbench.commands': [
+            'elcat=elcat_commands',
         ]
     },
     install_requires=[
