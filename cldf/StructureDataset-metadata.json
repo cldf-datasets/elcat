@@ -16,7 +16,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/elcat",
             "rdf:type": "prov:Entity",
-            "dc:created": "1bf4533",
+            "dc:created": "326bfd8",
             "dc:title": "Repository"
         },
         {
@@ -41,7 +41,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 62576,
+            "dc:extent": 64628,
             "tableSchema": {
                 "columns": [
                     {
@@ -245,7 +245,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 9,
+            "dc:extent": 10,
             "tableSchema": {
                 "columns": [
                     {

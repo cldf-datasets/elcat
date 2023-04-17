@@ -10,9 +10,10 @@ from cldfbench import Dataset as BaseDataset
 from cldfbench import CLDFSpec
 from pycldf.sources import Source
 from clldutils.misc import nfilter
+from nameparser import HumanName
 
 from util import (
-    iter_langs, SCORED_PARAMETERS, split, iter_other_sources, get_doc, COMPOSITE_PARAMETERS,
+    iter_langs, SCORED_PARAMETERS, split, bibliography, get_doc, COMPOSITE_PARAMETERS,
     norm_text, norm_coords,
 )
 
@@ -41,6 +42,7 @@ class Dataset(BaseDataset):
                 for aa in country.findall('.//a'):
                     if 'href' in aa.attrib and re.fullmatch('/lang/[0-9]+', aa.attrib['href']):
                         self.get(aa.attrib['href'])
+                        self.get(aa.attrib['href'] + '/bibliography')
 
     def cmd_makecldf(self, args):
         self.schema(args)
@@ -81,6 +83,11 @@ class Dataset(BaseDataset):
                 Description=desc,
                 ColumnSpec=dict(datatype=dict(base='json', format=json.dumps(schema))),
             ))
+        args.writer.objects['ParameterTable'].append(dict(
+            ID='bib',
+            Name='Bibliography',
+            Description='Other sources about a language.',
+        ))
 
         # Add languages:
         coords, iso2gc = {}, {}
@@ -93,9 +100,10 @@ class Dataset(BaseDataset):
         id2gc = {
             r['ID']: r['Glottocode'] for r in self.etc_dir.read_csv('languages.csv', dicts=True)}
 
+        sources = []
         for obj in iter_langs(self.raw_dir / 'html'):
             if isinstance(obj, Source):
-                args.writer.cldf.sources.add(obj)
+                sources.append(obj)
                 continue
             lang = obj
 
@@ -212,6 +220,27 @@ class Dataset(BaseDataset):
                             Source=[sid] if sid else [],
                             Comment=comment,
                         ))
+
+        bib = collections.defaultdict(set)
+        for src, lids in bibliography(self.raw_dir / 'html', sources):
+            for lid in lids:
+                bib[lid].add(src if isinstance(src, str) else src.id)
+
+        for src in sorted(sources, key=lambda s: (
+            HumanName(s.get('author') or s.get('editor', '')).last,
+            s.get('year', ''),
+            s.get('title', ''),
+        )):
+            args.writer.cldf.sources.add(src)
+
+        for lid, sources in bib.items():
+            args.writer.objects['ValueTable'].append(dict(
+                ID='{}-bib'.format(lid),
+                Language_ID=lid,
+                Parameter_ID='bib',
+                Value='See Source',
+                Source=list(sorted(sources)),
+            ))
 
         # Now we can assign locations to the languages, preferentially from ElCat data, as a
         # fallback from Glottolog data.

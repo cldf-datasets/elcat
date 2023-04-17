@@ -18,6 +18,7 @@
    ```
 4. Make sure an SQLite database can be created:
    ```shell
+   rm -f elcat.sqlite
    cldf createdb cldf/StructureDataset-metadata.json elcat.sqlite
    ```
 5. Re-create the README:
