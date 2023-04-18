@@ -8,9 +8,7 @@ import urllib.parse
 import requests
 from cldfbench import Dataset as BaseDataset
 from cldfbench import CLDFSpec
-from pycldf.sources import Source
 from clldutils.misc import nfilter
-from nameparser import HumanName
 
 from util import (
     iter_langs, SCORED_PARAMETERS, split, bibliography, get_doc, COMPOSITE_PARAMETERS,
@@ -158,6 +156,7 @@ class Dataset(BaseDataset):
                             Value=d['Endangerment Level'],
                             Source=[sid] if sid else [],
                             Comment=comment,
+                            preferred=sid == lang.preferred_source,
                         ))
                         level, _, certainty = d.pop('Endangerment Level').partition('(')
                         d['Endangerment'] = dict(Level=level.strip().lower())
@@ -203,6 +202,7 @@ class Dataset(BaseDataset):
                                 Code_ID='{}-{}'.format(k.lower().replace(' ', '_'), score),
                                 Source=[sid] if sid else [],
                                 Comment=comment,
+                                preferred=sid == lang.preferred_source,
                             ))
                     for key in ['Speaker Number Trends', 'Transmission', 'Domains Of Use']:
                         if key in d:
@@ -221,6 +221,7 @@ class Dataset(BaseDataset):
                             Value=json.dumps(d),
                             Source=[sid] if sid else [],
                             Comment=comment,
+                            preferred=sid == lang.preferred_source,
                         ))
 
         for src in bibliography(self.raw_dir / 'html'):
@@ -289,6 +290,16 @@ class Dataset(BaseDataset):
         )
         args.writer.cldf.add_component('ParameterTable')
         args.writer.cldf.add_component('CodeTable')
+        args.writer.cldf.add_columns(
+            'ValueTable',
+            {
+                'name': 'preferred',
+                'dc:description':
+                    'If ElCat contains multiple pieces of information pertaining to the same '
+                    'aspects of a language, the one used to assess the overall endangerment index '
+                    'is marked as *preferred* (based on its source).',
+                'datatype': {'base': 'boolean', 'format': 'yes|no'}}
+        )
 
     def cmd_readme(self, args):
         subprocess.check_call([

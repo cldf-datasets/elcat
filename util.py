@@ -276,6 +276,7 @@ class Language:
             'dormant',
         ]),
         converter=lambda s: s.lower() if s else None)
+    preferred_source = attr.ib(default=None)
 
     context = attr.ib(default=attr.Factory(list))
     speakers = attr.ib(default=attr.Factory(list))
@@ -286,7 +287,14 @@ class Language:
 
     @classmethod
     def from_html(cls, id, doc):
-        kw = dict(id=id, name=name(doc), metadata=Metadata.from_html(doc))
+        pref_source = doc.xpath('.//a[@href="#sources_popup_wrapper" and @data-source-id]')
+        pref_source = pref_source[0].attrib['data-source-id'] if pref_source else None
+        kw = dict(
+            id=id,
+            name=name(doc),
+            metadata=Metadata.from_html(doc),
+            preferred_source=pref_source,
+        )
         cae = classification_and_endangerment(doc)
         if cae:
             kw.update(classification=cae[0], endangerment=cae[1])

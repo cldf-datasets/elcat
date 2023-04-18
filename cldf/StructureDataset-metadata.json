@@ -16,7 +16,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/elcat",
             "rdf:type": "prov:Entity",
-            "dc:created": "268d1b4",
+            "dc:created": "97e03b6",
             "dc:title": "Repository"
         },
         {
@@ -97,6 +97,14 @@
                         "required": false,
                         "separator": ";",
                         "name": "Source"
+                    },
+                    {
+                        "dc:description": "If ElCat contains multiple pieces of information pertaining to the same aspects of a language, the one used to assess the overall endangerment index is marked as *preferred* (based on its source).",
+                        "datatype": {
+                            "base": "boolean",
+                            "format": "yes|no"
+                        },
+                        "name": "preferred"
                     }
                 ],
                 "foreignKeys": [
