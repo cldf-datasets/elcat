@@ -341,7 +341,7 @@ def iter_sources(doc):
 
 def iter_langs(dir):
     sources = collections.defaultdict(dict)
-    for p in dir.iterdir():
+    for p in sorted(dir.iterdir(), key=lambda pp: pp.name):
         m = re.fullmatch('lang_([0-9]+)', p.stem)
         if m:
             lid = m.groups()[0]
@@ -511,7 +511,7 @@ class Bib:
         return BaseSource(
             genre,
             id,
-            local_ids=' '.join(self.local_ids),
+            local_ids=' '.join(sorted(self.local_ids)),
             **{f: getattr(self, f) for f in self.regular_fields() if getattr(self, f)})
 
     @staticmethod
