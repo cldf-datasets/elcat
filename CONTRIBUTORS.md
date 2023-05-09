@@ -4,9 +4,9 @@ See https://endangeredlanguages.com/about_catalogue/ for a detailed description 
 
 Name | Role
 --- | ---
-Lyle Campbell | Editor, DataCollector, Researcher
-Gary Holton | ProjectManager, Editor
-Anna Belew | Editor, ProjectManager
+Lyle Campbell | Editor, DataCollector, Researcher, author
+Gary Holton | ProjectManager, Editor, author
+Anna Belew | Editor, ProjectManager, author
 Sean Simpson | DataCollector
 John Van Way | DataCollector
 Amy Brunett | DataCollector

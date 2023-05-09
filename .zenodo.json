@@ -183,5 +183,16 @@
             "name": "Robert Forkel",
             "type": "DataCurator"
         }
+    ],
+    "creators": [
+        {
+            "name": "Lyle Campbell"
+        },
+        {
+            "name": "Gary Holton"
+        },
+        {
+            "name": "Anna Belew"
+        }
     ]
 }

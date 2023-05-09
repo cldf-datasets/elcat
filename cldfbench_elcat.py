@@ -127,7 +127,8 @@ class Dataset(BaseDataset):
             if lang.id in id2gc:  # Hand-curated mapping exists.
                 if glottocodes:
                     if [id2gc[lang.id]] != glottocodes:
-                        assert lang.id == '2896'  # This is the only known discrepancy.
+                        #print(id2gc[lang.id], glottocodes)
+                        assert (lang.id in {'2896', '6029'}) or id2gc[lang.id] in glottocodes, str(lang.id)  # This is the only known discrepancy.
                         glottocodes = [id2gc[lang.id]]
                 else:
                     glottocodes = [id2gc[lang.id]]

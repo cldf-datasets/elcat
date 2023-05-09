@@ -16,7 +16,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/elcat",
             "rdf:type": "prov:Entity",
-            "dc:created": "06b63ae",
+            "dc:created": "v2023",
             "dc:title": "Repository"
         },
         {

@@ -5,7 +5,7 @@ bs4==0.0.1
 Cartopy==0.21.1
 certifi==2022.12.7
 cldfbench==1.13.0
--e git+https://github.com/cldf-datasets/elcat@06b63ae0432ba08b92f12ef810e536ffef2b16e2#egg=cldfbench_elcat
+-e git+https://github.com/cldf-datasets/elcat@3744f5a3f604b3f24638c93e1182ac7fd4d1452a#egg=cldfbench_elcat
 cldfcatalog==1.5.1
 cldfviz==0.12.0
 cldfzenodo==1.1.0

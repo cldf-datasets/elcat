@@ -20,7 +20,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 10189,Naha'ai,,-16.557359,167.505623,malf1237,mlx,Austronesian,endangered,ISO 639-3,mlx,Malfaxal; Malvaxal-Toman Island; Taman; Tomman
 10209,Avava,,-16.233418,167.470106,katb1237,tmb,Austronesian,vulnerable,ISO 639-3,tmb,Katbol; Navava; Bangsa’; Tembimbe-Katbol; Taremp; Tisvel; Mallicolo
 1021,Tala,,10.221004,9.906132,tala1295,tak,Afro-Asiatic,threatened,ISO 639-3,tak,
-10229,"Baka (Far North Region, Cameroon)",,10.881522,14.193724,,,Afro-Asiatic,severely endangered,LINGUIST List,5h1,
+10229,"Baka (Far North Region, Cameroon)",,10.881522,14.193724,baka1279,,Afro-Asiatic,severely endangered,LINGUIST List,5h1,
 10249,Bumang,,22.661,103.085,buma1247,bvp,Austro-Asiatic,threatened,ISO 639-3,bvp,Manzhang Dai; 曼仗傣; Bumang; 布芒語
 10269,Lavukaleve,,-9.079,159.22,lavu1241,lvk,Isolate,threatened,ISO 639-3,lvk,Laumbe; Laube; Russell Island; Lakukaleve
 10289,Torres Strait Creole,,-10.544521,142.253666,torr1261,tcs,Pidgin or Creole,vulnerable,ISO 639-3,tcs,Torres Strait Pidgin; Lockhart Creole; Torres Strait Broken; West Torres; Cape York Creole; Yumplatok; Ap-Ne-Ap; Blaik; Creole
@@ -67,18 +67,18 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 10463,Langas,,10.17,9.83,lang1332,,Afro-Asiatic,endangered,,,Laŋas; Nyamzak; Nyamzax; Nyámzax; Lundur
 10464,Zul,,10.2,9.566667,zull1239,,Afro-Asiatic,threatened,,,Zùl; Bi Zule; Mbarmi; Barma; Zulawa; Zull
 10465,Dir,,10.208333,9.708333,dirr1240,,Afro-Asiatic,endangered,,,Diir; Dììr; Diri; Dra; Baram Dutse
-10466,Buli,,10.233333,9.783333,,,Afro-Asiatic,endangered,,,Bili; Bɨlɨ; Bələ
-10467,Tunayana,,2.356611,-56.79421,,,Cariban,critically endangered,,,Katuena
+10466,Buli,,10.233333,9.783333,buli1260,,Afro-Asiatic,endangered,,,Bili; Bɨlɨ; Bələ
+10467,Tunayana,,2.356611,-56.79421,tuna1234,,Cariban,critically endangered,,,Katuena
 10470,Ordos,,39.612,109.781,ordo1245,,Mongolic,vulnerable,,,Urdus
 10471,Minhe Monguor,,36.4919,102.6452,minh1238,,Mongolic,vulnerable,,,Minhe Mangghuer; Mangghuer; Monguor de Minhe; минхэ-монгорский; 民和土家語
-10472,Kili,,48.8068,134.121,,,Tungusic,endangered,,,Kur-Urmi Nanay; Kur-Urmi Nanai; кили
-10473,Kilen,,47.4689,133.8574,,,Tungusic,severely endangered,,,Sungari Nanay; килен; 赫哲語奇楞方言; Sungari Nanai; Akani
+10472,Kili,,48.8068,134.121,kuro1242,,Tungusic,endangered,,,Kur-Urmi Nanay; Kur-Urmi Nanai; кили
+10473,Kilen,,47.4689,133.8574,kile1243,,Tungusic,severely endangered,,,Sungari Nanay; килен; 赫哲語奇楞方言; Sungari Nanai; Akani
 10474,Kamas,,57.9964,92.8784,kama1351,xas,Uralic,dormant,ISO 639-3,xas,Kamassian; камасинский язык; калмажи шəкə; ʒaǯ̕ kall; kamassin kieli; Kamasse
 10475,Kumandin,,52.884889,86.323299,kuma1284,,Turkic,endangered,,,Qumanda; Northern Altai; Куванды; куванта; кувандык; кувандыг; кувандых; къуманды; къубанды; къуўанды; къувандыг; кумандинский язык; северно-алтайский язык; Qumandy
 10479,Tuha,,50.95334449,101.64276123,tuha1234,,Turkic,critically endangered,,,Uyghur Uryangkha; Uighur Uryangkhai; Khövsgöl Uryangkhay; Khövsgöl Uryangkhai; уйгуро-урянхайский; Soyot Uryangkhai; Soyed
 10480,Soyot,,52.0406,101.0659,soyo1234,,Turkic,awakening,,,Soyote; Tuva; сойотский язык; сойоты
 10481,Lopnor Uighur,,40.983,84.224,lopn1238,,Turkic,critically endangered,,,Lopluk; 維吾爾語羅布話
-10482,Khamnigan Ewenki,,49.296,119.797,,,Tungusic,threatened,,,Khamnigan Evenki; Khamnigan Tungus; Horse Tungus; Tungus Evenki; 通古斯鄂溫克
+10482,Khamnigan Ewenki,,49.296,119.797,manc1253,,Tungusic,threatened,,,Khamnigan Evenki; Khamnigan Tungus; Horse Tungus; Tungus Evenki; 通古斯鄂溫克
 10484,Judeo-Iraqi Arabic,,31.5339,41.2595,jude1266,yhd,Afro-Asiatic,at risk,ISO 639-3,yhd,Judeo-Baghdadi
 10485,Zari,,9.71,9.4,zari1242,zaz,Afro-Asiatic,dormant,ISO 639-3,zaz,Zariwa; Kopti; Kwapm
 10488,Boto,,9.733333,9.233333,boto1248,,Afro-Asiatic,endangered,LINGUIST List,zaz-bot,Boot; Bibot
@@ -175,7 +175,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 10603,Kwoma,,-4.09,142.66,kwom1262,kmo,Sepik,threatened,ISO 639-3,kmo,Kuome; Washkuk
 10604,Kwanga,,-3.74,142.71,kwan1278,kwj,Sepik,threatened,ISO 639-3,kwj,Gawanga; Kawanga; Mende; Nihamber Sambu; Seim; Womsak
 10605,Mende,,-3.75,142.75,mend1268,sim,Sepik,threatened,ISO 639-3,sim,Seim; Nihamber; Sambu
-10606,Ambulas,,-3.78,143.06,,,Sepik,vulnerable,ISO 639-3,abt; wos,Abelam; Abulas; Ambelas; Hanga Hundi; Kwasengen; West Wosera
+10606,Ambulas,,-3.78,143.06,ambu1247,,Sepik,vulnerable,ISO 639-3,abt; wos,Abelam; Abulas; Ambelas; Hanga Hundi; Kwasengen; West Wosera
 10607,Boiken,,-3.25,143.25,boik1241,bzf,Sepik,vulnerable,ISO 639-3,bzf,Boikin; Nucum; Yangoru; Yengoru
 10608,Iatmul,,-4.3,143.32,iatm1242,ian,Sepik,threatened,ISO 639-3,ian,Big Sepik; No. 2 Sepik; Middle Sepik; Gepma Kwudi; Gepma Kwundi; Ngepma Kwundi; Nyaura
 10609,Manambu,,-4.19,142.86,mana1298,mle,Sepik,threatened,ISO 639-3,mle,
@@ -183,7 +183,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 10610,Burui,,-4.04,143.01,buru1309,bry,Sepik,endangered,ISO 639-3,bry,Sawos
 10611,Gaikundi,,-4.02,143.14,gaik1242,gbf,Sepik,endangered,ISO 639-3,gbf,Gaikunti; Gaikwundi; Sawos
 10612,Koiwat,,-4.03,143.62,koiw1243,kxt,Sepik,endangered,ISO 639-3,kxt,Sawos
-10613,Kwaruwi Kwundi,,-3.99,143.4,,,Sepik,threatened,ISO 639-3,sdk; keh,Sos Kundi; Agbane; Agbanekundi; Akbana; Soskundi; Keak; Kwaruwikwundi; Sepik Plains; Tshuosh; Tshwosh; Sawos
+10613,Kwaruwi Kwundi,,-3.99,143.4,sosk1235,,Sepik,threatened,ISO 639-3,sdk; keh,Sos Kundi; Agbane; Agbanekundi; Akbana; Soskundi; Keak; Kwaruwikwundi; Sepik Plains; Tshuosh; Tshwosh; Sawos
 10614,Sengo,,-4.02,142.96,seng1284,spk,Sepik,endangered,ISO 639-3,spk,Manambu
 10615,Yelogu,,-4.1,142.81,yelo1243,ylg,Sepik,endangered,ISO 639-3,ylg,Yalaku; Buiamanambu; Kaunga; Buiamanambu; Bwiamanambu
 10616,Alamblak,,-4.66,143.32,alam1246,amp,Sepik,threatened,ISO 639-3,amp,Arambak
@@ -198,8 +198,8 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 10624,Lizu,,28.330373,101.36055,lizu1234,,Sino-Tibetan,endangered,,,里汝語; Lüzu; 吕蘇; 傈蘇
 10625,Duoxu,,28.549809,102.177082,duox1238,,Sino-Tibetan,critically endangered,,,多緒; 多須
 10626,Hewa,,-5.04,142.55,hewa1241,ham,Sepik,threatened,ISO 639-3,ham,Sisimin; Umairof; Yoliapi
-10628,Bisorio,,-4.78,143.21,,,Trans-New Guinea,endangered,ISO 639-3,bir; bic,Bi; Gne; Sidi; Iniai; Inyai-Gadio-Bisorio; Bikaru; Bigalu; Bugalu; Pikaru
-10629,Angoram,,-4.08,144.03,,,Lower Sepik-Ramu,threatened,ISO 639-3,aog; myd,Kanda; Olem; Pondo; Sepik No. 1; Tjimundo; Maramba
+10628,Bisorio,,-4.78,143.21,biso1243,,Trans-New Guinea,endangered,ISO 639-3,bir; bic,Bi; Gne; Sidi; Iniai; Inyai-Gadio-Bisorio; Bikaru; Bigalu; Bugalu; Pikaru
+10629,Angoram,,-4.08,144.03,ango1255,,Lower Sepik-Ramu,threatened,ISO 639-3,aog; myd,Kanda; Olem; Pondo; Sepik No. 1; Tjimundo; Maramba
 10630,Karawari,,-4.49,143.59,tabr1243,tzx,Lower Sepik-Ramu,threatened,ISO 639-3,tzx,Tabriak
 10631,Chambri,,-4.28,143.1,cham1313,can,Lower Sepik-Ramu,threatened,ISO 639-3,can,Tchambuli; Tshamberi
 10632,Biwat,,-4.39,143.87,biwa1243,bwm,Yuat,threatened,ISO 639-3,bwm,Munduguma; Mundugumor; Mundokuma; Mundukumo
@@ -322,15 +322,15 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 10767,Olrat,,-14.313,167.433,olra1234,olr,Austronesian,critically endangered,ISO 639-3,olr,
 10768,Vunapu,,-14.834,166.741,vuna1239,vnp,Austronesian,endangered,ISO 639-3,vnp,
 10769,Valpei,,-14.883,166.577,valp1237,vlp,Austronesian,endangered,ISO 639-3,vlp,
-10773,Bura,,-15.403194,166.675312,,,Austronesian,endangered,,,
+10773,Bura,,-15.403194,166.675312,bura1300,,Austronesian,endangered,,,
 10774,Moiso,,-15.442909,166.859333,,,Austronesian,endangered,,,
 10775,Kene,,-15.49585,166.754963,,,Austronesian,endangered,,,
 10776,Daruru,,-15.616242,166.785161,,,Austronesian,severely endangered,,,
-10777,Ande,,-15.470705,166.936238,,,Austronesian,endangered,,,Morouas
+10777,Ande,,-15.470705,166.936238,moro1286,,Austronesian,endangered,,,Morouas
 10778,Retlatur,,-15.629468,166.834614,,,Austronesian,severely endangered,,,
 10780,Merei,,-15.51173,166.888172,mere1242,lmb,Austronesian,endangered,,lmb,Tiale; Lametin; Malmariv
 10781,Atin,,-15.441585,166.980183,,,Austronesian,endangered,,,
-10782,Ati (Vanuatu),,-15.393926,166.96645,,,Austronesian,severely endangered,,,Polonombauk; Meris
+10782,Ati (Vanuatu),,-15.393926,166.96645,polo1242,,Austronesian,severely endangered,,,Polonombauk; Meris
 10783,Farnanto,,-15.370092,166.96645,,,Austronesian,severely endangered,,,
 10784,Se,,-15.383333,166.999409,,,Austronesian,severely endangered,,,Fanafo
 10785,Sinia,,-15.309171,166.801655,navu1237,nsw,Austronesian,endangered,ISO 639-3,nsw,Navut
@@ -345,13 +345,13 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 10794,Vivti,,-16.250234,167.531217,vivt1234,,Austronesian,critically endangered,,,
 10795,Nitita,,-16.214958,167.518171,niti1249,,Austronesian,critically endangered,,,
 10797,Vovo,,-15.898421,167.202132,vovo1238,,Austronesian,endangered,,,
-10798,Najit,,-15.954546,167.198012,,,Austronesian,critically endangered,,,
-10799,Njav,,-15.975671,167.258437,,,Austronesian,critically endangered,,,
-10800,Nivat,,-16.271847,167.451384,,,Austronesian,critically endangered,,,
+10798,Najit,,-15.954546,167.198012,naji1240,,Austronesian,critically endangered,,,
+10799,Njav,,-15.975671,167.258437,njav1234,,Austronesian,critically endangered,,,
+10800,Nivat,,-16.271847,167.451384,niva1239,,Austronesian,critically endangered,,,
 10801,Orkon,,-16.242462,168.218976,orko1234,,Austronesian,severely endangered,,,Fanbak
 10802,Lelepa,,-17.597085,168.20924,lele1267,lpa,Austronesian,endangered,ISO 639-3,lpa,Havannah Harbour
 10803,Eton,,-17.753446,168.559429,eton1255,etn,Austronesian,endangered,ISO 639-3,etn,
-10804,Tholp,,-15.24301,167.134045,,,Austronesian,dormant,,,Nethalp
+10804,Tholp,,-15.24301,167.134045,lore1244,,Austronesian,dormant,,,Nethalp
 10806,Anem,,-5.54836,148.993,anem1249,anz,Isolate,endangered,ISO 639-3,anz,Anêm
 10807,Pele-Ata,,-5.58045,151.05,pele1245,ata,Isolate,threatened,,ata,
 10808,Bilua,,-7.748003,156.660565,bilu1245,blb,Isolate,threatened,ISO 639-3,blb,
@@ -512,10 +512,10 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 1249,Zome,,24.06,93.93,zouu1235,zom,Sino-Tibetan,vulnerable,ISO 639-3,zom,Zorni; Zomi; Zou; Zo; Kuki Chin; Jo; ဇိုမီး
 125,Hawaiian,,21.894103,-160.161856,hawa1245,haw,Austronesian,severely endangered,ISO 639-3,haw,'Ōlelo Hawai'i; 'Ōlelo Hawai'i Makuahine
 1250,Chrau,,10.75,107.5,chra1242,crw,Austro-Asiatic,vulnerable,ISO 639-3,crw,Jro; Ro; Tamun; Chauro; Choro; Chíoro
-1251,Triw,,15.6833,107.2,,,Austro-Asiatic,threatened,LINGUIST List,kuf-tri,Triw
-1252,Dakkang,,15.6333,107.25,,,Austro-Asiatic,threatened,LINGUIST List,kuf-dak,Daak Kang
+1251,Triw,,15.6833,107.2,triw1234,,Austro-Asiatic,threatened,LINGUIST List,kuf-tri,Triw
+1252,Dakkang,,15.6333,107.25,dakk1239,,Austro-Asiatic,threatened,LINGUIST List,kuf-dak,Daak Kang
 1253,Zemiaki,,34.945,70.954,zemi1238,,Indo-European,endangered,LINGUIST List,nli-zem,Zamyaki; Jamlám basa
-1254,Chatong,,15.65,107.1166,,,Austro-Asiatic,endangered,LINGUIST List,1iu,
+1254,Chatong,,15.65,107.1166,chat1270,,Austro-Asiatic,endangered,LINGUIST List,1iu,
 1255,Semelai,,3.0,103.0,seme1247,sza,Austro-Asiatic,vulnerable,ISO 639-3,sza,Bera; Semelai Bera; Serting
 1256,Semaq Beri,,4.0012,102.8443,sema1265,szc,Austro-Asiatic,threatened,ISO 639-3,szc,Semaq Bri; Semoq Beri; Ulu Tembeling
 1257,Semai,,4.33333333333,101.666666667,sema1266,sea,Austro-Asiatic,vulnerable,ISO 639-3,sea,Senoi; Sengoi; Sakai; Central Sakai; Central Sakai; Zentral Sakai
@@ -642,7 +642,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 1486,Doutai,,-3.33333333333,138.166666667,dout1240,tds,Lakes Plain,severely endangered,ISO 639-3; Glottolog,tds; dout1240,Taori-So; Taori; Tolitai
 1487,Dubu,,-3.5134,140.8612,dubu1240,dmu,Pauwasi,endangered,ISO 639-3,dmu,Tebi
 1488,Duriankere,,-1.3896,130.9247,duri1243,dbn,Trans-New Guinea,severely endangered,ISO 639-3; Glottolog,dbn; duri1243,Esaro; Sailen; Duriankari
-1505,Laji,,23.021,104.395,,,Tai-Kadai,critically endangered,LINGUIST List,1l4,Lachi; Lipulio; Y To; Y Pí; Y Póng; Y Mia; Cù Te; Cu-Tê; I To; Y Poong; Ku Te; La Chi; Laji; Lati; Tai Lati
+1505,Laji,,23.021,104.395,lakk1238,,Tai-Kadai,critically endangered,LINGUIST List,1l4,Lachi; Lipulio; Y To; Y Pí; Y Póng; Y Mia; Cù Te; Cu-Tê; I To; Y Poong; Ku Te; La Chi; Laji; Lati; Tai Lati
 1506,Lachi,,22.6666666667,104.833333333,lach1248,lbt,Tai-Kadai,threatened,ISO 639-3,lbt,Lipulio; Y To; Y Pí; Y Póng; Y Mia; Cù Te; Cu-Tê; I To; Y Poong; Ku Te; La Chi; Laji; Lati; Tai Lati
 1507,Laha (Vietnam),,21.5833333333,103.916666667,laha1250,lha,Tai-Kadai,severely endangered,ISO 639-3,lha,Xá Khao; Khlá Phlao; Klá Dong; Khlá Don; Khlá Dung; Khlá Liik; La Ha Ung; La Ha; Xá Chien; Xá Lay
 1508,White Gelao,,26.212,105.478,whit1267,giw,Tai-Kadai,severely endangered,ISO 639-3,giw,Tú Du; Telue; Southwestern Gelao; Gelao; White; 仡佬語多羅方言; 白仡佬
@@ -701,7 +701,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 1601,Bhumij,,22.552,85.804,bhum1234,,Austro-Asiatic,at risk,LINGUIST List,unr-bhu,Sadar Bhumij; Bhumij Munda; Bhumij Thar; Bhumiɟ
 1602,Birhor,,21.7594,85.935,birh1242,biy,Austro-Asiatic,threatened,ISO 639-3,biy,Birhar; Bīrhaṛ; Bihor; Birhore; Mankidi; Mankidia; Birhɔɽ; Mundari; Mundari-Ho
 1604,Bokar,,28.8735,94.3807,boka1249,,Sino-Tibetan,threatened,LINGUIST List,adi-bok,Boga'er Luoba; 崩尼-博嘎爾语
-1607,Bori,,28.9889,94.4439,,,Sino-Tibetan,threatened,LINGUIST List,adi-bor,
+1607,Bori,,28.9889,94.4439,bori1245,,Sino-Tibetan,threatened,LINGUIST List,adi-bor,
 1609,Brokkat,,27.5618,90.6152,brok1249,bro,Sino-Tibetan,endangered,ISO 639-3,bro,Brokskad; Jokay
 1610,Brokpake,,27.3766,91.9981,brok1248,sgt,Sino-Tibetan,threatened,ISO 639-3,sgt,Mira Sagtengpa; Dakpa; Brokpa; Dap; Mera Sagtengpa; Sagtengpa; Meragsagstengkha; Jobikha; Drokpakay; Damilo
 1612,Gahri,,32.7503,76.2451,gahr1239,bfu,Sino-Tibetan,threatened,ISO 639-3,bfu,Ghara; Lahuli of Bunan; Boonan; Punan; Poonan; Erankad; Keylong Boli; Bunan; Lahul; Gari; Bunán
@@ -951,7 +951,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 2087,Teiwa,,-8.267,124.207,teiw1235,twe,Timor-Alor-Pantar,endangered,ISO 639-3,twe,Tewa
 2088,Huzhu,,36.7608,102.4255,huzh1238,,Mongolic,endangered,LINGUIST List,mjg-huz,Mongghul; Halchighol; Naringhol; Hu-tsu; Narin-guor; 互助土家語
 2089,Nese,,-15.922193,167.187713,nese1235,,Austronesian,critically endangered,LINGUIST List,08o,Matanvat
-2090,Kodiak Russian Creole,,65.700241,-174.149151,,,Pidgin or Creole,critically endangered,LINGUIST List,1hs,
+2090,Kodiak Russian Creole,,65.700241,-174.149151,kodi1252,,Pidgin or Creole,critically endangered,LINGUIST List,1hs,
 2091,Ski:xs (Southern Tsimshian),,52.59,-128.53,sout2962,,Tsimshian,critically endangered,LINGUIST List,tsi-sou,Sgüüxs; Sguxs; Old Klemtu; Klemtu; Sküüxs; Southern Tsimshian
 2092,Han,,64.7837,-141.2172,hann1241,haa,Athabaskan-Eyak-Tlingit,critically endangered,ISO 639-3,haa,Han-Kutchin; Moosehide; Dawson; Hän
 2093,Sajalong,,27.66,96.66,saja1240,sjl,,threatened,ISO 639-3,sjl,Miji; Dammai; Dhammai; Hruso A
@@ -988,7 +988,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 2150,Teushen,,-44.0,-69.0,teus1236,,Chonan,dormant,LINGUIST List,0qk,Tehuesh; Patagón; Teuéx; Teuesh; Teuesen; Chon
 2151,Teteté,,-0.0109,-76.5966,tete1252,teb,Tucanoan,dormant,ISO 639-3,teb,Eteteguaje; Tetete
 2152,Namo,,-9.1834,141.8994,namo1246,mxw,Yam,severely endangered,ISO 639-3; Glottolog,mxw; namo1246,Mari; Na; Dorro (formerly)
-2153,Tipai,,32.6049,-116.4678,,,Cochimi-Yuman,severely endangered,LINGUIST List,dih-tip,Tiipay (Jamul); Mexican Diegueño; Kamia
+2153,Tipai,,32.6049,-116.4678,kumi1248,,Cochimi-Yuman,severely endangered,LINGUIST List,dih-tip,Tiipay (Jamul); Mexican Diegueño; Kamia
 2154,Terena,,-20.2841,-55.4638,tere1279,ter,Arawakan,vulnerable,ISO 639-3,ter,Tereno; Etelena; Terêna; Guaná; Chané; Kinikinao
 2155,Tenharín,,-8.4071,-61.1499,tenh1241,pah,Tupian,endangered,ISO 639-3,pah,Tenharim; Tenharem; Tenharin; Tenharín; Parintintin
 2157,Dumun,,-5.5421,146.0906,dumu1246,dui,Trans-New Guinea,severely endangered,ISO 639-3,dui,Bai
@@ -1124,7 +1124,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 2465,Cuiva,,6.4463,-69.9389,cuib1242,cui,Guajiboan,threatened,ISO 639-3,cui,Cuiba; Cuiba-Wámonae; Kuiva; Chiricoa; Cuiba-Wámonae; Hiwi; Maiben
 2466,Curripaco,,2.3723,-67.5659,curr1243,kpc,Arawakan,vulnerable,ISO 639-3,kpc,Kurripako; Ipeka-Kurripako; Curipaco; Kuripaco; Koripako; Korispaso; Payualiene; Paiorience; Pacu
 2485,Waima'a,,-8.4995,126.3372,waim1252,wmh,Austronesian,threatened,ISO 639-3,wmh,Uai Ma'a; Waimaha; Waimoa; Uaimo'a
-2487,Vera'a,,-13.813097,167.423783,,,Austronesian,endangered,,,
+2487,Vera'a,,-13.813097,167.423783,vera1241,,Austronesian,endangered,,,
 2488,Totoli,,1.039,120.817,toto1304,txe,Austronesian,endangered,ISO 639-3,txe,Tontoli; Tolitoli; Gage
 2489,Teop,,-5.66666666667,155.0,teop1238,tio,Austronesian,threatened,ISO 639-3,tio,
 2490,Savosavo,,-9.1316,159.8124,savo1255,svs,Isolate,threatened,ISO 639-3,svs,Savo; Savo Island
@@ -1135,7 +1135,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 2510,Sowa,,-15.775905,168.185812,sowa1244,sww,Austronesian,dormant,ISO 639-3,sww,
 2511,Ninde,,-16.46637,167.464395,labo1244,mwi,Austronesian,threatened,ISO 639-3,mwi,Labo; Mewun; Meaun; Nide
 2512,Nāti,,-16.516345,167.505623,nati1244,,Austronesian,severely endangered,LINGUIST List,1hr,Naati
-2513,Sörsörian,,-16.437,167.785,,,Austronesian,critically endangered,LINGUIST List,1l9,Sosorian
+2513,Sörsörian,,-16.437,167.785,sors1241,,Austronesian,critically endangered,LINGUIST List,1l9,Sosorian
 2514,Sian,,2.7199,113.7018,sian1255,spg,Austronesian,endangered,ISO 639-3; Glottolog,spg; sian1255,Sihan
 2515,Ngen,,-15.338309,167.106526,shar1244,ssv,Austronesian,endangered,ISO 639-3,ssv,Shark Bay
 2516,Saisiyat,,24.5977,121.0762,sais1237,xsy,Austronesian,severely endangered,ISO 639-3,xsy,Saiset; Seisirat; Saisett; Saisiat; Saisiett; Saisirat; Saisyet; Saisyett; Amutoura; Bouiok; Sprache von Formosa; 賽夏語
@@ -1388,7 +1388,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 2960,Panare,,6.5445,-66.4233,enap1235,pbh,Cariban,vulnerable,ISO 639-3,pbh,Eñepa; E'ñepa; Panari; Abira; Eye; E'ñapa Woromaipu
 2961,Kreen-Akarore,,-9.449,-54.5965,pana1307,kre,Jean,endangered,ISO 639-3,kre,Kren Akarore; Panará; Ipewí; Kren-Akarore; Creen-Acarore
 2962,Palikur,,3.908,-51.9873,pali1279,plu,Arawakan,threatened,ISO 639-3,plu,Palicur; Palikúr; Palikr; Palijur; Palikour; Paikwene; Palincur; Paricores; Paricuria; Parikurene; Parinkur-lene
-2963,Kaiwá,,-23.0,-55.0,,,Tupian,vulnerable,ISO 639-3,kgk; pta,Kaiwá; Caiwa; Caingua; Kaingwá; Cayua; Caiua; Kayova; Kaiowa; Kaiova; Chiripá; Nhandeva; Txiripá; Tsiripá; Ñandeva; Apytare; Kaiwá/Kayová; Kayowá; Kaiowá; Caiová; Caiguá; Pãi; Pãi-Tavyterã
+2963,Kaiwá,,-23.0,-55.0,kaiw1246,,Tupian,vulnerable,ISO 639-3,kgk; pta,Kaiwá; Caiwa; Caingua; Kaingwá; Cayua; Caiua; Kayova; Kaiowa; Kaiova; Chiripá; Nhandeva; Txiripá; Tsiripá; Ñandeva; Apytare; Kaiwá/Kayová; Kayowá; Kaiowá; Caiová; Caiguá; Pãi; Pãi-Tavyterã
 2964,Paez,,2.8237,-76.3117,paez1247,pbb,Isolate,vulnerable,ISO 639-3,pbb,Páez; Nasa Yuwe; Pez; Paes; Páes
 2965,Ute,,37.6818,-113.088,utes1238,ute,Uto-Aztecan,endangered,ISO 639-3,ute,Ute-Southern Paiute; Pai Ute; Paviotso; South Paiute; Southern Paiute; Chemehuevi; Ute-Chemehuevi
 2968,Nukak,,2.5,-71.5,nuka1242,mbr,Kakua-Nukak,endangered,ISO 639-3,mbr,Nukak Makú; Maczsa; Guaviare
@@ -1520,7 +1520,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 3157,E'ma Buyang,,23.4146,105.7632,emab1235,yzg,Tai-Kadai,endangered,ISO 639-3,yzg,Buyang Zhuang; Eastern Buyang; Funing Buyang; Buozaang; Langjia Buyang; 峨馬布央; 郎架布央
 3158,Yau,,-6.09554,146.8213,yaus1235,yyu,Torricelli,endangered,ISO 639-3,yyu,
 3159,Yawarrawarrka,,-26.49578047,140.609109,yawa1258,yww,Pama-Nyungan,critically endangered,ISO 639-3,yww,Yawarrawarka; Jauraworka; Jaurorka; Yara-wuarka; Yarrawaurka; Yarrawurka; Yarroworka; Yauarawaka; Yaurawakka; Yauroka; Yaurorka; Yauroworka; Yawarawarka; Yerawaka; Yowerawarrika; Yowerawoolka; Yawarawarga
-3160,Yawuru,,-17.91457525,122.3569459,,,Nyulnyulan,critically endangered,,ywr; dyd,Yaoro; Jaudjibara; Jawdjibaia; Jawdjibara; Yaudjibara; Yaudijbaia; Yawjibara; Jawadjag; Winjawindjagu; Jauor; Yauor; Yauera; Djauor; Yauro; Yaroro; Yawur; Jaoro; Jauro; Jawuru; Kakudu-Kakudu; Gawor; Nawudu; Jukun; Dyugun
+3160,Yawuru,,-17.91457525,122.3569459,yawu1244,,Nyulnyulan,critically endangered,,ywr; dyd,Yaoro; Jaudjibara; Jawdjibaia; Jawdjibara; Yaudjibara; Yaudijbaia; Yawjibara; Jawadjag; Winjawindjagu; Jauor; Yauor; Yauera; Djauor; Yauro; Yaroro; Yawur; Jaoro; Jauro; Jawuru; Kakudu-Kakudu; Gawor; Nawudu; Jukun; Dyugun
 3161,Kolyma Yukaghir,,65.4936,151.0757,sout2750,yux,Yukaghir,critically endangered,ISO 639-3,yux,Forest Yukagir; Southern Yukagir; южноюкагирский язык; Forest Yukaghir; Jukagirisch; Odul; Kolyma; Kolym; Southern Yukaghir; Одул; Одун ажуу
 3162,Yug,,61.0,90.0,yugh1240,yuu,Yeniseian,critically endangered,ISO 639-3,yuu,Yugh; Southern Ket; Sym Ket; D'uk; югский язык
 3163,Guarayu,,-15.919,-62.8747,guar1292,gyr,Tupian,threatened,ISO 639-3,gyr,Guarayú; Chapacura; Guarayo; Guapore; Tapacura; Huachi; Maré; Iten; Guarayu; Guarayo; Ñañañe
@@ -1629,7 +1629,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 3339,Wali,,11.817285,29.453608,wali1262,wll,Nubian,threatened,ISO 639-3,wll,Walari; Walarishe; Nubian (Hill); Ajang
 3340,Kunbarlang,,-12.020217,133.836286,kunb1251,wlg,Gunwinyguan,severely endangered,ISO 639-3,wlg,Gunbalang; Walang; Warlang; Gungalang; Gunbarlang
 3341,Walio,,-4.43658,142.1783,nucl1453,wla,Isolate,endangered,ISO 639-3,wla,
-3342,Waka-Waka,,-20.026536,138.010119,,,Pama-Nyungan,critically endangered,,wkw; wur,Enibura; Mungar; Nukunukubara; Wa; Wa:bar; Waa; Wacca-Wacca; Wackar; Waga; Wagawaga; Waga-Waga; Waka; Waka Waka; Wakar; Wakka; Wakka Wakka; Wakkar; Wakkawakka; Wakka-Wakka; Waku-wuka; Wapa; Woga; Wogga; Woka; Woka-Woka; Wokka; Wokkari; Wuka Wuka; Wakawaka; Wuliwuli
+3342,Waka-Waka,,-20.026536,138.010119,waka1274,,Pama-Nyungan,critically endangered,,wkw; wur,Enibura; Mungar; Nukunukubara; Wa; Wa:bar; Waa; Wacca-Wacca; Wackar; Waga; Wagawaga; Waga-Waga; Waka; Waka Waka; Wakar; Wakka; Wakka Wakka; Wakkar; Wakkawakka; Wakka-Wakka; Waku-wuka; Wapa; Woga; Wogga; Woka; Woka-Woka; Wokka; Wokkari; Wuka Wuka; Wakawaka; Wuliwuli
 3344,Wirangu,,-31.57687017,132.8519652,wira1265,wgu,Pama-Nyungan,awakening,ISO 639-3,wgu,Nhawu; Njangga; Nyangga; Warrangoo; Wirongu; Wironguwongga; Wirrung; Wirrunga; Wirrongu; Wirangga; Naljara; Wanbiri; Jilbara; Windakan; Wangon; Ngoleiadjara; Tidni and Hilleri; Tidnie; Titnie; Willeuroo; Yilrea; Nonga; Weerung; Wanggan; Yulbara; Julbari Wonnga; Yulbara wonga; Ulbarara; Youlbara; Willuro; Wilyaru; Kartawongulta; Nhangga; Tidni; Hilleri; Hillery; Illarie; Ngadha Wangga; Ngadhu wangga; Warna-biri; Wambira
 3345,Wilawila,,-15.98488583,126.5727527,wila1240,wil,Worrorran,critically endangered,ISO 639-3,wil,Wila-Wila; Northern Language; Walmbi; Wila-wila; 'Wila'Wila
 3346,Wiaki,,-3.55974,142.4135,mini1253,wii,Torricelli,critically endangered,ISO 639-3,wii,Menandon; Miniden; Minidien; Wiakei
@@ -1709,11 +1709,11 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 3454,Kashubian,,54.6484,17.2485,kash1274,csb,Indo-European,vulnerable,ISO 639-3,csb,Cassubian; Kaszubski; Cashubian
 3457,Chichimeca-Jonaz,,21.6666666667,-100.5,chic1272,pei,Otomanguean,threatened,ISO 639-3,pei,Chichimeco; Chichimeca; Chichimec; Chichimeca-Jonaz; Jonaz; Pame de Chichimeca-Jonaz; Meco
 3458,Chocho,,17.6666666667,-97.4166666667,choc1279,coz,Otomanguean,endangered,ISO 639-3,coz,Chocholteco; Chuchona; Chochoteco; Chochotec
-3459,Chol,,17.49,-92.47,,,Mayan,at risk,ISO 639-3,cti; ctu,Ch'ol; Chol; Tumbalá; Ch'ol de Sabanilla
+3459,Chol,,17.49,-92.47,chol1282,,Mayan,at risk,ISO 639-3,cti; ctu,Ch'ol; Chol; Tumbalá; Ch'ol de Sabanilla
 3460,Chontal de Tabasco,,18.1666666667,-92.5833333333,taba1266,chf,Mayan,vulnerable,ISO 639-3,chf,Chontal Maya; Chontal (Tabasco); Chontal; Chontal; Tabasco; Yokotán; Yocot'an; Yokot'an
 3465,Middle Southeastern Chinantec,,17.801461,-96.085258,tepi1241,cte,Otomanguean,vulnerable,ISO 639-3,cte,jujmi (del sureste medio); Chinanteco del sureste medio; Tepinapa; Chinantec; Chinanteco; Chinanteko; Tepinapa Chinantec
 3466,Ch'orti',,14.9364,-88.865,chor1273,caa,Mayan,threatened,ISO 639-3,caa,Chorti; Chortí; Apay; Ch'orti; Ch'ortí
-3467,Chuj,,16.1203,-92.0407,,,Mayan,vulnerable,ISO 639-3,cac; cnm,
+3467,Chuj,,16.1203,-92.0407,chuj1250,,Mayan,vulnerable,ISO 639-3,cac; cnm,
 3471,Cuicatec,,17.8,-96.961,,,Otomanguean,threatened,ISO 639-3,cux; cut,Cuica; Cuicateco; Cuicatec; Teutila; Kwikateko
 3472,Garífuna,,12.5666,-83.7166,gari1256,cab,Arawakan,at risk,ISO 639-3,cab,Garifuna; Garfuna; Black Carib; Caribe; Central American Carib; Moreno
 3487,Tuvaluan,,-8.5,179.166666667,tuva1244,tvl,Austronesian,vulnerable,ISO 639-3,tvl,Ellice; Ellicean; Tuvalu
@@ -1890,7 +1890,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 3909,Bhaya,,25.48,69.31,bhay1238,bhe,Indo-European,endangered,ISO 639-3,bhe,
 3910,Busa,,-3.86,141.42,odia1239,bhf,Isolate,endangered,ISO 639-3,bhf,Odiai; Busan; Uriai
 3911,Bukhori,,39.8043,64.4224,bukh1238,bhh,Indo-European,at risk,ISO 639-3,bhh,Bukharian; Bukhari; Bukharin; Bukharic; Bokharian; Bokharic; Bokharan; Bukharan; Judeo-Tajik
-3912,Bohtan Neo-Aramaic,,37.37,42.52,,,Afro-Asiatic,severely endangered,,bhn; hrt,Sôreth; Hértevin; севернобохтанский язык; Hertevince
+3912,Bohtan Neo-Aramaic,,37.37,42.52,boht1238,,Afro-Asiatic,severely endangered,,bhn; hrt,Sôreth; Hértevin; севернобохтанский язык; Hertevince
 3913,Badimaya,,-29.123373,116.706047,badi1246,bia,Pama-Nyungan,dormant,ISO 639-3,bia,Widimaya; Parti-Maya; Bidungu; Bardimaya Baadeemaia Badimaia Badimala Badimara Bardimaia Barimaia Bidungu Padimaia Padinaia Parimaia Patimara Patimay Waadal Wardal Badi-maia Wallawe Yamadgee Yamaji; Bardimaya
 3918,Biete,,25.6514,93.2409,biet1238,biu,Sino-Tibetan,vulnerable,ISO 639-3,biu,Bete; Baite; Biate
 3924,Bulu,,-5.052719,150.092506,bulu1253,bjl,Austronesian,endangered,ISO 639-3,bjl,
@@ -1937,7 +1937,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 4006,Eastern Buryat,,52.0,108.0,mong1330,bxm,Mongolic,vulnerable,ISO 639-3,bxm,Mongolian Buriat; бурят-монгольский язык; buryaad xelen; буряад хэлэн; буриад аялгуу; бурятский язык; Northern Mongolian; Buriat; Buryat; Buriat-Mongolian; Mongolia Buriat; Bur:aad; Burjatisch
 4007,Purduna,,-23.0093807,114.8292027,burd1238,bxn,Pama-Nyungan,dormant,ISO 639-3,bxn,Buduna; Boordoona; Bootena; Boruna; Budina; Budoona; Bu-tena; Poodena; Poordoona; Purduma; Pinneegooroo; Talandji-Buduna; Burduna
 4008,Barikanchi,,12.0,8.0,bari1241,bxo,,,ISO 639-3,bxo,
-4009,Maya,,-24.136728,113.41095,,,Pama-Nyungan,dormant,LINGUIST List,0qb,Maia; Miah; Majanna; Maja
+4009,Maya,,-24.136728,113.41095,badi1246,,Pama-Nyungan,dormant,LINGUIST List,0qb,Maia; Miah; Majanna; Maja
 401,Gooniyandi,,-18.26153435,126.2884882,goon1238,gni,Bunaban,severely endangered,ISO 639-3,gni,Guniyandi; Guniandi; Gunian; Kunian; Kuniyan; Guniyan; Guniyn; Kunan; Koneyandi; Konejandi; Cowrana; Goonien; Gunan; Gunin; Gunyari; Konajan; Konean Konejandi; Konejanu; Kuniandu; Wadeawulu
 4010,Bele,,10.217625,10.364777,beel1236,bxq,Afro-Asiatic,endangered,ISO 639-3,bxq,Beele; Àbéélé; Bellawa
 4012,Western Buryat,,50.8336,109.5117,russ1264,bxr,Mongolic,endangered,ISO 639-3,bxr,Russian Buriat; бурят-монгольский язык; buryaad xelen; буриад аялгуу; Buryat; Northern Mongolian; Burjatisch; буряад хэлэн; buriaad xelen
@@ -2028,7 +2028,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 4167,Chinook Wawa,,45.0591,-123.6091,chin1272,chn,Pidgin or Creole,critically endangered,ISO 639-3,chn,Chinook Jargon; Chinook Pidgin; Chinuk Wawa; Jargon; činúk wáwa
 4169,Chiapanec,,16.192264,-92.795103,chia1262,cip,Otomanguean,dormant,ISO 639-3,cip,Chiapaneco; Chiapaneko
 4171,Southwestern Ojibwa,,47.6666666667,-92.5,chip1241,ciw,Algic,threatened,ISO 639-3,ciw,Ojibwe (Minnesota); Ojibwa; Ojibway; Ojibwe; Chippeway; Chippewa; Chipewa; Chipeway; Anishinabe
-4172,Chaima,,8.4941,-64.0942,,,,,,ciy; cuo,Chaima: Chayma; Guaga-Tagare; Sayma; Warapiche; Kumaná; Cumaná; Cumanagoto
+4172,Chaima,,8.4941,-64.0942,chai1253,,,,,ciy; cuo,Chaima: Chayma; Guaga-Tagare; Sayma; Warapiche; Kumaná; Cumaná; Cumanagoto
 4173,Eastern Cham,,11.562,108.994,east2563,cjm,Austronesian,vulnerable,ISO 639-3,cjm,Phan Rang Cham; Cham; Cham (Eastern); Tjam; Chiem; Chiem ThÃ nh; Bhamam; Bình Thuân
 4174,Chenapian,,-4.273582935,142.2684479,chen1259,cjn,Sepik,endangered,ISO 639-3,cjn,Tsenap; Zenap; Chenap
 4176,Kavalan,,24.6,121.85,kava1241,ckv,Austronesian,critically endangered,ISO 639-3,ckv,Kuwarawan; Kiwarawa; Kuvarawan; Kibalan; Kiwaraw; Kuvalan; Kavarauan; Kvalan; Shekwan; Cabaran; Kabalan; Kabaran; Kamalan; Kavanan; Kbalan; Sprache von Formosa; 噶瑪蘭語
@@ -2117,7 +2117,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 4309,Masimasi,,-2.01,139.04,masi1265,ism,Austronesian,severely endangered,ISO 639-3,ism,
 4311,"Isu (Northwest Region, Cameroon)",,6.39173,10.050327,isum1240,isu,Niger-Congo,vulnerable,ISO 639-3,isu,
 4312,Iteri,,-4.0807,141.5039,iter1241,itr,Left May,endangered,ISO 639-3,itr,Alowiemino; Iyo; Laro; Rocky Peak; Yinibu
-4314,Ixil,,15.4849,-91.0358,,,Mayan,vulnerable,ISO 639-3,ixi; ixj; ixl,
+4314,Ixil,,15.4849,-91.0358,ixil1251,,Mayan,vulnerable,ISO 639-3,ixi; ixj; ixl,
 4315,Jakun,,1.8871,103.984,jaku1244,jak,Austronesian,vulnerable,ISO 639-3,jak,Jaku'd; Jakud'n; Jakoon; Djakun; Orang Hulu
 4317,Yanyuwa,,-16.49279406,136.7840759,yany1243,jao,Pama-Nyungan,severely endangered,ISO 639-3,jao,Aniula; Anjula; Anula; Anuwa; Anyoola; Anyula; Anyuwa; Djirukurumbant; Iangkala; Janjula; Leanawa; Leeanuwa; Njangga; Njangkala; Unalla; Wadere; Waderi; Wadiri; Yangala; Yanula; Yanular; Yanyula; Yuggamurra
 4321,Jad,,30.645,78.3627,jadd1243,jda,Sino-Tibetan,endangered,ISO 639-3,jda,Bhotia; Dzad
@@ -2246,9 +2246,9 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 4542,White Lachi,,22.818,104.571,whit1266,lwh,Tai-Kadai,dormant,ISO 639-3,lwh,Lachi; White; Lipupõ; 白拉基
 4543,Laomian,,19.75,100.0,laom1237,lwm,Sino-Tibetan,threatened,ISO 639-3,lwm,Bisu; Guba; Lawmeh; 老緬語
 4545,Litzlitz,,-16.114,167.439,litz1237,lzl,Austronesian,critically endangered,ISO 639-3,lzl,Naman; Litzlitz-Visele; Mallicolo
-4565,Barain,,11.06677,17.933586,,bva,Afro-Asiatic,threatened,ISO 639-3; Glottolog,bva; bare1279; saka1296,Barein; Baraïn; Guilia; Jalkia
+4565,Barain,,11.06677,17.933586,bare1279,bva,Afro-Asiatic,threatened,ISO 639-3; Glottolog,bva; bare1279; saka1296,Barein; Baraïn; Guilia; Jalkia
 4567,Mahwa,,11.740913,18.280973,mawa1270,mcw,Afro-Asiatic,threatened,ISO 639-3,mcw,Mawa; Mahoua; Mahoura
-4569,Sengwer,,,,,,Nilotic,threatened,LINGUIST List,1iz,Cherengany; Mei
+4569,Sengwer,,,,seng1286,,Nilotic,threatened,LINGUIST List,1iz,Cherengany; Mei
 4570,Ts'ixa,,-19.088076,24.301758,tsix1234,,Khoe,endangered,LINGUIST List,1iy,Ts'exa
 4571,Chenoua,,36.5703,2.2892,chen1266,cnu,Afro-Asiatic,vulnerable,ISO 639-3,cnu,Shenowa; Sheliff Basin
 4572,Uncunwee,,12.0,31.0,ghul1238,ghl,Nubian,endangered,ISO 639-3,ghl,Ghulfan; Gulfan; Wunci; Wuncimbe; Nubian (Hill)
@@ -2567,11 +2567,11 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 5148,Namla,,-3.58,140.66,naml1240,naa,Namla-Tofanma,severely endangered,ISO 639-3,naa,
 5149,Pei,,-4.51867,142.2774,peii1238,ppq,,severely endangered,ISO 639-3,ppq,Pai
 515,Seediq,,23.77,121.35,taro1264,trv,Austronesian,critically endangered,ISO 639-3,trv,Taroko; Sediq; Saediq; Seedik; Sejiq; Sedeq; Seedek; Seedeq; Shedekka; Sedek; Sediakk; Sedik; Sazek; Bu-Hwan; Che-Hwan; Daiya-Ataiyal; Hogo; Iboho; Paran; Taruku; Toroko; Truku; Toda; Taroko; 賽德克語; 太魯閣語; 都達方言; Tgdaya
-5152,Isolado do Tanaru,,,,,,,critically endangered,LINGUIST List,1kq,Isolado do Buraco
+5152,Isolado do Tanaru,,,,isol1239,,,critically endangered,LINGUIST List,1kq,Isolado do Buraco
 5153,Northern Emberá,,6.83333333333,-77.1666666667,nort2972,emp,Chocoan,vulnerable,ISO 639-3,emp,Emperã; Eberã Bed'ea; Eperã Pedea; Atrato; Darién; Dariena; Panama Embera; Eberã; Cholo; Choco; Emberá; Northern; Empera; Ebera Bedea; Darien; Eerã; Embera; Northern Ember; Andagueda; Northern Ępęra; Emperá; Emberá
 5155,Tanimuca-Retuarã,,-0.5,-70.6666666667,tani1257,tnc,Tucanoan,threatened,ISO 639-3,tnc,Uairã; Tanimuca-Letuama; Retuama; Retuarã; Letuama; Letuhama; Ufaina; Tanimuca-Retuar
 5159,Macaguaje,,0.491972,-76.244411,maca1261,mcl,Tucanoan,dormant,ISO 639-3,mcl,
-5162,Mawayana,,1.5159,-58.4143,,,Arawakan,critically endangered,,mzx; mpw,Mahuayana; Madipian; Maiopitian; Maopityan
+5162,Mawayana,,1.5159,-58.4143,mapi1252,,Arawakan,critically endangered,,mzx; mpw,Mahuayana; Madipian; Maiopitian; Maopityan
 5166,Enxet Sur,,-22.5,-59.0,sout2989,enx,Enlhet-Enenlhet (Mascoyan),threatened,ISO 639-3,enx,Lengua Sur; Lengua; Enlhit; Enhlit; Enlhit Nipiyam; Chánepyeyam
 5168,Zauzou,,26.1554,99.2944,zauz1238,zal,Sino-Tibetan,endangered,ISO 639-3,zal,Rouruo; Raoruo; Jaojo; Independent Lolo; 柔若語
 5170,Harakmbut,,-13.366,-71.166,,,Harakmbut-Katukinan,endangered,,hug; amr,Harákmbut; Harakmbet; Hate; Ate; Tuyoneri; Harakmbut; Harakmbut; Amarakaeri; Amarakaéri; Amarakaire; Amaracaire; Mashco (Mashco is a derogatory term); Harakbut; Arazaeri; Arasairi; Huachipaeri; Huachipayri; Wacipairi; Kisamberi; Pukirieri; Puncuri; Toyoeri; Toioeri; Toyeri; Tuyune
@@ -2708,9 +2708,9 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 5433,Syuba,,27.349813,86.071987,kaga1252,,Sino-Tibetan,vulnerable,Glottolog,kaga1252,Shuba; Shyuba; Kagate Bhote; Kāgatē
 544,Bubia,,4.0204,9.2037,bubi1249,bbx,Niger-Congo,severely endangered,ISO 639-3,bbx,Bobe; Bobea; Wovea; Bota; Ewota
 5445,Bininj Gun-wok,,-12.26525431,133.6466651,gunw1252,gup,Gunwinyguan,threatened,ISO 639-3,gup,Proto Bininj Gun-wok; Mayali; Kunwinjku; Kuninjku; Gunawitji; Gundeidjeme; Gundeijeme; Gundja-jeimi; Gunwingo; Gunwingu; Gunwinygu; Koorungo; Kulunglutchi; Kulunglutji; Kundangyohmi; Maielli; Majali; Mangaridji; Mangeri; Margulitban; Neinggu; Unigangk; Urnigangg; Wengei; Wengej; Wengi; Witji; Gunwinjgu; Bininj Gun-Wok; Gunwiggu; Gunwinggu
-5447,Yiiji,,,,,,Worrorran,severely endangered,LINGUIST List,081,Jeidji; Yeidji; Northern Language; Forrest River; 'Jeidji; Jeithi; Yeeji; 'Ye'dji; Bugay
+5447,Yiiji,,,,yiij1234,,Worrorran,severely endangered,LINGUIST List,081,Jeidji; Yeidji; Northern Language; Forrest River; 'Jeidji; Jeithi; Yeeji; 'Ye'dji; Bugay
 5448,Andajin,,-17.37660823,126.2592854,anda1282,,Worrorran,critically endangered,LINGUIST List,ajn,Andidja
-5449,Ngaatjatjara,,-24.951158,125.958117,,,Pama-Nyungan,severely endangered,LINGUIST List,08q,Jabungadja; Ku:rara; Nadadjara; Nga:da; Nga:dapitjardi; Ngad-adara; Ngadatara; Ngadatjara; Ngadawongga; Ngadjatara; Nganadjara; Ngatatara; Ngatatjara; Rumudjara; Teitudjara; Wan:udjara; Warara; Wirtjandja; Witjandja; Ngaatjatjarra
+5449,Ngaatjatjara,,-24.951158,125.958117,ngaa1240,,Pama-Nyungan,severely endangered,LINGUIST List,08q,Jabungadja; Ku:rara; Nadadjara; Nga:da; Nga:dapitjardi; Ngad-adara; Ngadatara; Ngadatjara; Ngadawongga; Ngadjatara; Nganadjara; Ngatatara; Ngatatjara; Rumudjara; Teitudjara; Wan:udjara; Warara; Wirtjandja; Witjandja; Ngaatjatjarra
 545,Busuu,,6.8282,10.1087,busu1244,bju,Niger-Congo,critically endangered,ISO 639-3,bju,Awa; Furu
 5451,Putijarra,,-24.16283449,121.2749997,pudi1238,,Pama-Nyungan,critically endangered,LINGUIST List,1j9,Budidjara; Putujara; Pawututjara; Puditara
 5452,Worla,,-17.12222176,126.7823205,wurl1240,,Worrorran,critically endangered,LINGUIST List,1ke,Ola; Walajangarri; Wula; Waladjangari; Waladjaŋari; Worlaja; Walar; Wuladja; Wuladjangari; Wulu; Woorlaja; Woorla; Wurla
@@ -2821,7 +2821,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 5679,Pani Koch,,25.8,90.2,bana1283,,Sino-Tibetan,endangered,LINGUIST List,kdq-ban,Banai; Wanang
 568,Boor,,10.2149,17.3721,boor1242,bvf,Afro-Asiatic,severely endangered,ISO 639-3,bvf,Bwara; Damraw
 5680,Phom Naga,,26.7799,94.9493,phom1236,nph,Sino-Tibetan,vulnerable,ISO 639-3,nph,Phom; Chingmengnu; Tamlu; Phon; Tamlu Naga; Chingmengu; Tśingmegnu; Naga; Phom
-5681,Puiron,,25.7,94.1,,,,,LINGUIST List,05k,Puiron
+5681,Puiron,,25.7,94.1,inpu1234,,,,LINGUIST List,05k,Puiron
 5682,Rabha,,25.9284,90.9777,rabh1238,rah,Sino-Tibetan,at risk,ISO 639-3,rah,Rava
 5683,Raji,,28.0,82.75,raji1240,rji,Sino-Tibetan,endangered,ISO 639-3,rji,Rajibar
 5684,Ramo,,28.2463,95.3668,ramo1243,,Sino-Tibetan,endangered,LINGUIST List,adi-ram,
@@ -2854,7 +2854,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 5712,Girramay,,,,girr1240,,Pama-Nyungan,severely endangered,LINGUIST List,dbl-gir,Keramai; Kiramay; Kiramai; Wombelbara
 572,Jonkor Bourmataguil,,11.4261,19.0145,jonk1238,jeu,Afro-Asiatic,threatened,ISO 639-3,jeu,Djongor Bourmataguil; Dougne; Karakir
 5725,Dhangu-Djangu,,-12.38347818,136.7522892,dhan1270,dhg,Pama-Nyungan,endangered,ISO 639-3,dhg,Dhangu; Dhaŋu; Djangu; Warameri; Waramiri; Dangu; Dhangu'mi; Yirgala
-5726,Diyari,,-28.58486621,139.0862193,,,Pama-Nyungan,severely endangered,,dif; dit,Dieri; Dayerrie; Deerie; Diari; Dickeri; Dieyerie; Dieyrie; Dijari; Diyeri; Dthee-eri; Koonarie; Kunari; Ti:ari; Tirari; Urronminna; Wongkadieri; Wonkadieri; Dirari; Dhirari
+5726,Diyari,,-28.58486621,139.0862193,dier1241,,Pama-Nyungan,severely endangered,,dif; dit,Dieri; Dayerrie; Deerie; Diari; Dickeri; Dieyerie; Dieyrie; Dijari; Diyeri; Dthee-eri; Koonarie; Kunari; Ti:ari; Tirari; Urronminna; Wongkadieri; Wonkadieri; Dirari; Dhirari
 5727,Duungidjawu,,-25.3987,152.345,duun1241,,Pama-Nyungan,dormant,LINGUIST List,wkw-duu,Dundijau
 573,Kendeje,,13.6299,21.5771,kend1253,klf,Maban,endangered,ISO 639-3,klf,Yaali; Kindeje
 574,Koke,,10.8575,18.1315,koke1240,kou,Niger-Congo,endangered,ISO 639-3,kou,Khoke
@@ -2892,14 +2892,14 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 5874,Pong,,18.609278,104.922586,phon1243,,Austro-Asiatic,endangered,LINGUIST List,hnu-pho,Phong; Poong; Pong 1; Pong 2; Tay Pong; Toum Phong; Khong Kheng; Xa La Vang
 5876,Ruc,,17.682933,105.784103,rucc1239,,Austro-Asiatic,endangered,LINGUIST List,scb-ruc,Kha Mu Gia; Tac Cui
 5877,Phong-Kniang,,19.856569,104.036814,phon1246,pnx,Austro-Asiatic,threatened,ISO 639-3,pnx,Pong 3; Khaniang; Kenieng; Keneng; Lao Phong; Phong; Pong; Kniang; Pheng; Theng; P'eng
-5878,Phong,,18.3333,105.0,,,Austro-Asiatic,endangered,LINGUIST List,1hq,Vietic Phong
+5878,Phong,,18.3333,105.0,hung1275,,Austro-Asiatic,endangered,LINGUIST List,1hq,Vietic Phong
 5879,Maleng,,17.920839,105.400831,male1282,pkt,Austro-Asiatic,endangered,ISO 639-3,pkt,Malieng; Malang; Kri; Krìì; Sô Salang; Hareme; Mã Liềng; Kha
 588,Benga,,1.16666666667,9.41666666667,beng1282,bng,Niger-Congo,severely endangered,ISO 639-3,bng,Qaqet
 5881,Tewa,,36.0833333333,-106.083333333,tewa1260,tew,Kiowa-Tanoan,endangered,ISO 639-3,tew,
-5882,Phonsung,,17.77,104.23,,,Austro-Asiatic,endangered,LINGUIST List,thm-pho,
+5882,Phonsung,,17.77,104.23,aheu1239,,Austro-Asiatic,endangered,LINGUIST List,thm-pho,
 5883,May,,17.981492,105.622181,mayy1239,,Austro-Asiatic,endangered,LINGUIST List,scb-may,
 5884,Kri,,18.25,105.0,khap1242,,Austro-Asiatic,vulnerable,LINGUIST List,1fn,
-5885,Kasong,,13.228214,99.852433,,,Austro-Asiatic,severely endangered,LINGUIST List,1l3,Song; Chong of Trat
+5885,Kasong,,13.228214,99.852433,cent2314,,Austro-Asiatic,severely endangered,LINGUIST List,1l3,Song; Chong of Trat
 5886,Kukatja,,-20.242549,127.534736,kuka1246,kux,Pama-Nyungan,vulnerable,ISO 639-3,kux,Nambulatji; Panara; Pardoo; Peedona; Peedong; Pidung; Pidunga; Wanaeka; Wangatjunga; Wangatunga; Wangkadjungga; Wangkatjunga; Wangkatunga; Wangu; Wankutjunga; Bedengo; Bidong; Bidungo; Boonara; Bunara; Gogada; Gogadja; Gogoda; Gugada; Gugadja; Gugudja; Ilbaridja; Julbaritja; Julbre; Kokatja; Kukaja; Ku-kuruba; Manggai; Nambulatji; Kukacha; Luritja; Luritcha; Loritja; Loritcha; Lurritji; Aluridja; Loorudgie; Loorudgee; Juluridja; Maduntara; Maiulatara; Jumu
 590,Naro,,-21.53317,21.934448,naro1249,nhr,Khoe,vulnerable,ISO 639-3,nhr,Nharo; Naron; /Ai San; Nharon; Nhauru; Nhaurun; ||Aikwe; |Aikwe; ||Ai||en; ||Aisan; ||Ai||e; Qoo; Gaa; Ts'ao
 592,N||ng,,-27.935574,22.734146,nngg1234,ngh,Tuu,critically endangered,ISO 639-3,ngh,N|uu; N|u; N/u; Khomani; ǂKhomani; /Nusan; =|Khomani
@@ -2937,7 +2937,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 6000,Kpatili,,5.301989,21.889473,kpat1244,kym,Niger-Congo,threatened,ISO 639-3,kym,Kpatiri; Kpatere; Ngindere
 6006,Kw'adza,,-5.3753,35.8621,kwad1248,wka,Afro-Asiatic,dormant,ISO 639-3,wka,Qwadza; Kwadza; Ng’omvia; Ngomvya
 6025,Bezhta,,42.1369,46.1508,bezh1248,kap,Northeast Caucasian,threatened,ISO 639-3,kap,Bezheta; Kapucha; бежитинский язык; капучинский язык; бежкьалас миц; bežƛʼalas mic; Bexita; Bezhita; Bezhti; Kapuchin; Bechitin; Kupuca
-6029,Dhuwal,,-12.61979016,135.5309461,,,Pama-Nyungan,threatened,,duj; djr,Duala; Dual; Wulamba; Duwal; Murngin; Balamumu; Barlamomo; Barlamumu; Malag; Marlark; Arrawiya; Banjarrpuma; Bilamandji Dhurili; Durilji; Djambarrpuyngu; Jambapuing; Jambapuingo
+6029,Dhuwal,,-12.61979016,135.5309461,nucl1333,,Pama-Nyungan,threatened,,duj; djr,Duala; Dual; Wulamba; Duwal; Murngin; Balamumu; Barlamomo; Barlamumu; Malag; Marlark; Arrawiya; Banjarrpuma; Bilamandji Dhurili; Durilji; Djambarrpuyngu; Jambapuing; Jambapuingo
 603,Ju|'hoan,,-18.783792,21.742359,juho1239,ktz,Kx'a,vulnerable,ISO 639-3,ktz,Ju/'hoan; Agau; Kung-Tsumkwe; Xu; Xun; Kung; !Xo; Zhu'oasi; Dzu'oasi; Tsumkwe; Dobe Kung; Xaixai; Žhu|hõasi; Ju/'hoansi
 6030,Logba,,6.952328,0.472206,logb1245,lgq,Niger-Congo,threatened,ISO 639-3,lgq,
 6031,Mbonga,,5.6,13.8,mbon1252,xmb,,,ISO 639-3,xmb,Mboa; Mboŋa
@@ -2948,7 +2948,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 6038,Hwarasa,,,,hwar1238,,Afro-Asiatic,critically endangered,LINGUIST List,ahg-hwa,Qwara; Qwarina; Kara; Quara; Qwarenya; 中库希特语支
 6039,Selee,,7.17462,0.42458,sele1249,snw,Niger-Congo,threatened,ISO 639-3,snw,Santrokofi; Sentrokofi; Bale; Sele
 6045,Swoeng,,15.3333,106.75,lawi1235,,Austro-Asiatic,endangered,LINGUIST List,1eu,Lavi; Lavy
-6046,Juk,,15.3333,106.85,,,Austro-Asiatic,threatened,LINGUIST List,lbo-juk,Suai
+6046,Juk,,15.3333,106.85,souu1238,,Austro-Asiatic,threatened,LINGUIST List,lbo-juk,Suai
 605,Hadza,,-3.401,35.3897,hadz1240,hts,Isolate,threatened,ISO 639-3,hts,Hatsa; Hadzabi; Wakindiga; Kangeju; Hadzapi; Kindiga; Tindiga
 6065,Saulteaux,,50.5573,-98.6562,west1510,ojw,Algic,threatened,ISO 639-3,ojw,Ojibwa; Ojibway; Ojibwe; Chippeway; Plains Ojibway; Western Ojibwa; Salteaux; Nakawēmowin
 6085,Diné Bizaad (Navajo),,35.8044,-108.475,nava1243,nav,Athabaskan-Eyak-Tlingit,at risk,ISO 639-3,nav,Diné Bizaad; Navajo; Navaho; Diné
@@ -2958,16 +2958,16 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 6107,Yukuben,,6.852805,9.892777,yuku1243,ybl,Niger-Congo,vulnerable,ISO 639-3,ybl,Boritsũ; Nyikuben; Nyikobe; Ayikiben; Boritsu; Balaabe; Balaaben; Oohum; Uuhum; Uuhum-Gigi; Uhumkhegi; Gohum
 6108,Khufi,,37.8595,71.603726,khuf1238,,Indo-European,vulnerable,LINGUIST List,sgh-khu,Khuf; Chuf
 6146,Yokuts,,36.0269,-118.7213,yoku1256,yok,Yokutsan,critically endangered,ISO 639-3,yok,
-6149,Jakalteko,,15.66,-91.66,,,Mayan,vulnerable,ISO 639-3,jac; jai,Jacaltec; Jakalteco; Popti'
+6149,Jakalteko,,15.66,-91.66,popt1235,,Mayan,vulnerable,ISO 639-3,jac; jai,Jacaltec; Jakalteco; Popti'
 6150,Matlatzinca,,19.39,-99.92,sanf1262,mat,Otomanguean,threatened,ISO 639-3,mat,Bot'una
 6169,Sierra Popoluca,,18.3333333333,-95.1666666667,high1276,poi,Mixe-Zoquean,vulnerable,ISO 639-3,poi,Highland Popoluca; Popoluca de la Sierra; Soteapanec; Soteapan Zoque
 6189,Pisaflores Tepehua,,20.688,-98.012,pisa1237,tpp,Totonacan,threatened,ISO 639-3,tpp,
 6193,Triqui,,,,,,Otomanguean,vulnerable,ISO 639-3,trs; trc; trq,
 6195,Guazacapán Xinka,,14.057656,-90.497983,xinc1246,qda,Xincan,dormant,ISO 639-3,qda,Xinca de Guazacapán
 6196,Jumaytepeque Xinka,,14.344,-90.256,xink1235,qhq,Xincan,dormant,,qhq,Jumay Xinka; Xinca de Jumaytepeque
-6197,Poqomchi',,15.36,-90.58,,,Mayan,vulnerable,ISO 639-3,poh; pob,
+6197,Poqomchi',,15.36,-90.58,poqo1254,,Mayan,vulnerable,ISO 639-3,poh; pob,
 6198,Uspanteko,,15.3475,-90.8684,uspa1245,usp,Mayan,threatened,ISO 639-3,usp,Uspanteco; Uspantec
-6199,Sumo,,13.0,-84.5,,,Misumalpan,threatened,ISO 639-3,sum; yan; ulw,Sumo-Mayangna; Sumu; Ulwa; Ulua; Ulúa; Woolwa; Mayangna
+6199,Sumo,,13.0,-84.5,maya1285,,Misumalpan,threatened,ISO 639-3,sum; yan; ulw,Sumo-Mayangna; Sumu; Ulwa; Ulua; Ulúa; Woolwa; Mayangna
 6200,Guaymí,,8.66666666667,-82.0,ngab1239,gym,Chibchan,threatened,ISO 639-3,gym,Ngäbere; Chiriqui; Ngobere; Valiente
 6202,Cora,,22.0,-105.0,,,Uto-Aztecan,endangered,ISO 639-3,crn; cok,Náayeri
 6203,Guarijío,,27.75,-108.666666667,huar1255,var,Uto-Aztecan,threatened,ISO 639-3,var,Macurái; Maculái; Macurawe; Varihío; Varijío; Vorijío; Warihío; Huarijío
@@ -2978,7 +2978,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 627,Zuni,,35.082,-108.76,zuni1245,zun,Isolate,threatened,ISO 639-3,zun,Zuñi; Shiwi'ma
 6270,Martu Wangka,,-29.854456,122.324919,mart1256,mpj,Pama-Nyungan,endangered,ISO 639-3,mpj,Mardo; Targudi; Jigalong; Martuwangka; Targoodi; Mardujara
 6271,Wudjari,,-33.76168825,122.1094206,,,Pama-Nyungan,critically endangered,LINGUIST List,1kf,Widjara; Warangoo; Warranger; Warrangle; Ngokwurring; Ngokgurring; Nonga; Nunga; Yunga; Daran
-6272,Mirniny,,-31.297328,130.052719,,,Pama-Nyungan,critically endangered,LINGUIST List,0ql,Mirning-Ngadjunma-Kalarko; Mirning; Mirniny; East Mirniny; Mirniñ; Mining; Meening; Wanbiri; Warnabirrie; Warnabinnie; Wanmaraing; Yirkla; Ikala; Ikula
+6272,Mirniny,,-31.297328,130.052719,mirn1245,,Pama-Nyungan,critically endangered,LINGUIST List,0ql,Mirning-Ngadjunma-Kalarko; Mirning; Mirniny; East Mirniny; Mirniñ; Mining; Meening; Wanbiri; Warnabirrie; Warnabinnie; Wanmaraing; Yirkla; Ikala; Ikula
 6273,Western Arrarnte,,-22.97968655,132.4794151,west2441,are,Pama-Nyungan,threatened,ISO 639-3,are,Arrernte; Arrernte (Western); Arrarnta (Western); Western Aranda; Aranda; Aldolanga; Aldolinga; A'randa; Aranta; Arinta; Arranda; Arrinda; Arrundta; Arrunta; Arunda; Arunta; Arunta Ulpma; Burrin-gah; Herrinda; Ilpma; Jairunda; Oiljpma; Paroola; Ulpma; Urrundie; Ur-rundie; Waitjinga; Wonggaranda; Wongkatjeri; Wychinga; Western Arranta
 629,Záparo,,-2.2186,-76.5087,zapa1253,zro,Zaparoan,critically endangered,ISO 639-3,zro,Záparo; Zápara; Kayapwe; Zaparo; Kayapi; Záparo-Conambo; Sáparo-Konambo; Sápara
 6310,Ambele,,5.868,9.765,ambe1247,ael,Niger-Congo,vulnerable,ISO 639-3,ael,Tinta; Ambala; Bata'o; Lembala; Tentwa'
@@ -3018,7 +3018,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 663,Araweté,,-5.1347,-52.3388,araw1273,awt,Tupian,endangered,ISO 639-3,awt,Bïde; Asuriní; Asuriní do Xingú; Asuriní do Coatinema; Awaeté
 6630,Jurruru,,-23.103734,116.026382,tjur1240,tju,Pama-Nyungan,dormant,ISO 639-3,tju,Tjuroro; Tjururu; Tjororo; Tjururo; Churoro; Choororo; Chooraroo; Djururo; Djururu; Chooraro
 6631,Awabakal,,-33.09,151.588,awab1243,awk,Pama-Nyungan,awakening,ISO 639-3,awk,Arwarbukarl; Awabagal; Hunter River and Lake Macquarie; Kuringgai; Kuri; Lake Macquaire Newcastle tribe; Lake Macquarie; Geawegal; Gwegal
-6632,Kalkatungu,,-20.8213821,139.0590511,,,Pama-Nyungan,dormant,,ktg; wwb,Calcadoon; Galgadung; Galgadungu; Galgaduun; Kalka-donna; Kalkadoon; Kalkadun; Kalkadung; Kalkadunga; Kalkaladoona; Kalkatongo; Kalkatunga; Kulkadoon; Kulkodone; Maithakari; Mantaba; Roongkari; Rungkari; Kalkutung; Wakabunga; Waggaboonyah; Waggabundi; Wakobungo; Waukaboonia; Worgabunga; Workabunga; Workoboongo
+6632,Kalkatungu,,-20.8213821,139.0590511,kalk1246,,Pama-Nyungan,dormant,,ktg; wwb,Calcadoon; Galgadung; Galgadungu; Galgaduun; Kalka-donna; Kalkadoon; Kalkadun; Kalkadung; Kalkadunga; Kalkaladoona; Kalkatongo; Kalkatunga; Kulkadoon; Kulkodone; Maithakari; Mantaba; Roongkari; Rungkari; Kalkutung; Wakabunga; Waggaboonyah; Waggabundi; Wakobungo; Waukaboonia; Worgabunga; Workabunga; Workoboongo
 664,Arikapú,,-12.0527,-64.7259,arik1265,ark,Jabutian,critically endangered,ISO 639-3,ark,Arikapu; Aricapú; Aricapu; Maxubí; Mashubi
 6649,Barngarla,,-30.99936857,136.9137803,bang1339,bjb,Pama-Nyungan,awakening,ISO 639-3,bjb,Parnkala; Parnkalla; Banggarla; Bangala; Banggala; Bahanga-La; Bungeha; Bungela; Pangkala; Pakarla; Pankalla; Punkalla; Kortabina; Pankarla; Bahanga-la; Kooapidna; Bungala; Bahngala; Pankala; Parkalla; Parn-ka-la; Punkirla; Willeuroo; Arkaba-tura; Wanbirujurari; Willara
 665,Aruá,,-12.0285,-64.7094,arua1261,arx,Tupian,critically endangered,ISO 639-3,arx,Aruaxi; Aruashí; Cinta Larga; Gavião; Zoró
@@ -3045,10 +3045,10 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 6677,Boonwurrung,,-38.44632223,145.8369926,boon1243,,Pama-Nyungan,awakening,LINGUIST List,0hq,Bunurong; Boon Wurrung; Bun wurrung; Boatnairo; Boatnarro; Putnaroo; Putmaroo; Bonurong; Bonnings; Boonnong; Boomerang; Port Phillip Aborigines; Bon-gar-rong; Bon-ga-rong; Boom ner wrong; Boomerong; Boonerong; Boong wer rong; Boongerong; Bounworong; Boonwoorong; Boonworong; Bonwarry; Westernport blacks; Boong.er.rong; Boong.er.ong; Bonwerong; Boormarong; Boonmerong; Bon-worong; Boonmorong; Bon-wrogon; Boonrong; Boongerang; Boon.ger.rong; Boonwo-rong; Western Port tribe; Boonurong; Bonwrong; Boungerong; Bournourong; Boongurong; Boonguerong; Boonwerung; Boonwerong; Boomeronge; Boon wurong; Coast tribe; Boonoorong; Boon-oor-rong; Boonurrong; Bunwurru; Bun-wurru; Bunwurung; Boon-wurung; Boon wurung; Borawong; Bunoorong; bunurong; Boonerang; Bunuron; Bunarong; Bunerong; Boonoor-ong; Bunwurong; Bunwurra; Thurung; Boonoorung; Boonworung; Boonwurrong; Bonourong; Bunerung; Boonooroong
 6678,Darkinyung,,-33.11470744,150.4952383,hawk1239,xda,Pama-Nyungan,awakening,ISO 639-3,xda,Darginjang; Darginyung; Darkinjang; Darkinoong; Darkinung; Darkinyun; Darkiñung; Darknung; Darkinjung
 668,Kapong,,5.3753,-60.5126,,,Cariban,vulnerable,,ake; pbc,Kapon; Ka'pong
-6680,Gayiri,,-23.9039922,148.0814757,,,Pama-Nyungan,dormant,LINGUIST List,0h5,Kairi; Khararya
+6680,Gayiri,,-23.9039922,148.0814757,gayi1238,,Pama-Nyungan,dormant,LINGUIST List,0h5,Kairi; Khararya
 6681,Gundungurra,,-34.76946368,149.6767454,gund1248,xrd,Pama-Nyungan,awakening,ISO 639-3,xrd,Burragorang; Gan dangara; Gandangara; Gandanggara; Gundaahmyro; Gundanora; Gundungari; Gurragunga; Gurra-gunga; Gudungura; Ngunawal; Ngaonawal; Nungawal; Yarr; Ngennigenwurro; Yiilima; Cundunorah; Gundungorra
 6682,Ngunawal,,-35.0079515,148.5035148,ngun1277,xul,Pama-Nyungan,awakening,ISO 639-3,xul,Burragorang; Ngunuwal; Ngunnawal; Ngoonawal; Nungawal; Ngaonawal; Ngennigenwurro; Wonnawal; Yarr; Yass tribe; Lake George tribe; Five Islands tribe; Molonglo tribe; Gurungada; Gundungurra; Yiilima
-6684,Eora,,-33.899572,151.206704,,,Pama-Nyungan,awakening,LINGUIST List,1j0,Iyora; Iora; Eaora; Yora
+6684,Eora,,-33.899572,151.206704,sydn1236,,Pama-Nyungan,awakening,LINGUIST List,1j0,Iyora; Iora; Eaora; Yora
 6686,Dharug,,-33.52925837,150.3490464,sydn1236,xdk,Pama-Nyungan,awakening,ISO 639-3,xdk,Dharuk; Daruk; Dharruk; Eora; Lyora; Sydney Language; Broken Bay tribe; Darrook; Dharrook; Dharrok; Oharruk; Eo-ra; Ea-ora; Iora; Yo-ra; Kameraigal; Kem:arai; Kemmaraigal; Camera-gal; Cammera; Camerray-gal; Cam-meray; Kemmirai-gal; Gweagal; Bedia-mangora; Gouia-gul; Gouia; Botany Bay tribe; Wanuwangul; Kadigal; Caddiegal; Darug; Dhar’rook
 6688,Kaniyang,,-33.495598,116.354485,kani1276,,Pama-Nyungan,awakening,LINGUIST List,1j2,Nyunga; Kaniyan; Kaneang; aneang; Kunjung; Kunyung; Ka:lbar-anggara; Jabururu; Yobberore; Uduc-Harvey tribe; Kaleap; Qualeup; Qua-lup; Quailup; Waal.g
 6689,Kartujarra,,-23.27912297,121.7321284,kart1247,,Pama-Nyungan,critically endangered,LINGUIST List,1j3,Kartutjara; Kardutjara; Kadaddjara; Kardutjarra; Kiadjara; Gardudjara; Gagudjara
@@ -3143,7 +3143,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 7006,Original Costa Rican Sign Language,,9.89,-84.12,orig1234,,Sign Language,critically endangered,LINGUIST List,1a4,Old Costa Rican Sign Language
 7007,Urubú-Kaapor Sign Language,,-2.54,-46.42,urub1243,uks,Sign Language,critically endangered,ISO 639-3,uks,Urubú Sign Language
 701,Western Abenaki,,44.0,-72.25,west2630,abe,Algic,critically endangered,ISO 639-3,abe,Abenaki (Western); Abnaki (Western); Abnaki; Western; Abenaki; Abenaqui; St. Francis; Abnaki; St Francis
-7069,Tjupany,,,,,,Pama-Nyungan,severely endangered,LINGUIST List,1kp,Tjupany
+7069,Tjupany,,-27.11796,120.56642,pini1245,,Pama-Nyungan,severely endangered,LINGUIST List,1kp,Tjupany
 7109,Ecuadorian Sign Language,,-0.144957,-78.496198,ecua1243,ecs,Sign Language,at risk,ISO 639-3,ecs,
 7110,Guatemalan Sign Language,,14.5,-90.57,guat1249,gsm,Sign Language,threatened,ISO 639-3,gsm,Lensegua
 7111,Honduras Sign Language,,14.62,-87.22,hond1239,hds,Sign Language,threatened,ISO 639-3,hds,LESHO
@@ -3183,7 +3183,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 7249,Aluo,,25.9368,102.1839,aluo1235,yna,Sino-Tibetan,endangered,ISO 639-3,yna,阿羅語; Ala; Naluo; Yala; Lila; Laka; Gan Yi
 7250,Ayizi,,24.5964,103.7329,ayiz1244,yyz,Sino-Tibetan,critically endangered,ISO 639-3,yyz,阿夷子語
 7251,Chesu,,24.4211,102.0459,ches1238,ych,Sino-Tibetan,endangered,ISO 639-3,ych,車蘇
-7252,Kazhuo,,24.0959,102.5463,,,Sino-Tibetan,threatened,LINGUIST List,1hl,卡卓語
+7252,Kazhuo,,24.0959,102.5463,kats1235,,Sino-Tibetan,threatened,LINGUIST List,1hl,卡卓語
 7253,Samatao,,24.9359,102.7935,sama1295,ysd,Sino-Tibetan,critically endangered,ISO 639-3,ysd,Samaduo; Samou; Samataw; 撒慕; 撒馬多; Eastern Samadu
 7254,Sanie,,24.9262,102.5134,sani1265,ysy,Sino-Tibetan,severely endangered,ISO 639-3,ysy,
 7256,Salvadoran Lenca,,13.72,-88.118,lenc1243,,Lencan,dormant,LINGUIST List,062,Chilanga
@@ -3252,7 +3252,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 804,Kabalai,,9.465995,16.27482,kaba1292,kvf,Afro-Asiatic,vulnerable,ISO 639-3,kvf,Kaba-Lai; Kabalay; Kabalaye; Keb-Kaye; Gablai; Lay; Lai
 8049,K'iche',,19.3482,-90.7177,kich1262,quc,Mayan,vulnerable,ISO 639-3,quc,Kiché; Quiché; Quiche; K'iche'; Central; Central Quiché; Chiquel; Cachabel
 8069,Talinga-Bwisi,,0.624835,29.974608,tali1258,tlj,Niger-Congo,vulnerable,ISO 639-3,tlj,Talinga; Kitalinga; Lubwisi; Olubwisi; Bwissi; Mawissi; Lubwissi
-8089,Kaqchikel,,14.47,-90.99,,,Mayan,vulnerable,ISO 639-3,cak; ckk; cke; ckc; cki; ckj; ckd; ckf; ckw; cbm,Kakchiquel; Kaqchikel; Central; Cakchiquel; Kaqchiquel; Kachiquel
+8089,Kaqchikel,,14.47,-90.99,kaqc1270,,Mayan,vulnerable,ISO 639-3,cak; ckk; cke; ckc; cki; ckj; ckd; ckf; ckw; cbm,Kakchiquel; Kaqchikel; Central; Cakchiquel; Kaqchiquel; Kachiquel
 8090,Q'eqchi',,15.38,-89.25,kekc1242,kek,Mayan,vulnerable,ISO 639-3,kek,K'ekchí; Kekch; Kekchi; Qeqchi'; Quecchi'; Cacche'; Ketchi'; Kekchi'; Kekchí
 8091,Mam,,14.8,-91.72,mamm1241,mam,Mayan,vulnerable,ISO 639-3,mam,Qyo:l
 8111,Aymara,,-17.1417,-70.3442,sout2996,ayc,Aymaran,at risk,ISO 639-3,ayc,Aymará; Aymara; Southern; Southern Aymara; 2 varieties: Aymara (Central)/Aymara (Southern); Aimara; Tupe
@@ -3280,7 +3280,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 8329,Dhao,,-10.82,122.67,dhao1237,nfa,Austronesian,threatened,ISO 639-3,nfa,Ndao; Dao; Ndaonese; Ndaundau; Kahore
 8330,Kula,,-8.2,125.0,kula1280,tpg,Timor-Alor-Pantar,vulnerable,ISO 639-3,tpg,Lantoka; Lamtoka; Kola; Tanglapui
 8349,Upper Silesian,,50.680797,17.878417,sile1253,szl,Indo-European,vulnerable,ISO 639-3,szl,Silesian; ślōnskŏ gŏdka; ślōnski; ślōnskŏ mŏwa; Śląski; Szlonzok; Eng: Silesian; Pol: język śląski; Ces: slezský jazyk
-8369,Nyagrong Minyag,,30.833856,100.159607,,,Sino-Tibetan,threatened,LINGUIST List,nm0,Minyag; 新龍木雅語
+8369,Nyagrong Minyag,,30.833856,100.159607,horp1239,,Sino-Tibetan,threatened,LINGUIST List,nm0,Minyag; 新龍木雅語
 8390,Siuslaw,,42.653122,-124.358941,sius1254,sis,Isolate,dormant,ISO 639-3,sis,Umpqua; Ku-itc (Kuitsh)
 8409,Jejueo,,33.366667,126.533333,jeju1234,jje,Koreanic,endangered,ISO 639-3,jje,제주어; Jejumal; 제주말; Jeju saturi; 제주 사투리; Saturi; 사투리; Jeju bangeon; 제주 방언; 濟州方言; Chejueo; 濟州語; Jejutmal; 제줏말; Jeju Jiyeokeo; 제주 지역어; 濟州地域語
 841,Nkoroo,,4.561549,7.473342,nkor1239,nkx,Niger-Congo,threatened,ISO 639-3,nkx,Kirika; Nkoro; Ịjọ
@@ -3297,15 +3297,15 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 848,Jaqaru,,-12.7488,-75.8248,jaqa1244,jqr,Aymaran,severely endangered,ISO 639-3,jqr,Haqearu; Haqaru; Haq'aru; Aru; Hakaru-Kauki
 8489,Senhaja de Srair,,34.881362,-4.611313,senh1238,sjs,Afro-Asiatic,vulnerable,ISO 639-3,sjs,Sanhāja of Srair; Senhajiya; Sanhaja de Srair
 849,Lamkang,,24.2569,94.0759,lamk1238,lmk,Sino-Tibetan,endangered,ISO 639-3,lmk,
-8490,Figuig,,32.112095,-1.222258,,,Afro-Asiatic,threatened,LINGUIST List,qb8,Berber (Figuig)
+8490,Figuig,,32.112095,-1.222258,tazn1238,,Afro-Asiatic,threatened,LINGUIST List,qb8,Berber (Figuig)
 850,Łingít (Tlingit),,60.171,-132.7395,tlin1245,tli,Athabaskan-Eyak-Tlingit,critically endangered,ISO 639-3,tli,Tlinkit; Thlinget; Inland Tlingit; Lingit; Kolosch; Kolosh
 8509,Tetserret,,15.406024,6.26976,tets1235,,Afro-Asiatic,severely endangered,LINGUIST List,1nl,
 851,Yaqui,,32.1158,-111.0638,yaqu1251,yaq,Uto-Aztecan,vulnerable,ISO 639-3,yaq,Yaki; Cahita; Yaqui-Mayo; Kahita; Yoeme
 852,Shiwilu,,-5.41666666667,-76.5,jebe1250,jeb,Cahuapanan,critically endangered,ISO 639-3,jeb,Xiwilu; Jebero; Chébero; Jébero; Xihuila; Xébero; Xevero; Xebero; Chebero; Hevero
 8529,Northern Mansi,,62.6539,63.1494,mans1258,,Uralic,endangered,LINGUIST List,1nt,Northern Vogul; Sos'va; северно-мансийский язык; Northern Man'si; вогульский; маньси; моаньсь
 853,Wiyot,,40.8333333333,-124.166666667,wiyo1248,wiy,Algic,awakening,ISO 639-3,wiy,Wishosk; Kowilth; Wiyoshk; Weyot
-8530,Eastern Mansi,,60.7752,67.6098,,,Uralic,severely endangered,LINGUIST List,1nu,Eastern Vogul; восточно-мансийский язык; кондинский-мансийский язык; Konda; вогульский язык; маньси; моаньсь; Eastern Man'si
-8549,Western Mansi,,61.1432,62.4023,,,Uralic,dormant,LINGUIST List,1od,Western Vogul; Pelym; западно-мансийский язык; Vogul; West Vogul; вогульский; маньси; моаньсь
+8530,Eastern Mansi,,60.7752,67.6098,cent2322,,Uralic,severely endangered,LINGUIST List,1nu,Eastern Vogul; восточно-мансийский язык; кондинский-мансийский язык; Konda; вогульский язык; маньси; моаньсь; Eastern Man'si
+8549,Western Mansi,,61.1432,62.4023,sout3253,,Uralic,dormant,LINGUIST List,1od,Western Vogul; Pelym; западно-мансийский язык; Vogul; West Vogul; вогульский; маньси; моаньсь
 855,Tolowa,,41.9566,-124.1915,tolo1259,tol,Athabaskan-Eyak-Tlingit,awakening,ISO 639-3,tol,Smith River; Chetco-Tolowa; Tolowa-Chetco; Smith River Athabaskan; Chetco; Siletz Dee-ni
 8550,Northern Khanty,,63.7047,66.676,nort3264,,Uralic,threatened,LINGUIST List,1of,Northern Khant; Ostyak; северно-хантыйский язык; хӑнты ясӑң; khănty yasăŋ; Northern Khante; Ostyak; Ostiak; Ugrian Ostyak
 8551,Southern Khanty,,60.4301,69.9829,sout3226,,Uralic,dormant,LINGUIST List,1og,Southern Khant; Ostyak; южно-хантыйский язык; хӑнты ясӑң; Southern Khante; Ostiak; Ugrian Ostyak; остяцкий язык
@@ -3314,7 +3314,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 8554,Central Selkup,,59.8903,82.0129,cent2328,,Uralic,critically endangered,LINGUIST List,1op,Narym; Tym Selkup; čumyľ qumyt әty; чумыль ӄумыт әты; центральный селькупский язык; Middle Selkup; Ostyak Samoyed; narymin selkupin kieli; narymin selkuppi
 8555,Southern Selkup,,59.964395,83.932541,sout3262,,Uralic,critically endangered,LINGUIST List,1or,Ket Selkup; южноселькупский язык; tüj qumyt әty; šöš qumyt әty; śüssü qumyt әty; tüjqum; šöšqum; śüssogum; сӱccӱ ӄумыт әты; шӧш ӄумыт әты; тӱй ӄумыт әты; eteläselkuppi; кетский селькупский язык; Ket' Selkup; Ostyak Samoyed
 8556,Amur Nivkh,,53.2684,140.4107,gily1242,,Nivkh,severely endangered,LINGUIST List,1ot,Nivx; Gilyak; амурский нивхский язык; Nivukhi; Ghilyak; Ghiliak; Gelyak; Giriyaaku; Нивхгу диф; Ньиғвӈгун; гиляцкий язык
-8557,New Bargut,,48.684,116.814,,,Mongolic,vulnerable,LINGUIST List,1no,New Barghut; Xin Baerhu; Menggu; 新巴爾虎土語
+8557,New Bargut,,48.684,116.814,chin1476,,Mongolic,vulnerable,LINGUIST List,1no,New Barghut; Xin Baerhu; Menggu; 新巴爾虎土語
 8558,Old Bargut,,49.506,119.43,,,Mongolic,threatened,LINGUIST List,1np,Old Barghut; Chen Baerhu; Menggu; 陳巴爾虎土語
 856,Sukur,,10.73,13.57,suku1272,syk,Afro-Asiatic,vulnerable,ISO 639-3,syk,Sakun; Sugur; Adikimmu Sukur; Gemasakun; Sakul
 8569,Sinkiang Dagur,,46.7737,83.0017,,,Mongolic,threatened,LINGUIST List,1nq,Turkestan Dagur; Daur; 新疆達斡爾
@@ -3332,8 +3332,8 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 8599,Enwan,,4.652842,8.251014,enwa1245,enw,Niger-Congo,vulnerable,ISO 639-3,enw,Enwang; Oron
 8600,Itu Mbon Uzo,,5.53,7.8,itum1245,itm,Niger-Congo,threatened,ISO 639-3,itm,Itu Mbon Uso; Itu Mbuzo; Ito Mbonuso
 8601,Manx,,54.163387,-4.498093,manx1243,glv,Indo-European,awakening,ISO 639-3,glv,Manx Gaelic; Manks; Gaelg; Gailck
-8602,Tzeltal,,16.64,-92.28,,,Mayan,at risk,ISO 639-3,tzb; tzh,Tseltal; Tzendal
-8603,Tzotzil,,16.64,-92.74,,,Mayan,at risk,ISO 639-3,tzc; tze; tzu; tzs; tzo; tzz,Ts'ots'il
+8602,Tzeltal,,16.64,-92.28,tzel1254,,Mayan,at risk,ISO 639-3,tzb; tzh,Tseltal; Tzendal
+8603,Tzotzil,,16.64,-92.74,tzot1259,,Mayan,at risk,ISO 639-3,tzc; tze; tzu; tzs; tzo; tzz,Ts'ots'il
 861,Ninam,,4.5435,-63.5668,nina1238,shb,Yanomaman,vulnerable,ISO 639-3,shb,Yanam; Nimam; Xiriâna; Casapare; Kasrapai; Jawaperi; Crichana; Jawari; Shiriana; Shirianá; Samatari; Yanam-Ninam; Xirianá; Shiriana Casapare
 862,Omagua,,-4.0724,-73.103,omag1248,omg,Tupian,critically endangered,ISO 639-3,omg,Omagua-Yete; Ariana; Pariana; Anapia; Macanipa; Kambeba; Yhuata; Umaua; Cambeba; Campeba; Cambela; Cambeeba; Compeva; Canga-Peba; Agua; Omagua-Campeva; Omawa-Kampeva; Janbeba
 8629,Provençal,,44.0,6.0,prov1235,,Indo-European,threatened,LINGUIST List,oci-prv,Provençal Occitan; Provenzale; Prouvençau; Mistralien
@@ -3370,7 +3370,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,classification,enda
 8869,Koshin,,6.58815,10.281317,kosh1246,kid,Niger-Congo,threatened,ISO 639-3,kid,Kosin; Kaw
 8889,Ajumbu,,6.5391,10.238567,mbuu1238,muc,Niger-Congo,endangered,ISO 639-3,muc,Mbu'
 8909,Naki,,6.600783,10.265667,naki1238,mff,Niger-Congo,threatened,ISO 639-3,mff,Mekaf; Munkaf; Nkap; Bunaki
-8929,Buu (Cameroon),,6.56465,10.25515,,,Niger-Congo,endangered,LINGUIST List,8uu,
+8929,Buu (Cameroon),,6.56465,10.25515,buuu1246,,Niger-Congo,endangered,LINGUIST List,8uu,
 8949,Sambe,,9.074976,8.451004,samb1307,xab,Niger-Congo,critically endangered,ISO 639-3,xab,
 8969,Tunica,,31.1267,-92.0661,tuni1252,tun,Isolate,awakening,ISO 639-3,tun,Tonika; Tunixka
 8989,Mansaka,,6.79,126.18,mans1262,msk,Austronesian,vulnerable,ISO 639-3,msk,Mandaya Mansaka
