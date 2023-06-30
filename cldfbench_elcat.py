@@ -4,15 +4,17 @@ import pathlib
 import subprocess
 import collections
 import urllib.parse
+import urllib.request
 
 import requests
 from cldfbench import Dataset as BaseDataset
 from cldfbench import CLDFSpec
 from clldutils.misc import nfilter
+from csvw.metadata import URITemplate
 
 from util import (
     iter_langs, SCORED_PARAMETERS, split, bibliography, get_doc, COMPOSITE_PARAMETERS,
-    norm_text, norm_coords, Bib
+    norm_text, norm_coords, Bib, norm_country,
 )
 
 
@@ -30,17 +32,16 @@ class Dataset(BaseDataset):
         p = self.raw_dir / 'html' / parsed.path[1:].replace('/', '_')
         if not p.exists():
             p.write_text(requests.get(url).text, encoding='utf8')
+            print(p)
         return get_doc(p)
 
     def cmd_download(self, args):
-        langs = self.get("/lang/region")
-        for a in langs.findall('.//a'):
-            if 'href' in a.attrib and a.attrib['href'].startswith('/lang/country'):
-                country = self.get(a.attrib['href'])
-                for aa in country.findall('.//a'):
-                    if 'href' in aa.attrib and re.fullmatch('/lang/[0-9]+', aa.attrib['href']):
-                        self.get(aa.attrib['href'])
-                        self.get(aa.attrib['href'] + '/bibliography')
+        urllib.request.urlretrieve(
+            "https://endangeredlanguages.com/userquery/download/",
+            self.raw_dir / 'languages.csv')
+        for row in self.raw_dir.read_csv('languages.csv'):
+            self.get('/lang/{}'.format(row[0]))
+            self.get('/lang/{}/bibliography'.format(row[0]))
 
     def cmd_makecldf(self, args):
         self.schema(args)
@@ -98,6 +99,12 @@ class Dataset(BaseDataset):
         id2gc = {
             r['ID']: r['Glottocode'] for r in self.etc_dir.read_csv('languages.csv', dicts=True)}
 
+        cols = {9: 'Comment', 10: 'Countries', 11: 'ELCatMacroareas'}
+        lmeta = {}
+        for row in self.raw_dir.read_csv('languages.csv'):
+            lmeta[row[0]] = {n: split(row[i]) if i in {11, 10} else row[i] for i, n in cols.items()}
+            lmeta[row[0]]['Countries'] = [norm_country(c) for c in lmeta[row[0]]['Countries']]
+
         sources = []
         for obj in iter_langs(self.raw_dir / 'html'):
             if obj is None:
@@ -143,6 +150,7 @@ class Dataset(BaseDataset):
                 code_authorities=lang.metadata.code_authority,
                 codes=lang.metadata.language_code,
                 alt_names=nfilter(lang.metadata.also_known_as),
+                **lmeta[lang.id],
             ))
 
             # Add values:
@@ -263,6 +271,20 @@ class Dataset(BaseDataset):
         args.writer.cldf.add_component(
             'LanguageTable',
             {
+                'name': 'Comment',
+                'propertyUrl': 'http://cldf.clld.org/v1.0/terms.rdf#comment',
+            },
+            {
+                'name': 'Countries',
+                'separator': ' ',
+                'dc:description':
+                    'Countries a language is spoken in given by ISO 3166-1 alpha-2 code',
+            },
+            {
+                'name': 'ELCatMacroareas',
+                'separator': '; ',
+            },
+            {
                 'name': 'classification',
                 'dc:description': 'Top-level genealogical unit the language belongs to.',
             },
@@ -289,6 +311,8 @@ class Dataset(BaseDataset):
                 'dc:description': 'Alternative names used for the language.',
                 'separator': '; '},
         )
+        args.writer.cldf['LanguageTable', 'ID'].valueUrl = URITemplate(
+            'https://endangeredlanguages.com/lang/{ID}')
         args.writer.cldf.add_component('ParameterTable')
         args.writer.cldf.add_component('CodeTable')
         args.writer.cldf.add_columns(

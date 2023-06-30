@@ -16,7 +16,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/elcat",
             "rdf:type": "prov:Entity",
-            "dc:created": "v2023",
+            "dc:created": "v2023-1-gfceed2a",
             "dc:title": "Repository"
         },
         {
@@ -41,7 +41,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 64628,
+            "dc:extent": 64826,
             "tableSchema": {
                 "columns": [
                     {
@@ -150,7 +150,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 3451,
+            "dc:extent": 3464,
             "tableSchema": {
                 "columns": [
                     {
@@ -160,6 +160,7 @@
                         },
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
                         "required": true,
+                        "valueUrl": "https://www.endangeredlanguages.com/lang/{ID}",
                         "name": "ID"
                     },
                     {
@@ -212,6 +213,19 @@
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#iso639P3code",
                         "required": false,
                         "name": "ISO639P3code"
+                    },
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
+                        "name": "Comment"
+                    },
+                    {
+                        "dc:description": "Countries a language is spoken in given by ISO 3166-1 alpha-2 code",
+                        "separator": " ",
+                        "name": "Countries"
+                    },
+                    {
+                        "separator": "; ",
+                        "name": "ELCatMacroareas"
                     },
                     {
                         "dc:description": "Top-level genealogical unit the language belongs to.",

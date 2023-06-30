@@ -11,6 +11,7 @@ from lxml.etree import HTMLParser, parse
 from pycldf.sources import Source as BaseSource
 from clldutils.coordinates import Coordinates
 from clldutils.misc import slug
+from pycountry import countries
 
 INVALID_LANGUAGE_IDS = {'2679'}
 SCORED_PARAMETERS = {
@@ -149,6 +150,18 @@ COMPOSITE_PARAMETERS = [
 ]
 
 
+def norm_country(s):
+    known = {
+        'Laos': 'LA',
+        'East Timor': 'TL',
+        'Democratic Republic of the Congo': 'CD',
+        'Trindad and Tobago': 'TT',
+    }
+    if s in known:
+        return known[s]
+    return countries.search_fuzzy(s)[0].alpha_2
+
+
 def norm_text(s):
     if s.startswith('"') and s.endswith('"'):
         s = s[1:-1]
@@ -231,7 +244,7 @@ class Metadata:
         validator=validate_authority)
     also_known_as = attr.ib(
         default='',
-        converter=lambda s: [ss.strip().replace('"', '') for ss in s.split(',') if ss.strip()])
+        converter=lambda s: [ss.strip() for ss in s.split(',') if ss.strip()])
     language_code = attr.ib(default=None, converter=functools.partial(split, sep=re.compile('[,;]')))
     orthography = attr.ib(default=None)
     additional_comments = attr.ib(default=None)

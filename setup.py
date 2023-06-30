@@ -15,6 +15,7 @@ setup(
         ]
     },
     install_requires=[
+        'pycountry',
         'lxml',
         'requests',
         'clldutils',
