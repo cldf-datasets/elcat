@@ -68,7 +68,7 @@ COMPOSITE_PARAMETERS = [
                 "Institutional Support": {"type": "string"},
                 "Number Speaker Other Languages": {"type": "string"},
                 "Other Languages Used": {"type": "string"},
-                "Speaker Attitude": {"type": "string"}}
+                "Speaker Attitude": {"type": "string"}},
         },
     ),
     (

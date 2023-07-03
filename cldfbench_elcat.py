@@ -232,7 +232,7 @@ class Dataset(BaseDataset):
                                 d[key] = SCORED_PARAMETERS[('vitality', key)][score]
                             except ValueError:
                                 del d[key]
-                    if d:
+                    if d or comment:
                         args.writer.objects['ValueTable'].append(dict(
                             ID='{}-{}-{}'.format(lang.id, param, i),
                             Language_ID=lang.id,

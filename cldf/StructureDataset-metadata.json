@@ -16,13 +16,13 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/elcat",
             "rdf:type": "prov:Entity",
-            "dc:created": "v2023.2",
+            "dc:created": "v2023.2-1-g3cc417f",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.7-39-g05491b967d",
+            "dc:created": "v4.7",
             "dc:title": "Glottolog"
         }
     ],
@@ -41,7 +41,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 64833,
+            "dc:extent": 65442,
             "tableSchema": {
                 "columns": [
                     {

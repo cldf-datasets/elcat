@@ -13,7 +13,7 @@ property | value
 [dc:identifier](http://purl.org/dc/terms/identifier) | https://endangeredlanguages.com
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/cldf-datasets/elcat
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/cldf-datasets/elcat/tree/v2023.2">cldf-datasets/elcat v2023.2</a></li><li><a href="https://github.com/glottolog/glottolog/tree/05491b967d">Glottolog v4.7-39-g05491b967d</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/cldf-datasets/elcat/tree/3cc417f">cldf-datasets/elcat v2023.2-1-g3cc417f</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.7">Glottolog v4.7</a></li></ol>
 [prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.10.6</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | elcat
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
@@ -24,7 +24,7 @@ property | value
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ValueTable](http://cldf.clld.org/v1.0/terms.rdf#ValueTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 64833
+[dc:extent](http://purl.org/dc/terms/extent) | 65442
 
 
 ### Columns
