@@ -16,13 +16,13 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/elcat",
             "rdf:type": "prov:Entity",
-            "dc:created": "v2023-1-gfceed2a",
+            "dc:created": "v2023.2",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.7",
+            "dc:created": "v4.7-39-g05491b967d",
             "dc:title": "Glottolog"
         }
     ],
@@ -41,7 +41,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 64826,
+            "dc:extent": 64833,
             "tableSchema": {
                 "columns": [
                     {
@@ -160,7 +160,7 @@
                         },
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
                         "required": true,
-                        "valueUrl": "https://www.endangeredlanguages.com/lang/{ID}",
+                        "valueUrl": "https://endangeredlanguages.com/lang/{ID}",
                         "name": "ID"
                     },
                     {
@@ -232,7 +232,7 @@
                         "name": "classification"
                     },
                     {
-                        "dc:description": "ElCat's aggregated endangerment assessment.",
+                        "dc:description": "ElCat's aggregated endangerment assessment. Note that in a few cases this endangerment assessment does **not** match the assessment in the preferred source as given for parameter LEI in the ValueTable.",
                         "datatype": {
                             "base": "string",
                             "format": "at risk|awakening|critically endangered|dormant|endangered|endangerment|severely endangered|threatened|vulnerable"
@@ -257,6 +257,19 @@
                         "dc:description": "Alternative names used for the language.",
                         "separator": "; ",
                         "name": "alt_names"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Countries"
+                        ],
+                        "reference": {
+                            "resource": "countries.csv",
+                            "columnReference": [
+                                "alpha_2"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -357,6 +370,33 @@
                 ]
             },
             "url": "codes.csv"
+        },
+        {
+            "dc:extent": 172,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "name": "alpha_2"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "alpha_3"
+                    },
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "name": "name"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "official_name"
+                    }
+                ],
+                "primaryKey": [
+                    "alpha_2"
+                ]
+            },
+            "url": "countries.csv"
         }
     ]
 }

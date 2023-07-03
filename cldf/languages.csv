@@ -427,7 +427,7 @@ Ethnologue has only Yauyos Quechua [qux] and does not distinguish Northern Yauyo
 10889,Batak Karo,,3.141907,98.227524,bata1293,btx,,ID,Southeast Asia,Austronesian,at risk,ISO 639-3,btx,Karo Batak
 10890,Paluai,,-2.559112,147.281946,balu1257,,"Paluai is spoken both on Baluan Island and on Pam Island. The two varieties are very similar, only differing by a few lexical items. Speakers of both islands regard their language varieties to be very similar. Paluai is also very similar to Lou Language spoken on nearby Lou island. As much as 80-90% of the lexicons of the two languages overlap, and there is very little grammatical difference.",PG,Pacific,Austronesian,vulnerable,Glottolog,balu257,Pam-Baluan
 10891,Bonerate,,-7.322884,121.09935,bone1254,bna,,ID,Southeast Asia,Austronesian,threatened,ISO 639-3,bna,
-10893,Shelta,,53.178583,-7.556409,shel1236,sth,,GB IE,Europe,,,ISO 639-3,sth,Cant; Gammon; Irish Traveler Cant; Sheldru; The Cant
+10893,Shelta,,53.178583,-7.556409,shel1236,sth,,GB IE,Europe,,vulnerable,ISO 639-3,sth,Cant; Gammon; Irish Traveler Cant; Sheldru; The Cant
 10894,Scots,,57.149,-2.094,scot1243,sco,,,,Indo-European,endangered,ISO 639-3,sco,
 10899,Babanki,,5.973611,10.323333,baba1266,bbk,,,,Niger-Congo,endangered,ISO 639-3,bbk,Kejom; Kedjom
 10900,Nsong,,-5.054521,18.781299,song1299,soo,"Nsong is commonly called Songo, which is the name for the language in the lingua franca of the region, Kikongo.",CD,Africa,Bantu,threatened,ISO 639-3,soo,Songo
@@ -438,8 +438,8 @@ Ethnologue has only Yauyos Quechua [qux] and does not distinguish Northern Yauyo
 10920,Jakato,,9.068604,9.364322,chak1275,,,,,West Chadic A3 group,endangered,,,
 10921,Jibyal,,9.060199,9.183607,jiby1234,,,,,West Chadic A3 group,vulnerable,Glottolog,jiby1234,Ankwei
 10922,Griko,,40.248817,18.283177,apul1237,,Griko is considered both a dialect of Modern Greek (Greek perspective) and a minority language (Italian perspective). ,,,Outlying dialect of Modern Greek,severely endangered,,,Greko; Katoitaliótika; Grakanika
-10924,Belep,,-19.75,163.6667,nyal1254,,,NC,Pacific,,,Glottolog,nyal1254,Nyelâyu
-10931,Cajun French,,29.6869,-91.6133,caju1236,,,US,North America,,,Glottolog,caju1236,Louisiana French; Français Louisiane; Cajun; Acadien
+10924,Belep,,-19.75,163.6667,nyal1254,,,NC,Pacific,,threatened,Glottolog,nyal1254,Nyelâyu
+10931,Cajun French,,29.6869,-91.6133,caju1236,,,US,North America,,endangered,Glottolog,caju1236,Louisiana French; Français Louisiane; Cajun; Acadien
 10935,Tidore,,0.683333,127.4,tido1248,tvo,,ID,Southeast Asia,North Halmaheran,threatened,ISO 639-3,tvo,
 10936,Tobelo,,1.731944,128.007778,tobe1252,tlb,,ID,Southeast Asia,North Halmaheran,threatened,ISO 639-3,tlb,
 10939,Lakurumau,,-2.883,151.25,laku1238,,,PG,Pacific,Austronesian,endangered,Glottolog,laku1238,Laxudamau; Lakuramau; Loxodumau
@@ -449,7 +449,7 @@ Ethnologue has only Yauyos Quechua [qux] and does not distinguish Northern Yauyo
 10951,San Vicente Coatlán,,16.2817,-96.8667,sanv1242,,Its speakers refer to it as /ðiʔʐ ndê/ 'this language'.,MX,"Mexico, Central America, Caribbean",Coatecan,vulnerable,Glottolog,sanv1242,
 10952,Texmelucan Zapotec,,16.49197,-97.08947,texm1235,,,MX,"Mexico, Central America, Caribbean",,,Glottolog,texm1235,Texmelucan Papabuco
 10953,Zaniza Zapotec,,16.6804,-97.2876,zani1235,,,MX,"Mexico, Central America, Caribbean",,,Glottolog,zani1235,Zaniza Papabuco
-10954,Coatec Zapotec,,,,,,Its speakers call it [ðiʔʂkeʔ].,MX,"Mexico, Central America, Caribbean",,,Glottolog,coat1242; sanb1241; coat1243,Coatlán-Loxicha Zapotec (non-preferred)
+10954,Coatec Zapotec,,,,,,Its speakers call it [ðiʔʂkeʔ].,MX,"Mexico, Central America, Caribbean",,severely endangered,Glottolog,coat1242; sanb1241; coat1243,Coatlán-Loxicha Zapotec (non-preferred)
 10955,Amatec Zapotec,,,,,,In Zapotec the language is known as /díʔʐzæ̂/. ,MX,"Mexico, Central America, Caribbean",,,Glottolog,amat1238; coat1244,Amatlán Zapotec; Coatecas Altas Zapotec
 10956,Conestoga,,41.17,-76.21,susq1241,sqn,"The Conestoga language is known only from an 89 word vocabulary collected in 1696 and appended to a Delaware language translation of a Lutheran catechism translated by the Swedish missionary Johan Campanius, ",,,Iroquoian,dormant,ISO 639-3,sqn,Susquehannock (English); Andaste (French); Minqua (Netherlands Dutch)
 10958,Myanmar Sign Language,,16.78599,96.13867,yang1309,ysm,"""There are significant dialectal differences between Yangon and Mandalay which sometimes affect understanding. It is not clear if these differences are important enough to recognize the two varieties as separate languages. The decision may ultimately depend more on sociolinguistic factors of identity than on linguistic differences. For now, I am proposing that these two varieties be treated as just one language and share one code, because it will be better to have a code now than to wait until the issue is decided about how many varieties to recognize."" - Naw Shay Myar (2020)
@@ -468,21 +468,21 @@ Research with fluent signers in Myanmar found only a 59% overlap in basic core v
 10973,Gorwaa,,-4.22,35.75,goro1270,,,TZ,Africa,Afro-Asiatic,threatened,Glottolog,goro1270,Gorowa; Goroa; Kimbulu; Fiome; Ufiomi
 10974,Ibatan,,19.48,121.96,babu1242,,,PH,Southeast Asia,Batanic,threatened,Glottolog,babu1242,Ibatan of Babuyan claro
 10976,Vatlongos,,-16.3,168.21,sout2859,tvk,,VU,Pacific,Austronesian,threatened,ISO 639-3,tvk,Southeast Ambrym
-10979,Khroskyabs,,31.91350804468802,102.25131830958067,guan1266,jiq,,CN,East Asia,,,ISO 639-3,jiq,Lavrung; bósʁæi; Guanyinqiao; ཁོ་སྐྱབས།; 绰斯甲
+10979,Khroskyabs,,31.91350804468802,102.25131830958067,guan1266,jiq,,CN,East Asia,,threatened,ISO 639-3,jiq,Lavrung; bósʁæi; Guanyinqiao; ཁོ་སྐྱབས།; 绰斯甲
 10988,Sanzhi Dargwa,,41.9779562670328,47.56669789363135,sanz1248,,,RU,Caucasus; Europe; East Asia,Nakh-Dagestanian,endangered,Glottolog,sanz1248,Dargwa; Dargva; Dargi; Darginskiy; Sunglan ʁaj; Sunglan
 10989,Salawati,,-1.116457,130.8666,made1253,xmx,,ID,Southeast Asia,Austronesian,endangered,ISO 639-3; Glottolog,xmx; made1253,"""Maden"""
-10990,Batta,,-0.872323,130.770766,bata1295,,,ID,Southeast Asia,,,Glottolog,bata1295,Batanta
+10990,Batta,,-0.872323,130.770766,bata1295,,,ID,Southeast Asia,,severely endangered,Glottolog,bata1295,Batanta
 11007,Chinali,,32.555,76.961,chin1475,cih,,IN,South Asia,Indo-European,severely endangered,ISO 639-3,cih,Chana; Channali; Chinal; Dagi; Harijan; Shipi
 1101,Vidunda,,-6.8664,37.304,vidu1238,vid,,TZ,Africa,Niger-Congo,threatened,ISO 639-3,vid,Chividunda; Kividunda; Ndunda
 11012,Pengo,,19.3435,83.6552,peng1244,peg,,IN,South Asia,Dravidian,endangered,ISO 639-3,peg,Hengo; Pengu
-11013,Sangtam Naga,,25.8581,94.6279,sang1321,nsa,,IN,South Asia,,,ISO 639-3,nsa,Sangtam; Isachanure; Lophomi
+11013,Sangtam Naga,,25.8581,94.6279,sang1321,nsa,,IN,South Asia,,vulnerable,ISO 639-3,nsa,Sangtam; Isachanure; Lophomi
 11023,Reo Ra’ivavae,,-23.86742446282182,-147.65510405689076,raiv1237,,,PF,Pacific,Austronesian,endangered,Glottolog,﻿raiv1237,
 11025,Roviana,,-8.20493,157.408,rovi1238,rug,,SB,Pacific,Austronesian,vulnerable,ISO 639-3,rug,
 11026,Namosi,,-18.5308,177.637,namo1248,bwb,,FJ,Pacific,Austronesian,threatened,ISO 639-3,bwb,Namosi-Naitasiri-Serua
 11029,Innu,,49.0533,-68.7376,mont1268,,,CA,North America,Algic,endangered,Glottolog,mont1268,Innu-aimun; Montagnais; Innu Aimun
 11041,East Uvean,,13.16,176.12,wall1257,wls,,FR,Europe,Austronesian,threatened,ISO 639-3,wls,'Uvea; Faka 'Uvea
 11042,West Uvean,,-20.44288,166.617239,west2516,uve,,NC,Pacific,Austronesian,vulnerable,ISO 639-3,uve,Fagauvea
-11043,Jiiddu,,1.84353,44.1294,jiid1238,jii,,SO,Africa,,,ISO 639-3,jii,
+11043,Jiiddu,,1.84353,44.1294,jiid1238,jii,,SO,Africa,,threatened,ISO 639-3,jii,
 11047,Badugu,,11.374817551896571,76.75558292454049,bada1257,bfq,,IN,South Asia,Dravidian,threatened,ISO 639-3,bfq,Badaga; படகு மொழி; படக; ಬಡಗ; ബഡഗ; Badagu; Baduga
 1122,Bagvalal,,42.5247,46.192,bagv1239,kva,,RU,Caucasus; Europe; East Asia,Northeast Caucasian,threatened,ISO 639-3,kva,Bagulal; Kvanadin; багвалинский язык; Barbalin; багулальский язык; кванадинский язык; ბაგვალალური ენა; Bagvalin; Bagwalal; Kvanada
 1123,Baraba Tatar,,55.149606,78.330788,bara1408,,,RU,Caucasus; Europe; East Asia,Turkic,critically endangered,LINGUIST List,tat-bar,барабинский язык; Параба; 巴拉巴鞑靼语; Baraba dili; Paraba
@@ -2429,7 +2429,7 @@ Crevels (2012) also distinguishes Piritugoto, with 50 speakers, saying ""further
 4203,Geruma,,10.206,9.27,geru1240,gea,,NG,Africa,Afro-Asiatic,threatened,ISO 639-3,gea,Gerumawa; Gerema; Germa
 4204,Kukatj,,-18.04972881,141.088921,guga1239,ggd,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,ggd,Kukatji; Konggada; Kalibamu; Gugadj
 4207,Eastern Gurung,,28.275,84.1782,east2345,ggn,The new ISO code change resulted in the inclusion of Eastern Gurung into Western Gurung (http://www-01.sil.org/iso639-3/cr_files/639-3_ChangeRequests_2015_Summary.pdf).,NP,South Asia,Sino-Tibetan,threatened,ISO 639-3,ggn,Gurung; Gurnung; Eastern; Gurung; Eastern
-421,Baba Malay,,1.75,103.08,baba1267,mbf,"According to Lee (2014), it is still disputed whether Baba Malay is a creole because it lacks lots of things considered by many scholars necessary for a language to fit the definition of a creole language. Baba Malay may be a mixed language, a simplified trade language, or perhaps a real creole.",MY SG,Southeast Asia,,,ISO 639-3,mbf,Chinese Malay; Baba; Straits Malay; Bahasa Peranakan; Malay; Baba
+421,Baba Malay,,1.75,103.08,baba1267,mbf,"According to Lee (2014), it is still disputed whether Baba Malay is a creole because it lacks lots of things considered by many scholars necessary for a language to fit the definition of a creole language. Baba Malay may be a mixed language, a simplified trade language, or perhaps a real creole.",MY SG,Southeast Asia,,critically endangered,ISO 639-3,mbf,Chinese Malay; Baba; Straits Malay; Bahasa Peranakan; Malay; Baba
 4210,Gija,,-17.72282433,127.6836782,kitj1240,gia,,AU,Australia,Jarrakan,critically endangered,ISO 639-3; Glottolog,gia; kitj1240,Gidja; Kidja; Kija; Kitja; Ku:tji; Kuitji; Kuitj; Gi:dj; Kwitj; Gwidji; Guidj; Guwidji; Kisah; Keha; Kisha; Kityu; Liej; Lungga; Longga; Loonga; Langgu; Lunga; Lungu; Paljarri; Djarak; Tjarak; War-ingari; Warrangari; Kutnalawaru; Miwa; Walki; Kitja
 4211,Gibanawa,,12.22,4.38,giba1240,gib,,NG,Africa,,,ISO 639-3,gib,Gembanawa; Gimbanawa; Jega
 4213,Gitsenimx̱,,55.355,-127.6828,gitx1241,git,,CA,North America,Tsimshian,severely endangered,ISO 639-3,git,Gitksan; Gitsanimx̱; Gitksanimx; Gitxsan; Gitxsen; Hazelton; Giklsan; Gityskyan; Gyitska'n; Interior; Nass-Gitksan
@@ -2493,7 +2493,7 @@ Some sources have estimated 40 in the group, but how this number was reached is 
 
 Ethnologue distinguishes Inga (Highland Inga) [inb] from Jungle Inga (Lowland Inga) [inj], where others do not.",CO,South America,Quechuan,threatened,,inb; inj,Ingano
 4306,Ipiko,,-7.435678005,144.8769073,ipik1244,ipo,,PG,Pacific,Trans-New Guinea,endangered,ISO 639-3,ipo,Ipikoi; Higa; Epai
-4308,Isconahua,,-7.760233,-74.515153,isco1239,isc,,PE,South America,Pano-Tacanan,critically endangered,ISO 639-3,isc,Iskonawa; Iscobakebo; Iscobaquebu
+4308,Iskonawa,,-7.760233,-74.515153,isco1239,isc,,PE,South America,Pano-Tacanan,critically endangered,ISO 639-3,isc,Isconahua; Iscobakebo; Iscobaquebu
 4309,Masimasi,,-2.01,139.04,masi1265,ism,,ID,Southeast Asia,Austronesian,severely endangered,ISO 639-3,ism,
 4311,"Isu (Northwest Region, Cameroon)",,6.39173,10.050327,isum1240,isu,,CM,Africa,Niger-Congo,vulnerable,ISO 639-3,isu,
 4312,Iteri,,-4.0807,141.5039,iter1241,itr,"Laycock (1973) lists two separate languages--Yinibu (Rocky Peak) and Iyo--athough he writes that Iyo may be the same language as Yinibu. According to Årsjö (1999), Rocky Peak is a dialect of Iteri.",PG,Pacific,Left May,endangered,ISO 639-3,itr,Alowiemino; Iyo; Laro; Rocky Peak; Yinibu
@@ -2740,7 +2740,7 @@ Ethnologue distinguishes Coatlán Mixe [mco], Mazatlán Mixe [mzl],  Isthmus Mix
 4727,Yaaku,,0.4394,37.1777,yaak1241,muu,,KE,Africa,Afro-Asiatic,severely endangered,ISO 639-3,muu,"Yakunte; Yiakunte; Yiaku; Mukogodo; Mogogodo; Mukoquodo; Siegu; Yaakua; ""Ndorobo"""
 4730,Miyako,,24.930462,125.244197,miya1259,mvi,Dialect names are from Aoi (2015).,JP,East Asia,Japonic,severely endangered,ISO 639-3; Glottolog,mvi; miya1259,Ikimatsu; Ryukyuan; Southern Ryukyuan; Saskisima; Saskishima; 宮古語; 宮古方言; ミャークフツ
 4731,Botovro,,-15.92772,167.279892,mpot1241,mvt,,VU,Pacific,Austronesian,endangered,ISO 639-3,mvt,Mpotovoro; Mallicolo
-4732,Meoswar,,2.08,134.38,meos1237,mvx,,ID,Southeast Asia,Austronesian,endangered,ISO 639-3,mvx,War
+4732,Meoswar,,2.04,134.22,meos1237,mvx,,ID,Southeast Asia,Austronesian,endangered,ISO 639-3,mvx,War
 4734,Miranda do Douro,,41.4958535,-6.2738577,mira1251,mwl,,ES PT,Europe,Indo-European,vulnerable,ISO 639-3,mwl,Mirandês; Mirandesa; Mirandese
 4736,Kalaw Kawaw Ya,,-10.156694,142.282428,kala1377,mwp,,AU,Australia,Pama-Nyungan,severely endangered,ISO 639-3,mwp,Kala Yagaw Ya; Yagar Yagar; Mabuiag; Kala Lagau Langgus; Langus; West Torres
 4741,Mao of Bambeshi,,9.7469,34.7662,bamb1262,myf,"""Northern Mao, also known by the toponyms Bambassi and Diddesa, is one of the least documented Omotic languages (Bender 2000:180). A Mao language of the Omotic family, a subclass of the Afroasiatic phylum (Bender 1985; 2000; 2003; Hayward 2000), the language is spoken by an estimated 5,000 speakers (Siebert et al. 1993)""",ET,Africa,Afro-Asiatic,threatened,ISO 639-3,myf,Bambassi; Bambeshi; Siggoyo; Amam; Fadiro; Northern Mao; Didessa; Mao of Diddesa; Bambessi Mao; Didessa Mao
@@ -4003,7 +4003,7 @@ Ethnologue (2013) gives only a single ""Xinca"" [xin] language, with no known L1
 981,Iwaidja,,-11.4407565,132.5594586,iwai1244,ibd,"Most of the languages of the group are extinct or threatened with imminent extinction, and only two – Iwaidja and Maung – have speech communities large enough to ensure daily use by a full age range including children. (DoBeS)",AU,Australia,Iwaidjan,endangered,ISO 639-3,ibd,Iwaydja; Iwaidji; Ibadjo; Eiwaja; Jiwadja; Limba; Karadjee; Jiwaidja; Iwaiji; Eaewandja; Unalla; Limbakaraja; Eaewardja; Eaewarga; Eae-warge-ga; Iwaija; Iwaja; Iyi; Ji:wadja; Juwadja; Limba-Karadjee; Tarula; Uwaidja; Yiwadya; Yiwayja
 9829,Uma' Lung,,2.99,117.22,umal1238,ulu,,ID,Southeast Asia,Austronesian,threatened,ISO 639-3,ulu,Kenyah (Uma' Lung); Oma Longh; Òma Lóngh
 9849,Northern Chinantec,,18.075,-96.3369,ojit1237,chj,"Some sources list up to 14 different Chinantec languages. The most recent and accurate sources claim that there are 11 different Chinantec languages, with 20 different dialects. (INALI 2009) Classifications are based Campbell, Lyle. 1997. American Indian Languages: The Historical Linguistics of Native America. Oxford: Oxford University Press.",MX,"Mexico, Central America, Caribbean",Otomanguean,vulnerable,ISO 639-3,chj,Chinanteco del norte; Ojitlán Chinantec; Chinantec; Chinanteco; Chinanteko; jmiih kia' dzä 'vï ï; jujmi (del norte); Comaltepec; jujmi tsa kö 'w++
-9850,Northwestern Chinantec,,17.8646,-96.5176,tlac1239,ctl,"Some sources list up to 14 different Chinantec languages. The most recent and accurate sources claim that there are 11 different Chinantec languages, with 20 different dialects. (INALI 2009)",MX,"Mexico, Central America, Caribbean",Otomanguean,threatened,ISO 639-3,ctl,jau jmai; Chinanteco del noroeste; Tlacoatzintepec Chinantec
+9850,Northwestern Chinantec,,17.856571,-96.604898,tlac1239,ctl,"Some sources list up to 14 different Chinantec languages. The most recent and accurate sources claim that there are 11 different Chinantec languages, with 20 different dialects. (INALI 2009)",MX,"Mexico, Central America, Caribbean",Otomanguean,threatened,ISO 639-3,ctl,jau jmai; Chinanteco del noroeste; Tlacoatzintepec Chinantec
 9851,Upper Southeastern Chinantec,,17.675036884871695,-96.2282121102249,ozum1235,chz,"Some sources list up to 14 different Chinantec languages. The most recent and accurate sources claim that there are 11 different Chinantec languages, with 20 different dialects. (INALI 2009)",MX,"Mexico, Central America, Caribbean",Otomanguean,threatened,ISO 639-3,chz,jumi dsa mojai; Chinanteco del sureste alto; Ozumacín Chinantec; Chinantec; Chinanteco; Chinanteko; Juujmii; Chinanteco de Ayotzintepec
 9869,Lower Southeastern Chinantec,,17.5071981929337,-95.87680981397497,lala1270,cnl,"Some sources list up to 14 different Chinantec languages. According to the most recent and accurate sources available, there are 11 different Chinantec languages, with 20 different dialects. (INALI 2009)",MX,"Mexico, Central America, Caribbean",Otomanguean,vulnerable,ISO 639-3,cnl,jujmi dsa m+ta'o; jujmi dsa maji'i; Chinanteco del sureste bajo; Lalana Chinantec; Chinantec; Chinanteco; Chinanteko; Chinanteco de San Juan Lalana
 9870,Western Chinantec,,17.7985,-96.6079,soch1239,cso,"Some sources list up to 14 different Chinantec languages. According to the most recent and accurate sources available, there are 11 different Chinantec languages, with 20 different dialects. (INALI 2009)",MX,"Mexico, Central America, Caribbean",Otomanguean,threatened,ISO 639-3,cso,jujma; Chinanteco del oeste; Sochiapám Chinantec; Chinantec; Chinanteco; Chinanteko; Sochiapan Chinantec; Sochiapam Chinantec

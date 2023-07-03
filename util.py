@@ -13,7 +13,7 @@ from clldutils.coordinates import Coordinates
 from clldutils.misc import slug
 from pycountry import countries
 
-INVALID_LANGUAGE_IDS = {'2679'}
+INVALID_LANGUAGE_IDS = {'2679'}  # HTML page for this language isn't rendered properly.
 SCORED_PARAMETERS = {
     'Score': [
         'Safe',
@@ -150,7 +150,7 @@ COMPOSITE_PARAMETERS = [
 ]
 
 
-def norm_country(s):
+def norm_country(s, agg):
     known = {
         'Laos': 'LA',
         'East Timor': 'TL',
@@ -158,8 +158,12 @@ def norm_country(s):
         'Trindad and Tobago': 'TT',
     }
     if s in known:
-        return known[s]
-    return countries.search_fuzzy(s)[0].alpha_2
+        res = known[s]
+    else:
+        res = countries.search_fuzzy(s)[0].alpha_2
+    if res not in agg:
+        agg[res] = countries.get(alpha_2=res)._fields
+    return res
 
 
 def norm_text(s):
@@ -328,6 +332,8 @@ def classification_and_endangerment(doc):
             clf = p.text
         elif i == 1:
             return clf, p.text
+    if clf in {s.lower() for s in SCORED_PARAMETERS['Score']}:
+        return None, clf
 
 
 def iter_language_metadata(doc):
@@ -650,12 +656,12 @@ class Bib:
 
 
 def bibliography(dir):
-    res = collections.defaultdict(list)
+    res = collections.defaultdict(set)
     for p in dir.glob('lang_*_bibliography'):
         lid = p.stem.split('_')[1]
         doc = parse(io.StringIO(p.read_text(encoding='utf8')), HTMLParser())
         for para in doc.findall('.//ul[@id="other_sources"]/li'):
-            res[re.sub(r'\s+', ' ', ''.join(para.itertext()).strip())].append(lid)
+            res[re.sub(r'\s+', ' ', ''.join(para.itertext()).strip())].add(lid)
 
     for line, lids in res.items():
-        yield Bib.from_other_sources(line, {lid for lid in lids if lid not in INVALID_LANGUAGE_IDS})
+        yield Bib.from_other_sources(line, lids - INVALID_LANGUAGE_IDS)

@@ -1,5 +1,6 @@
 import re
 import json
+import hashlib
 import pathlib
 import subprocess
 import collections
@@ -14,7 +15,7 @@ from csvw.metadata import URITemplate
 
 from util import (
     iter_langs, SCORED_PARAMETERS, split, bibliography, get_doc, COMPOSITE_PARAMETERS,
-    norm_text, norm_coords, Bib, norm_country,
+    norm_text, norm_coords, Bib, norm_country, INVALID_LANGUAGE_IDS,
 )
 
 
@@ -25,12 +26,12 @@ class Dataset(BaseDataset):
     def cldf_specs(self):
         return CLDFSpec(module='StructureDataset', dir=self.cldf_dir)
 
-    def get(self, url):
+    def get(self, url, force=False):
         if url.startswith('/'):
             url = 'https://endangeredlanguages.com' + url
         parsed = urllib.parse.urlparse(url)
         p = self.raw_dir / 'html' / parsed.path[1:].replace('/', '_')
-        if not p.exists():
+        if force or (not p.exists()):
             p.write_text(requests.get(url).text, encoding='utf8')
             print(p)
         return get_doc(p)
@@ -40,8 +41,9 @@ class Dataset(BaseDataset):
             "https://endangeredlanguages.com/userquery/download/",
             self.raw_dir / 'languages.csv')
         for row in self.raw_dir.read_csv('languages.csv'):
-            self.get('/lang/{}'.format(row[0]))
-            self.get('/lang/{}/bibliography'.format(row[0]))
+            if row[0] not in INVALID_LANGUAGE_IDS:
+                self.get('/lang/{}'.format(row[0]))
+                self.get('/lang/{}/bibliography'.format(row[0]))
 
     def cmd_makecldf(self, args):
         self.schema(args)
@@ -101,9 +103,13 @@ class Dataset(BaseDataset):
 
         cols = {9: 'Comment', 10: 'Countries', 11: 'ELCatMacroareas'}
         lmeta = {}
+        countries = {}
         for row in self.raw_dir.read_csv('languages.csv'):
             lmeta[row[0]] = {n: split(row[i]) if i in {11, 10} else row[i] for i, n in cols.items()}
-            lmeta[row[0]]['Countries'] = [norm_country(c) for c in lmeta[row[0]]['Countries']]
+            lmeta[row[0]]['Countries'] = [norm_country(c, countries) for c in lmeta[row[0]]['Countries']]
+
+        for c in sorted(countries.values(), key=lambda i: i['name']):
+            args.writer.objects['countries.csv'].append(c)
 
         sources = []
         for obj in iter_langs(self.raw_dir / 'html'):
@@ -134,7 +140,6 @@ class Dataset(BaseDataset):
             if lang.id in id2gc:  # Hand-curated mapping exists.
                 if glottocodes:
                     if [id2gc[lang.id]] != glottocodes:
-                        #print(id2gc[lang.id], glottocodes)
                         assert (lang.id in {'2896', '6029'}) or id2gc[lang.id] in glottocodes, str(lang.id)  # This is the only known discrepancy.
                         glottocodes = [id2gc[lang.id]]
                 else:
@@ -158,6 +163,11 @@ class Dataset(BaseDataset):
                 for i, (sid, d) in enumerate(getattr(lang, param), start=1):
                     comment = norm_text(d.pop('Public Comment', '')) or None
                     if 'Endangerment Level' in d:
+                        if sid == lang.preferred_source:
+                            if lang.endangerment and (lang.endangerment != d['Endangerment Level'].split('(')[0].strip().lower()):
+                                # 29 cases. What to do here?
+                                args.log.warning('{}: {} vs {}'.format(
+                                    lang.id, lang.endangerment, d['Endangerment Level'].split('(')[0].strip().lower()))
                         args.writer.objects['ValueTable'].append(dict(
                             ID='{}-LEI-{}'.format(lang.id, i),
                             Language_ID=lang.id,
@@ -238,10 +248,15 @@ class Dataset(BaseDataset):
                 sources.append(src)
 
         lid2sids = collections.defaultdict(set)
-        local_id2sid = {}
+        local_id2sid, sids = {}, set()
         for i, m in enumerate(Bib.iter_merged(sources), start=1):
-            sid = 'bib{}'.format(i)
+            src = m.as_source(str(i))
+            sid = hashlib.md5((src.get('local_ids') or src.bibtex()).encode('utf8')).hexdigest()
+            src.id = sid
+            assert sid not in sids
+            sids.add(sid)
             args.writer.cldf.sources.add(m.as_source(sid))
+            assert m.local_ids or m.language_ids, str(src.bibtex())
             for local_id in m.local_ids:
                 local_id2sid[local_id] = sid
             for lid in m.language_ids:
@@ -290,7 +305,10 @@ class Dataset(BaseDataset):
             },
             {
                 'name': 'endangerment',
-                'dc:description': "ElCat's aggregated endangerment assessment.",
+                'dc:description':
+                    "ElCat's aggregated endangerment assessment. Note that in a few cases this "
+                    "endangerment assessment does **not** match the assessment in the preferred "
+                    "source as given for parameter LEI in the ValueTable.",
                 'datatype': {
                     'base': 'string',
                     'format': 'at risk|awakening|critically endangered|dormant|endangered|endangerment|severely endangered|threatened|vulnerable'},
@@ -325,6 +343,20 @@ class Dataset(BaseDataset):
                     'is marked as *preferred* (based on its source).',
                 'datatype': {'base': 'boolean', 'format': 'yes|no'}}
         )
+        args.writer.cldf.add_table(
+            'countries.csv',
+            {
+                'name': 'alpha_2',
+                'propertyUrl': 'http://cldf.clld.org/v1.0/terms.rdf#id',
+            },
+            'alpha_3',
+            {
+                'name': 'name',
+                'propertyUrl': 'http://cldf.clld.org/v1.0/terms.rdf#name',
+            },
+            'official_name',
+        )
+        args.writer.cldf.add_foreign_key('LanguageTable', 'Countries', 'countries.csv', 'alpha_2')
 
     def cmd_readme(self, args):
         subprocess.check_call([
