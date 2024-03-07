@@ -16,20 +16,20 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/elcat",
             "rdf:type": "prov:Entity",
-            "dc:created": "v2023.2-1-g3cc417f",
+            "dc:created": "v2023.3",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.7",
+            "dc:created": "v4.8",
             "dc:title": "Glottolog"
         }
     ],
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.10.6"
+            "dc:description": "3.10.12"
         },
         {
             "dc:title": "python-packages",
@@ -41,7 +41,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 65442,
+            "dc:extent": 65483,
             "tableSchema": {
                 "columns": [
                     {
@@ -150,7 +150,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 3464,
+            "dc:extent": 3465,
             "tableSchema": {
                 "columns": [
                     {

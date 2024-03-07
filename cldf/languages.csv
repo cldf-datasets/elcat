@@ -4,7 +4,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Comment,Countries,E
 1002,Yuchi,,36.0009,-96.0988,yuch1247,yuc,,US,North America,Isolate,critically endangered,ISO 639-3,yuc,Euchee
 10029,Suabo,,-2.1,132.197,suab1238,szp,,ID,Southeast Asia,Trans-New Guinea,critically endangered,ISO 639-3,szp,Suabau; Inanwatan; Mirabo; Iagu; Solowat; Itigo; Bira
 1003,Wichita,,35.0647,-98.2788,wich1260,wic,,US,North America,Caddoan,dormant,ISO 639-3,wic,Witchita
-1004,Achumawi,,41.5,-121.0,achu1247,acv,,US,North America,Palaihnihan,critically endangered,ISO 639-3,acv,Achumawi; Achomawi; Pitt River; Achoma'wi; Achowawi
+1004,Achumawi,,41.320107,-121.129761,achu1247,acv,,US,North America,Palaihnihan,critically endangered,ISO 639-3,acv,Achumawi; Achomawi; Pitt River; Achoma'wi; Achowawi
 10069,Aftari,,35.36,53.7,afta1234,,,IR,Near East,Indo-European,endangered,LINGUIST List,5qc,
 10070,West Tarangan,,-6.573,134.147,west2538,txn,,ID,Southeast Asia,Austronesian,vulnerable,ISO 639-3,txn,West Trangan; Tarangan Barat; Tarangan (West); Aru; Aroesch
 10071,Meymai,,35.34,53.24,meym1234,,,IR,Near East,Indo-European,threatened,LINGUIST List,98s,Meyma'i
@@ -30,7 +30,7 @@ Kadu (zkd) is different from Kaduo (ktp), a language of China belonging to the S
 10310,Hahon,,-5.342585,154.559549,haho1237,hah,,PG,Pacific,Austronesian,vulnerable,ISO 639-3,hah,Hanon
 10329,Sirva,,-4.98,145.22,sile1255,sbq,,PG,Pacific,Trans-New Guinea,endangered,ISO 639-3,sbq,Sileibi
 10330,Aisi,,-5.405093,145.175755,musa1266,mmq,,PG,Pacific,Trans-New Guinea,endangered,ISO 639-3,mmq,Musak; Green Miao; Blue Miao; Red Miao; White Miao
-10349,Äiwoo,,-9.43895,-171.205463,ayiw1239,nfl,,SB,Pacific,Austronesian,vulnerable,ISO 639-3,nfl,Reef; Ayiwo; Naaude; Aiwo; Gnivo; Nivo; Nifilole; Lomlom; Reef Islands; Reefs; Äiwo; Aïwo; Reef Islands-Santa Cruz Sub-Family
+10349,Äiwoo,,-10.303377,166.306967,ayiw1239,nfl,,SB,Pacific,Austronesian,vulnerable,ISO 639-3,nfl,Reef; Ayiwo; Naaude; Aiwo; Gnivo; Nivo; Nifilole; Lomlom; Reef Islands; Reefs; Äiwo; Aïwo; Reef Islands-Santa Cruz Sub-Family
 10369,Vaeakau-Taumako,,-10.18746,166.300435,pile1238,piv,,SB,Pacific,Austronesian,vulnerable,ISO 639-3,piv,Pileni; Pilheni; Taumako
 10374,Southern Nicobarese,,7.3134,93.6968,sout2689,nik,Unclear how many of the dialects subsumed under Southern Nicobarese are languages in their own right. ,IN,South Asia,Austro-Asiatic,threatened,ISO 639-3,nik,Nicobarese; Southern; Condul; Great Nicobar; Little Nicobar; Milo; Lo'ong; Ong; Lamongse; Lamongshe; Takahanyilang
 10377,Amami,,28.31,129.982,,,"Pellard (2015), whose classification is used here, considers Okinawan and Amami to be separate. According to Niinaga (2015), Northern Okinawan dialects are grouped together with Amami dialects. 
@@ -63,7 +63,7 @@ According to other analyses, the Amami language consists of Kikai (kzg), Kunigam
 10450,Dyarim,,10.033333,9.066667,dyar1234,,,NG,Africa,Afro-Asiatic,severely endangered,,,Dyarum; Dyàrìm Tə́; Dyarim Tə; Ndyarim Tə; Kaiwari; Kayaurinci
 10451,Sasak,,-8.583333,116.116667,sasa1249,sas,,ID,Southeast Asia,Austronesian,at risk,ISO 639-3,sas,
 10452,Chaari,,10.05,9.283333,dans1239,,,NG,Africa,Afro-Asiatic,endangered,,,Chari; Caari; Cààrí; Danshe; Danche
-10453,Tule,,,,nucl1693,,,NG,Africa,Afro-Asiatic,dormant,,,Tulai
+10453,Tule,,10.06673,9.28484,nucl1693,,,NG,Africa,Afro-Asiatic,dormant,,,Tulai
 10454,Yakut,,62.3496,130.8691,yaku1245,sah,,RU,Caucasus; Europe; East Asia,Turkic,vulnerable,ISO 639-3,sah,Sakha; якутский язык; Saxa tıla; Саха тыла; Yakutça; Yakut Türkçesi; Saha Türkçesi; Yakoute; Yakuto; 雅库特语; 야쿠트어; サハ語
 10455,Salar,,36.2752,102.4584,sala1264,slr,,CN,East Asia,Turkic,threatened,ISO 639-3,slr,撒拉語; саларский
 10457,Iraya,,13.3,120.9,iray1237,iry,,PH,Southeast Asia,Austronesian,vulnerable,ISO 639-3,iry,
@@ -318,7 +318,7 @@ Ethnologue (18th edition) includes two entries that correspond to what Laycock (
 10751,Lendamboi,,-16.43,167.57,lete1241,nms,,VU,Pacific,Austronesian,endangered,ISO 639-3,nms,Small Nambas; Letemboi
 10752,Malua Bay,,-16.0,167.18,malu1245,,,VU,Pacific,Austronesian,endangered,Glottolog,malu1245,Malakula; Middle Nambas
 10753,Unua,,-16.26,167.6,unua1237,onu,The name 'Unua' is derived from bangon nue 'mouth river'. (Elizabeth Pearce 2015),VU,Pacific,Austronesian,vulnerable,ISO 639-3,onu,Onua
-10754,Adithinngithigh,,-12.887711,141.717248,arit1239,dth,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,dth,Adetingiti
+10754,Adithinngithigh,,-12.887711,141.717248,,dth,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,dth,Adetingiti
 10755,Awngthim,,-12.587833,142.023835,awng1245,gwm,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,gwm,Angutimi; Mamangidigh
 10756,Bigambal,,-28.166667,150.166667,biga1237,xbe,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,xbe,Bigambul; Bigumbil
 10757,Taungurung,,-36.966911,145.420664,daun1234,dgw,,AU,Australia,Pama-Nyungan,awakening,ISO 639-3,dgw,Daungwurrung; Daung Wurrung; Dhagung-wurrung; Taungurong; Thagawurung
@@ -336,7 +336,7 @@ Ethnologue (18th edition) includes two entries that correspond to what Laycock (
 10774,Moiso,,-15.442909,166.859333,,,,VU,Pacific,Austronesian,endangered,,,
 10775,Kene,,-15.49585,166.754963,,,,VU,Pacific,Austronesian,endangered,,,
 10776,Daruru,,-15.616242,166.785161,,,,VU,Pacific,Austronesian,severely endangered,,,
-10777,Ande,,-15.470705,166.936238,moro1286,,,VU,Pacific,Austronesian,endangered,,,Morouas
+10777,Ande,,-15.470705,166.936238,moro1286,mrp,,VU,Pacific,Austronesian,endangered,ISO 639-3,mrp,Morouas
 10778,Retlatur,,-15.629468,166.834614,,,,VU,Pacific,Austronesian,severely endangered,,,
 10780,Merei,,-15.51173,166.888172,mere1242,lmb,,VU,Pacific,Austronesian,endangered,,lmb,Tiale; Lametin; Malmariv
 10781,Atin,,-15.441585,166.980183,,,,VU,Pacific,Austronesian,endangered,,,
@@ -429,7 +429,7 @@ Ethnologue has only Yauyos Quechua [qux] and does not distinguish Northern Yauyo
 10891,Bonerate,,-7.322884,121.09935,bone1254,bna,,ID,Southeast Asia,Austronesian,threatened,ISO 639-3,bna,
 10893,Shelta,,53.178583,-7.556409,shel1236,sth,,GB IE,Europe,,vulnerable,ISO 639-3,sth,Cant; Gammon; Irish Traveler Cant; Sheldru; The Cant
 10894,Scots,,57.149,-2.094,scot1243,sco,,,,Indo-European,endangered,ISO 639-3,sco,
-10899,Babanki,,5.973611,10.323333,baba1266,bbk,,,,Niger-Congo,endangered,ISO 639-3,bbk,Kejom; Kedjom
+10899,Babanki,,5.973611,10.323333,baba1266,bbk,,CM,Africa,Niger-Congo,endangered,ISO 639-3,bbk,Kejom; Kedjom
 10900,Nsong,,-5.054521,18.781299,song1299,soo,"Nsong is commonly called Songo, which is the name for the language in the lingua franca of the region, Kikongo.",CD,Africa,Bantu,threatened,ISO 639-3,soo,Songo
 10901,Nda'nda',,4.60509,10.19952,ndan1241,nnz,-,CM,Africa,Niger-Congo,vulnerable,ISO 639-3,nnz,Bamileke-Nda’nda’; Bangwa
 10906,Mingrelian,,42.01444,43.566671,ming1252,xmf,,GE,Caucasus,South Caucasian,at risk,ISO 639-3,xmf,Megrelian; Margali; Margaluri; Megrel; Megruli
@@ -484,6 +484,7 @@ Research with fluent signers in Myanmar found only a 59% overlap in basic core v
 11042,West Uvean,,-20.44288,166.617239,west2516,uve,,NC,Pacific,Austronesian,vulnerable,ISO 639-3,uve,Fagauvea
 11043,Jiiddu,,1.84353,44.1294,jiid1238,jii,,SO,Africa,,threatened,ISO 639-3,jii,
 11047,Badugu,,11.374817551896571,76.75558292454049,bada1257,bfq,,IN,South Asia,Dravidian,threatened,ISO 639-3,bfq,Badaga; படகு மொழி; படக; ಬಡಗ; ബഡഗ; Badagu; Baduga
+11050,Noakhali,,22.64424,91.08214,noak1234,,,IN BD,South Asia,,,Glottolog,noak1234,Noakhalian; Noakhailla; নোয়াখাইল্লা
 1122,Bagvalal,,42.5247,46.192,bagv1239,kva,,RU,Caucasus; Europe; East Asia,Northeast Caucasian,threatened,ISO 639-3,kva,Bagulal; Kvanadin; багвалинский язык; Barbalin; багулальский язык; кванадинский язык; ბაგვალალური ენა; Bagvalin; Bagwalal; Kvanada
 1123,Baraba Tatar,,55.149606,78.330788,bara1408,,,RU,Caucasus; Europe; East Asia,Turkic,critically endangered,LINGUIST List,tat-bar,барабинский язык; Параба; 巴拉巴鞑靼语; Baraba dili; Paraba
 1124,Batsbi,,42.045117,45.302274,bats1242,bbl,,GE,Caucasus,Northeast Caucasian,severely endangered,ISO 639-3,bbl,Bats; Tsova-Tush; batsba motjiti; Bac; Tush; Batsaw; Batsi; ბაცბური ენა; წოვათუშური ენა; бацбийский язык; цова-тушинский; цоватский язык; бацбур мотlтl
@@ -492,7 +493,7 @@ Research with fluent signers in Myanmar found only a 59% overlap in basic core v
 1127,Eastern Penan,,4.59,114.58,east2485,pez,,ID MY BN,Southeast Asia,Austronesian,threatened,ISO 639-3,pez,Punan
 1128,North Ambrym,,-16.186489,168.137208,nort2839,mmg,,VU,Pacific,Austronesian,threatened,ISO 639-3,mmg,Ambrym; North
 1129,Chamacoco,,-20.59,-58.2,cham1315,ceg,,BR PY,South America,Zamucoan,threatened,ISO 639-3,ceg,Ebidoso; Tumraha; Chamakoko; Ishiro; Yshyro; Jeywo; Bahía Negra; Tumarahá; Tumerehã
-1130,Adi,,29.1473,94.5538,bori1243,adi,"Ethnologue's Adi [adi] amalgamates several ethnolinguistically and linguistically distinct groups and thus subsumes several languages:
+1130,Adi,,28.526319,93.115814,bori1243,adi,"Ethnologue's Adi [adi] amalgamates several ethnolinguistically and linguistically distinct groups and thus subsumes several languages:
 Ethnologue listed varieties:  Ashing, Bokar (Boga’er Luoba), Bori, Gallong (Galong), Karko, Komkar, Milang, Minyong, Padam, Pailibo, Pangi, Pasi, Ramo, Shimong, Tangam. Milang is definitely a separate language (possibly not a member of the Tani family). Bokar, Pailibo, Ramo and Padam also are all most likely separate languages. Bori, Minyong and Tangam also may be separate languages.
 ",IN CN,South Asia; East Asia,Sino-Tibetan,at risk,ISO 639-3,adi,崩尼-博嘎爾语; Lho-Pa; Abhor; Abor; Boga'er Luoba; Luoba; Lhoba; Boga'er; Bengni-Boga'er; Bokar; Adi-Bokar; Na Bengni; Bengni; Miri; Abor-Miri; Miśing
 1131,Bainouk-Gunyaamolo,,12.7421,-16.1141,bain1261,bcz,,SN GM,Africa,Niger-Congo,threatened,ISO 639-3,bcz,Banyum; Banyun; Bagnoun; Banhum; Bainuk; Banyuk; Banyung; Elomay; Elunay; Ñuñ
@@ -648,7 +649,7 @@ Ethnologue listed varieties:  Ashing, Bokar (Boga’er Luoba), Bori, Gallong (Ga
 1411,Taworta,,-3.2776,138.7902,tawo1244,tbp,,ID,Southeast Asia,Lakes Plain,endangered,ISO 639-3; Glottolog,tbp; tawo1244,Dabra; Taworta-Aero; Taria; Bok; Taburta; Diebroud
 1412,Dampelas,,0.2005,119.8965,damp1237,dms,,ID,Southeast Asia,Austronesian,threatened,ISO 639-3; Glottolog,dms; damp1237,Dian; Dampal; Dampelasa
 1414,Demisa,,-2.7016,136.6699,demi1242,dei,,ID,Southeast Asia,East Geelvink Bay,endangered,ISO 639-3; Glottolog,dei; demi1242,Dewesa
-1415,Abaza,,44.0,42.0,abaz1241,abq,,RU,Caucasus; Europe; East Asia,Northwest Caucasian,vulnerable,ISO 639-3; Glottolog,abq; abaz1241,абаза бызшва‎; Abazintsy; Abazin; Ahuwa; Tapanta; Ashuwa
+1415,Abaza,,44.1556,41.9368,abaz1241,abq,,RU,Caucasus; Europe; East Asia,Northwest Caucasian,vulnerable,ISO 639-3; Glottolog,abq; abaz1241,абаза бызшва‎; Abazintsy; Abazin; Ahuwa; Tapanta; Ashuwa
 1418,Baïnounk Gubëeher,,12.531272,-16.353248,gube1234,,Smallest of the major Baïnounk languages (DoBES 2006),SN,Africa,Niger-Congo,threatened,LINGUIST List,1id,
 1419,Baïnounk Gujaher,,12.579,-16.283,bain1259,,,SN,Africa,Niger-Congo,vulnerable,LINGUIST List,0tz,
 1420,Oyda,,5.9438,36.6503,oyda1235,oyd,,ET,Africa,Afro-Asiatic,vulnerable,ISO 639-3,oyd,Oida
@@ -729,7 +730,7 @@ Katukina do Biá, and Tyohon Dyapa.
 1530,Quechan,,32.7279,-114.7255,quec1382,yum,,US,North America,Cochimi-Yuman,endangered,ISO 639-3,yum,Yuma; Kechan; Quecl; Kwtsan; Kwtsaan; Cuchan; Yuma Proper
 1531,Northern Pomo,,39.4143,-123.3502,nort2966,pej,,US,North America,Pomoan,dormant,ISO 639-3,pej,Redwood Cañon; North Pomo; Pomo (Northern)
 1532,Central Pomo,,38.9704,-123.6893,cent2138,poo,,US,North America,Pomoan,dormant,ISO 639-3,poo,Oat Valley; Pomo; Central; Ballo-Kai-Pomo; Cabanapo; Habenapo; H'hana; Kábinapek; Khabenapo; Khana; Kulanapan; Kulanapo; Venaambakaia; Venambakaiia; Yokaia; Pomo (Central); Yokaya
-1533,Southern Pomo,,38.7048,-122.8971,sout2984,peq,,US,North America,Pomoan,critically endangered,ISO 639-3,peq,Russian River; Pomo; Southern; Gallinoméro; South Pomo
+1533,Southern Pomo,,38.7048,-122.8971,sout2984,peq,,US,North America,Pomoan,dormant,ISO 639-3,peq,Russian River; Pomo; Southern; Gallinoméro; South Pomo
 1534,Kashaya,,38.6603,-123.3045,kash1280,kju,,US,North America,Pomoan,severely endangered,ISO 639-3,kju,Southwestern Pomo; Southwest Pomo; Kashayn; Kashia
 1536,Pawnee,,36.3372,-96.8032,pawn1254,paw,,US,North America,Caddoan,critically endangered,ISO 639-3,paw,Grand Pawnee; Republican Pawnee
 1537,Patwin,,38.7608,-122.0354,patw1250,pwi,"Ethnologue considers Patwin a dialect of Wintu (Wintu, Patwin, Nomlaki).",US,North America,Wintuan,critically endangered,ISO 639-3,pwi,
@@ -832,7 +833,7 @@ The number of native speakers reportedly dropped to blow 100 by 2008.",US CA,Nor
 1683,Central Siberian Yupik,,63.7444,-171.7242,cent2128,ess,"Interaction between the varieties spoken in the United States and Russia has been greatly restricted since the 1950's, though they remain mutually intelligible. ",RU US,Caucasus; Europe; North America; East Asia,Eskimo-Aleut,threatened,ISO 639-3,ess,St. Lawrence Island Yupik; Bering Strait Yupik; чаплинский язык; Yoit; Yuk; Yuit; Siberian Yupik; Asiatic Yupik; Chaplinsk; シベリア・ユピック語
 1684,ᏣᎳᎩ (Cherokee),,35.113,-84.0588,cher1273,chr,,US,North America,Iroquoian,threatened,ISO 639-3,chr,Iroquois; Tsalagi; Tslagi; Rickohockan; Rechahecrian; Southern Iroquoian; ᏣᎳᎩ ᎦᏬᏂᎯᏍᏗ; チェロキー語
 1685,Cheyenne,,45.5495,-106.5263,chey1247,chy,,US,North America,Algic,endangered,ISO 639-3,chy,
-1686,Chickasaw,,34.6,-96.8161,chic1270,cic,,US,North America,Muskogean,endangered,ISO 639-3,cic,Chicasa
+1686,Chickasaw,,34.6,-96.8161,chic1270,cic,,US,North America,Muskogean,critically endangered,ISO 639-3,cic,Chicasa
 1687,Tsilhqot'in (Chilcotin),,52.031,-123.1678,chil1280,clc,"Spoken in central interior British Columbia, in seven communities: ʔEsdilagh First Nation, Tl'esqox Indian Band, 
 Tl'etinqox-T'in Government, Tsi Del Del First Nation, Ulkatchot'en First Nation, Xeni Gwet'in First Nations Government , Yunesit' in Government, and in urban areas, especially Williams Lake.",CA,North America,Athabaskan-Eyak-Tlingit,severely endangered,ISO 639-3,clc,Chilcotin; Tinneh; Tsilhqot'in; Tzilkotin
 1689,Dënesųłiné,,56.4807,-109.4127,chip1261,chp,,CA,North America,Athabaskan-Eyak-Tlingit,threatened,ISO 639-3,chp,Chipewyan; Montagnais; Dene Suline; Dëne Súline; Sluacus-tinneh; Dene Soun'line
@@ -881,7 +882,7 @@ Ethnologue's Pisabo [pig] (600 speakers in Peru in 2006), and Crevels' (2012: 18
 1757,Ririo,,-6.91,156.9671,riri1237,rri,,SB,Pacific,Austronesian,severely endangered,ISO 639-3,rri,
 1758,Papapana,,-5.8974,155.2505,papa1265,ppn,,PG,Pacific,Austronesian,severely endangered,ISO 639-3,ppn,
 1759,Emplawas,,-8.0374,129.7375,empl1237,emw,,ID,Southeast Asia,Austronesian,endangered,ISO 639-3,emw,
-1760,Enggano,,-5.41666666667,102.25,engg1245,eno,,ID,Southeast Asia,Austronesian,threatened,ISO 639-3,eno,Engganese
+1760,Enggano,,-5.4191,102.2717,engg1245,eno,,ID,Southeast Asia,Austronesian,threatened,ISO 639-3,eno,Engganese
 1761,Erokwanas,,-2.8113,132.6708,erok1237,erw,,ID,Southeast Asia,Austronesian,endangered,ISO 639-3,erw,
 1762,Fayu,,-3.1,136.8,fayu1238,fau,,ID,Southeast Asia,Lakes Plain,threatened,ISO 639-3,fau,Sehudate
 1763,Abinomn,,-2.92,138.89,abin1243,bsa,,ID,Southeast Asia,Isolate,critically endangered,ISO 639-3; Glottolog,bsa; abin1243,"Avinomen; ""Baso""; Foya; Foja"
@@ -1006,7 +1007,7 @@ Campbell (2012:108) and Kaufman (2007: 68)  lists Wanano and Piratapuyo as a sin
 
 ""Today, about a dozen generations after its prime, the language endures only through a handful of native speakers - as few as 25 out of the Comanche Nation's approximately 15,000 registered members - but they are dying off and taking the legacy with them.
 'It's definitely going extinct in the sense that what we're losing is intergenerational transmission of the language,"" Williams said. ""In other words, kids aren't learning it.'"" http://lubbockonline.com/stories/121809/loc_536884399.shtml (2009).",US,North America,Uto-Aztecan,severely endangered,ISO 639-3,com,
-2006,Éy7á7juuthem (Comox),,49.6795,-124.9542,como1259,coo,"Island Comox and Mainland Comox dialects are recognized, the latter divided into three varieties associated respectively with the Homalco, Klahoose, and Sliammon Bands.",CA,North America,Salishan,critically endangered,ISO 639-3,coo,Comox; Mainland Comox; Sliammon; Comox-Sliammon; Çatlotq; Comox Cluster; Comux
+2006,Éy7á7juuthem (Comox),,49.6795,-124.9542,como1259,coo,"Island Comox and Mainland Comox dialects are recognized, the latter divided into three varieties associated respectively with the Homalco, Klahoose, and Sliammon Bands.",CA,North America,Salishan,critically endangered,ISO 639-3,coo,Comox; Mainland Comox; Sliammon; Klahoose; Homalco; Comox-Sliammon; Çatlotq; Comox Cluster; Comux; Tla'amin; Ay-A-Ju-Thum; ʔayʔaǰuθəm
 2007,Muskogee,,35.6319,-95.9616,cree1270,mus,,US,North America,Muskogean,severely endangered,ISO 639-3,mus,Creek; Northern Muskogean; Creek-Seminole; Maskoki Proper; Maskoke; Seminole
 2008,Crow,,45.5963,-107.4613,crow1244,cro,,US,North America,Siouan,threatened,ISO 639-3,cro,Apsaalooke; Apsaroka; Apsaloka; Upsaroka; Absaruqe
 2009,Cupeño,,33.1666666667,-116.5,cupe1243,cup,,US,North America,Uto-Aztecan,awakening,ISO 639-3,cup,Agua Caliente
@@ -1275,7 +1276,7 @@ As for the ethnicity, the Saaroa people, together with the Kanakanabu people, ha
 2529,Pije,,-20.7869,164.9487,pije1237,piz,,NC,Pacific,Austronesian,endangered,ISO 639-3,piz,Pinje; Pindje; Neukaledonien
 2545,Guamaca,,10.9196,-73.4985,mala1522,mbp,,CO,South America,Chibchan,threatened,ISO 639-3,mbp,Malayo; Marocasero; Maracasero; Sanja; Sanka; Sancá; Arosario; Arsario; Guamaka; Wiwa; Wamaka; Atanque; Kampanake; Bustintana; Sanká; Aisario; Nabela; Sanha; Marocacero; Huihua; Damana
 2546,Mawng,,-12.06446118,133.060671,maun1240,mph,,AU,Australia,Iwaidjan,vulnerable,ISO 639-3,mph,Gunmarung; Mawung; Gun-Marung; Maw; Managari; Goulburn Islands; Gunmarang; Kunmarung; Manangari; Mau; Mauung; Maung
-2547,Dâw,,0.2197,-68.7744,daww1239,kwa,"The term ""Makú"" has pejorative connotations; ""Nadahup"" is the preferred term for this group of languages. ",BR,South America,Nadahup,endangered,ISO 639-3,kwa,Kamã; Kamã Makú; Kam; Kamán; Daw; Dow; Kamarada; Makú-Kamarada; Kaman
+2547,Dâw,,0.2197,-68.7744,daww1239,kwa,"The term ""Makú"" has pejorative connotations; ""Nadahup"" is the preferred term for this group of languages. ",BR,South America,Nadahup,vulnerable,ISO 639-3,kwa,Kamã; Kamã Makú; Kam; Kamán; Daw; Dow; Kamarada; Makú-Kamarada; Kaman
 2548,Meriam,,-9.9201,144.0472,meri1244,ulk,,AU,Australia,Eastern Trans-Fly,endangered,ISO 639-3,ulk,Miriam; Meryam Mir; Miriam-Mir; Mer; Mir; East Torres
 2549,Miriwoong,,-16.01698315,128.7965195,miri1266,mep,,AU,Australia,Jarrakan,critically endangered,ISO 639-3,mep,Mirung; Merong; Miriwun; Miriwong; Mirriwong; Miriwu; Moreng; Mirong; Miriwung
 2550,Mudburra,,-17.37280975,132.0454005,mudb1240,dmw,,AU,Australia,Pama-Nyungan,critically endangered,ISO 639-3,dmw,Madbara; Moodburra; Mootburra; Mudbara; Mudbera; Mudbra; Mulpira; Mutpura; Pinkangama; Karranga; Mudbura
@@ -1725,7 +1726,7 @@ Apanjekra (Apanhecra, Apaniekra), Ramkokamekra. It also lists as separate Gaviã
 3091,Coreguaje,,1.0,-75.5,kore1283,coe,,CO,South America,Tucanoan,threatened,ISO 639-3,coe,Corehuaje; Correguaje; Correguaje-Tama; Koreguaje; Ko'reuaju; Caquetá; Chaocha Pai; Korewahe
 3092,Zay,,8.0728,38.8476,zayy1238,zwa,,ET,Africa,Afro-Asiatic,threatened,ISO 639-3,zwa,Zway; Lak'i; Laqi; Gelilla; Zoay
 3093,Kumzari,,26.16045,56.418,kumz1235,zum,,OM,Near East,Indo-European,vulnerable,ISO 639-3,zum,Kumzāri; Komzāri; Komzari; Kamzáree; شاریَْکُ; شاريَْکُ
-3094,Zeem,,10.15,9.266667,zeem1242,zua,,NG,Africa,Afro-Asiatic,dormant,ISO 639-3,zua,
+3094,Zeem,,10.15,9.266667,,zua,,NG,Africa,Afro-Asiatic,dormant,ISO 639-3,zua,
 3097,Cogui,,10.8548,-74.0258,cogu1240,kog,,CO,South America,Chibchan,vulnerable,ISO 639-3,kog,Kogui; Coghui; Kogi; Coqui; Cágaba; Kagaba; Kaggaba; Káugian; Köggaba
 3098,Mebengokre,,-6.5569,-52.4707,kaya1330,txu,Known also as Kayapó or Xikrin.,BR,South America,Jean,threatened,ISO 639-3,txu,Kayapó; Cayapo; Kokraimoro; Cayapó; Gorotire; Southern Cayapo; Mebêngokrê; Xikrin; Put Karot
 3099,Katxúyana,,2.043,-55.4589,kaxu1237,kbb,"""One dialect ... is spoken by people under 50 in multiple villages of the Parque do Tumucumaque, plus in at least two villages in their traditional homelands along an easterly tributary of the Trombetas named the Rio Cachorro (in Katxuyana, the /Katxuru/ River, hence the name Katxuu-yana 'people of the Katxuru'). The other is spoken by the elders (over 50) in these same villages, and by speakers of all ages in the two villages along the Nhamundá River ... self-identified speakers of Xikuyana and Katxuyana have both told me that there are differences between them: some members of the subordinate group, the Xikuyana, insist that their language is not mutually intelligible with Katxuyana, whereas the dominant group, the Katxuyana, describe Xikuyana was ""the same Katxuyana, just pronounced a little more smoothly"". In my own work with both groups, I was unable to identify any differences at all between the two, so although each labels a clear social construct, I do not consider them to be major dialects."" (Spike Gildea, personal communication, October, 2014.)",BR,South America,Cariban,severely endangered,ISO 639-3,kbb,Kashuyana-Warikyana; Kaxuiana; Kaxuiâna; Kashuyana; Kashujana; Kachuana; Kaxuyâna; Kahyana; Kaxúyana; Katxúyana; Warikiana; Warikyana; Werikyana; Ingarïnyana; Ingarüna; Xikuyana; Txikuyana; Xikïyana; Txikïyana; Pauxi
@@ -1802,7 +1803,7 @@ Also this language is different from Zaiwa (atb) in Yunnan, China.",IN CN,South 
 3197,Yidiny,,-17.11594422,145.7736814,yidi1250,yii,,AU,Australia,Pama-Nyungan,severely endangered,ISO 639-3,yii,Yidini; Idinji; Boolboora; Deba; Eneby; Gerrah; Gijow; Gillah; Guwamal; Idin Idindji; Idin-Wudjar; Indindji; Jidindji; Kitba; Maimbie; Mungera Ohalo; Pegullo-Bura; Warra-Warra; Warryboora; Woggil; Yetinji; Yiddinji; Yidin; Yidindji; Yitintyi; Yukkaburra; Ilba; Mungerra; Peulloburra; Yiti-ntyi; Mungera; Pegullobura; Idin; Wudjar
 3198,Yingkarta,,-25.269536,114.361324,ying1247,yia,,AU,Australia,Pama-Nyungan,critically endangered,ISO 639-3,yia,Yinggarda; Ingarda; Ingada; Jinggarda; Ingara; Ingarrah; Inparra; Kakarakala; Inggadi; Angaardi; Angaardie; Ingarra; Ingra; Ingadi; Kurudandi; Jaburua; Inggarda
 3201,Yevanic,,31.8,35.11,yeva1238,yej,,IL,Near East,Indo-European,dormant,ISO 639-3,yej,Judeo-Greek; Romaniyot; Romaniote; Yevanitika
-3202,Apuriná,,-5.4847,-63.8964,apur1254,apu,,BR,South America,Arawakan,endangered,ISO 639-3,apu,Ipuriná; Kangite; Apurinã; Ipurina; Apurinã; Ipurinãn; Popengare; Cangaiti; Cacharary
+3202,Apuriná,,-9.0,-67.0,apur1254,apu,,BR,South America,Arawakan,endangered,ISO 639-3,apu,Ipuriná; Kangite; Apurinã; Ipurina; Apurinã; Ipurinãn; Popengare; Cangaiti; Cacharary
 3203,Eastern Mari,,57.0,48.0,east2328,mhr,,RU,Caucasus; Europe; East Asia,Uralic,vulnerable,ISO 639-3,mhr,Meadow Mari; Cheremis; Grassland Mari; олык марий; niittymari; itämari; лугово-восточный марийский; черемисский язык; Cheremiss; Low Mari; Eastern Cheremis; Tscheremissisch; Cheremissian; Tchérémisse; Marijcy; Mari-Woods; Low Mari; Lugovo Mari; Čeremissisch; Marij Jylme; Marijskij Jazyk
 3206,Romagnol,,44.23,11.72,roma1328,rgn,,IT,Europe,Indo-European,threatened,ISO 639-3,rgn,Emiliano-Romagnolo; Rumagnol
 3207,Erzya,,54.1302,45.4394,erzy1239,myv,Erzya is closely related to the language Moksha.,RU,Caucasus; Europe; East Asia,Uralic,threatened,ISO 639-3,myv,Mordvin; Erza; эрзянский язык; erzja; Mordwin; Mordva; erza; Erzya-Mordva; Mordwinisch; Erza-Mordwinisch; Mordvinisch; Ersä-Mundart; Mordvinian; mordve; erźa; Mordvin-Erzya; Erzia; Erzá; Erzja; Erza-Mordvinisch; erzjan΄ kel΄; erzjanskij jazyk; Morduini; Mordua; eŕźań keĺ; эрзянь кель; Ersän kieli; ersämordva
@@ -1932,7 +1933,7 @@ Sahaptin has marked dialectal diversity: Southern Sahaptin (or “River”), Nor
 3397,Vishavan,,10.18,76.76,vish1243,vis,,IN,South Asia,Dravidian,endangered,ISO 639-3,vis,Malankudi; Malarkuti
 3398,Veddah,,7.0,81.0,vedd1240,ved,,LK,South Asia,Indo-European,dormant,ISO 639-3,ved,Veda; Vedda; Veddha; Weda; Wedda; Weddo; Beda; Bedda
 3399,Wayu,,27.2912,86.0696,wayu1241,vay,,NP,South Asia,Sino-Tibetan,endangered,ISO 639-3,vay,Hayu; Vayu; Wayo; Vāyu
-3400,Friulian,,46.1037,13.1396,friu1240,fur,,IT,Europe,Indo-European,vulnerable,ISO 639-3,fur,Furlan; Frioulan; Frioulian; Priulian; Friulano
+3400,Friulian,,46.1037,13.1396,friu1240,fur,,IT,Europe,Indo-European,threatened,ISO 639-3,fur,Furlan; Frioulan; Frioulian; Priulian; Friulano
 3402,Vafsi,,34.85,49.383333,vafs1240,vaf,,IR,Near East,Indo-European,vulnerable,ISO 639-3,vaf,
 3403,Doko-Uyanga,,5.550381,8.172249,doko1243,uya,,NG,Africa,Niger-Congo,endangered,ISO 639-3,uya,Uyanga; Dosanga; Basanga; Iko
 3404,Kuku-Uwanh,,-14.261428,142.757186,kuku1280,uwa,,AU,Australia,Pama-Nyungan,severely endangered,ISO 639-3,uwa,Kugu-Uwanh; Kugu Nganhcara
@@ -2138,22 +2139,22 @@ Wedekind 2010 claims two dialects as well: Highland (Garibora/Gayibora) and Lowl
 3626,Mabire,,12.1682,18.7275,mabi1242,muj,,TD,Africa,Afro-Asiatic,critically endangered,ISO 639-3,muj,
 363,Bom,,7.3188,-11.9915,bomk1234,bmf,,SL,Africa,Niger-Congo,critically endangered,ISO 639-3,bmf,Bome; Bum; Bomo
 364,Mani,,9.874158,-9.550653,bull1247,buy,,GN SL,Africa,Niger-Congo,severely endangered,ISO 639-3,buy,Bullom So; Northern Bullom; Bolom; Bulem; Bullun; Bullin; Mmani; Mandingi; Mandenyi
-3645,!Xun,,-19.6666666667,18.0,kung1261,knw,,ZA NA AO,Africa,Kx'a,vulnerable,ISO 639-3,knw,Ju; !Xun (Ekoka); Kung-Ekoka; !Kung; Ekoka-!Xû; Kung; !Ku; !Xu; !Hu; Qxü !Khung; !Xung; Ekoka
+3645,!Xun,,-28.74358,23.983154,kung1261,knw,,ZA NA AO,Africa,Kx'a,vulnerable,ISO 639-3,knw,Ju; !Xun (Ekoka); Kung-Ekoka; !Kung; Ekoka-!Xû; Kung; !Ku; !Xu; !Hu; Qxü !Khung; !Xung; Ekoka
 365,Krim,,7.302792,-11.985668,krim1238,krm,,SL,Africa,Niger-Congo,critically endangered,ISO 639-3,krm,Kim; Kittim; Kirim; Kimi
 3665,Tequiraca,,-2.0869,-74.5092,abis1238,ash,,PE,South America,Isolate,dormant,ISO 639-3,ash,Tekiraka; Aushiri; Auishiri; Avishiri; Avixiri; Abiquira; Abishira; Abigira; Agouisiri; Ixignor; Vacacocha; Avirxiri; Tequraca
 3685,Argobba,,10.5958,39.9792,argo1244,agj,,ET,Africa,Afro-Asiatic,vulnerable,ISO 639-3,agj,Argoba
 3686,Fembe,,-5.72,142.25,femb1238,agl,,PG,Pacific,Trans-New Guinea,endangered,ISO 639-3,agl,Sinale; Agala
 3690,Àhàn,,7.762,5.724,ahan1244,ahn,,NG,Africa,Niger-Congo,endangered,ISO 639-3,ahn,Ahaan; Ahan
-3691,Ainu (China),,39.5,76.0,ainu1251,aib,,CN,East Asia,Turkic,threatened,ISO 639-3,aib,Aynu; Aini; Abdal; Eynu; Äynu; 艾努語
+3691,Ainu (China),,43.843,87.633,ainu1251,aib,,CN,East Asia,Turkic,threatened,ISO 639-3,aib,Aynu; Aini; Abdal; Eynu; Äynu; 艾努語
 3692,Ainbai,,-3.1,141.2,ainb1238,aic,"Laycock (1973) identifies the two Ainbai-speaking villages as speaking Pagi [pgi], but Brown (1980) classifies Ainbai as a separate language.",PG,Pacific,Border,endangered,ISO 639-3,aic,
 3693,Alngith,,-12.57310489,141.8691543,alng1239,aid,,AU,Australia,Pama-Nyungan,critically endangered,ISO 639-3,aid,Alngidh; Alingid; Laynngithy; Lengiti; Lenngiti; Alngid; Limrett; Laynngith; Winduwinda; Alingit; Alŋit̯; Laynŋit̯
-3694,Amara,,-5.66666666667,148.5,amar1272,aie,"""... [T]here are two alternate names for the Amara language, Longa and Bibling. Though the Amara people recognize those names, they reported that they prefer their language to be called Amara."" (Carter, et al. 2012)",PG,Pacific,Austronesian,endangered,ISO 639-3,aie,Longa; Bibling
+3694,Amara,,-5.51655,148.765182,amar1272,aie,"""... [T]here are two alternate names for the Amara language, Longa and Bibling. Though the Amara people recognize those names, they reported that they prefer their language to be called Amara."" (Carter, et al. 2012)",PG,Pacific,Austronesian,endangered,ISO 639-3,aie,Longa; Bibling
 3697,Inter-Zab Jewish Neo-Aramaic,,31.7188,34.7772,lish1245,aij,,IL IQ,Near East,Afro-Asiatic,severely endangered,ISO 639-3,aij,Lishanid Noshan; Neo-Aramaic (Arbel Jewish); Lishana Didán; Hulani; Kurdit; Galigalu; Jbeli
 3698,Ake,,8.94748,8.835342,akee1238,aik,,NG,Africa,Niger-Congo,vulnerable,ISO 639-3,aik,Aike; Akye
 3699,Aimele,,-6.751896,142.745361,aime1238,ail,,PG,Pacific,Trans-New Guinea,endangered,ISO 639-3,ail,Eibela; Kware
 3700,Aimol,,24.4971,93.6145,aimo1244,aim,,IN,South Asia,Sino-Tibetan,endangered,ISO 639-3,aim,Langrong; Aimal
 3701,Burumakok,,-5.12,140.03,buru1307,aip,,ID,Southeast Asia,Trans-New Guinea,severely endangered,ISO 639-3,aip,
-3703,Aja,,7.33333333333,25.6666666667,ajas1235,aja,,SD,Africa,Kresh-Aja,endangered,ISO 639-3,aja,Ajja; Adja
+3703,Aja,,8.6136,25.2465,ajas1235,aja,,SD,Africa,Kresh-Aja,endangered,ISO 639-3,aja,Ajja; Adja
 3705,Judeo-Tunisian Arabic,,33.8795,10.0634,jude1263,ajt,,IL TN,Africa; Near East,Afro-Asiatic,at risk,ISO 639-3,ajt,Arabic
 3725,Mpra,,8.867,-1.25,mpra1235,,,GH,Africa,,dormant,LINGUIST List,1ix,Mpre
 3745,Dompo,,8.150236,-2.363097,domp1238,doy,,GH,Africa,Niger-Congo,severely endangered,ISO 639-3,doy,Guang; Dumpo; Ndmpo
@@ -2188,7 +2189,7 @@ Wedekind 2010 claims two dialects as well: Highland (Garibora/Gayibora) and Lowl
 3817,Sininkere,,13.35653,-1.058613,sini1242,skq,,BF,Africa,Niger-Congo,threatened,ISO 639-3,skq,Silinkere; Silanke
 3818,Tiéfo,,10.816667,-4.55,tief1242,tiq,,BF,Africa,Niger-Congo,endangered,ISO 639-3,tiq,Foro; Tyefo; Tyeforo; Kiefo; Tiefo
 3819,Wara,,10.65,-5.4,wara1292,wbf,,BF,Africa,Niger-Congo,threatened,ISO 639-3,wbf,Wára; Ouara; Ouala; Samoe
-3829,Araki,,-15.632,166.952,arak1252,akr,,VU,Pacific,Austronesian,critically endangered,ISO 639-3,akr,Banks-Inseln
+3829,Araki,,-15.6666666667,166.916666667,arak1252,akr,,VU,Pacific,Austronesian,critically endangered,ISO 639-3,akr,Banks-Inseln
 3832,Alawa,,-15.53391918,134.2028228,alaw1244,alh,,AU,Australia,Gunwinyguan,critically endangered,ISO 639-3,alh,Alaua; Allaura; Allawa; Allowa; Allowiri; Allua; Alowa; Galawa; Galleewo; Kallana; Kallaua; Leealowa; Warliburru
 3833,Allar,,11.108169,76.166224,alla1247,all,,IN,South Asia,Dravidian,endangered,ISO 639-3,all,Alan; Alanmar; Alar; Allan; Chatans
 3834,Varavara,,-15.526286,166.952718,ambl1237,alm,,VU,Pacific,Austronesian,endangered,ISO 639-3,alm,Amblong; Aje
@@ -2206,7 +2207,7 @@ Wedekind 2010 claims two dialects as well: Highland (Garibora/Gayibora) and Lowl
 3857,Arabana-Wangkangurru,,-31.30521924,138.428335,arab1267,ard,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,ard,Arbana; Ngarabana; Arabuna; Arrabunna; Arrabonna; Arubbinna; Arapina; Arapani; Urapuna; Urabuna; Urabunna; Urroban; Wangarabana; Wongkurapuna; Wangarabunna; Nulla; Rabuna; Arabana
 3858,Araona,,-12.4473,-68.1372,arao1248,aro,,BO,South America,Pano-Tacanan,threatened,ISO 639-3,aro,Cavina; Carina
 3859,Arbore,,5.0,36.75,arbo1245,arv,,ET,Africa,Afro-Asiatic,threatened,ISO 639-3,arv,Arbora; Erbore; Irbore; Arborie
-3864,Ati (Philippines),,11.15,122.51,atii1237,atk,,PH,Southeast Asia,Austronesian,threatened,ISO 639-3,atk,Inati; Bisaya
+3864,Ati (Philippines),,11.15,122.51,atii1237,atk,,PH,Southeast Asia,Austronesian,endangered,ISO 639-3,atk,Inati; Bisaya
 3865,Ata,,9.6081,122.9155,ataa1240,atm,,PH,Southeast Asia,Austronesian,critically endangered,ISO 639-3,atm,
 3866,Ashtiani,,37.75,48.68,asht1244,atn,,IR,Near East,Indo-European,vulnerable,ISO 639-3,atn,Astiani; Ashtiyani
 3869,Northern Altai,,52.2816,87.4827,nort2686,atv,,RU,Caucasus; Europe; East Asia,Turkic,endangered,ISO 639-3,atv,Teleut; Telengut; северноалтайский язык; алтай тили; кумандинско-челканский язык; Telengit; Kumandin
@@ -2410,7 +2411,7 @@ Crevels (2012) also distinguishes Piritugoto, with 50 speakers, saying ""further
 4179,Kera'a,,28.6496,95.8419,idum1241,clk,,IN CN,South Asia; East Asia,Sino-Tibetan,threatened,ISO 639-3; Glottolog,clk; idum1241,"Idu-Mishmi; Idu; Midu; Lho-Pa; ""Chulikata""; ""Chulikotta""; Ida; Midhi; Yidu Luoba; Chulikatta; Idu Mishmi; Chulikātā Mishmi; Neda; Methun; Bebejiya; 義都語; 珞巴"
 4181,Kiai,,-15.403194,166.86002,fort1240,frt,,VU,Pacific,Austronesian,endangered,ISO 639-3,frt,Fortsenal
 4182,Ko,,10.6714,30.8386,kooo1244,fuj,,SD,Africa,Niger-Congo,threatened,ISO 639-3,fuj,Kau; Fungor; Fungur
-4184,Alekano,,-6.066817,145.39135,alek1238,gah,,PG,Pacific,Trans-New Guinea,vulnerable,ISO 639-3,gah,Gahuku; Gafuku; Gahuku-Gama; Zo'maga
+4184,Alekano,,-6.086192,145.386028,alek1238,gah,,PG,Pacific,Trans-New Guinea,vulnerable,ISO 639-3,gah,Gahuku; Gafuku; Gahuku-Gama; Zo'maga
 4186,Gta',,18.2293,82.727,gata1239,gaq,,IN,South Asia,Austro-Asiatic,threatened,ISO 639-3,gaq,Gataʔ; Gata'; Gataq; Getaq; Didei; Didey; Didayi; Dire; Geta'; Gta'; Gta Asa
 4188,Mudhili Gadaba,,18.3858,82.7819,mudh1235,gau,,IN,South Asia,Dravidian,threatened,ISO 639-3,gau,Kondekor Gadaba; Kondekor; Gadaba; Mudhili; Gadaba; Gol Gadaba; Salur Ollar Gadaba; Kondekar; Kondkor; Salur Gadba; Salur
 4189,Kaytetye,,-20.61525316,134.235744,kayt1238,gbb,,AU,Australia,Pama-Nyungan,endangered,ISO 639-3,gbb,Kaiditj; Kaititj; Gaididj; Kaititja; Kaitije; Katitja; Katitcha; Katitya; Kaitish; Kaddakie; Kadda-kie; Kaitidji; Kaitiji; Kaititje; Katitch-a; Kat-titch-a; Kat-tit-ya; Kaytej
@@ -2526,7 +2527,7 @@ Ethnologue distinguishes 3 ""Jívaro"" languages: Shuar [jiv]; Wampís (Huambisa
 4352,Kobiana,,12.4017,-16.3229,kobi1241,kcj,,SN GW,Africa,Niger-Congo,endangered,ISO 639-3,kcj,Cobiana; Uboi; Buy; Guboy
 4353,Kinalakna,,-6.040325165,147.4664001,kina1251,kco,,PG,Pacific,Trans-New Guinea,endangered,ISO 639-3,kco,
 4354,Kanga,,10.844,29.4708,kang1288,kcp,,SD,Africa,Kadu,threatened,ISO 639-3,kcp,Krongo Abdalla; Kufa-Lima; Chiroro-Kursi; Abu Sinun; Kufo; Kufa
-4355,Katla,,11.8333333333,29.3333333333,katl1237,kcr,,SD,Africa,Niger-Congo,vulnerable,ISO 639-3,kcr,Akalak; Kalak
+4355,Katla,,11.7329,29.3939,katl1237,kcr,,SD,Africa,Niger-Congo,vulnerable,ISO 639-3,kcr,Akalak; Kalak
 4357,Kami (Tanzania),,-6.729292,37.922087,kami1256,kcu,,TZ,Africa,Niger-Congo,severely endangered,ISO 639-3,kcu,Kikami
 4358,Gats'amé,,5.9548,37.5292,kach1284,kcx,,ET,Africa,Afro-Asiatic,threatened,ISO 639-3,kcx,Kachama-Ganjule; Gats'ame; Get'eme; Gatame; Haruro; Gidicho; Kachama; Gatsame; Qechem
 4359,Koch,,25.7603,90.3955,koch1250,kdq,,IN BD,South Asia,Sino-Tibetan,vulnerable,ISO 639-3,kdq,Koc; Kocch; Koce; Kochboli; Konch
@@ -2569,7 +2570,7 @@ Ethnologue distinguishes 3 ""Jívaro"" languages: Shuar [jiv]; Wampís (Huambisa
 4416,Kom,,24.0414,93.6639,komi1270,kmm,,IN,South Asia,Sino-Tibetan,vulnerable,ISO 639-3,kmm,Kom Rem; Kolhreng
 4423,Konomala,,-4.169494,152.889711,kono1269,koa,,PG,Pacific,Austronesian,endangered,ISO 639-3,koa,
 4427,Kota (Gabon),,0.207366,13.721718,kota1274,koq,,GA CG,Africa,Niger-Congo,vulnerable,ISO 639-3,koq,Ikota; Ikuta; Kotu
-4428,Kosraean,,5.3,163.0,kosr1238,kos,,NR FM,Pacific,Austronesian,threatened,ISO 639-3,kos,Kusaie; Kosrae
+4428,Kosraean,,5.322,162.9904,kosr1238,kos,,NR FM,Pacific,Austronesian,vulnerable,ISO 639-3,kos,Kusaie; Kosrae
 4429,Kudu-Camo,,11.0166,8.8879,kudu1241,kov,,NG,Africa,Niger-Congo,severely endangered,ISO 639-3,kov,Kudawa; Kuda-Chamo
 4432,Kapingamarangi,,1.05,154.75,kapi1249,kpg,,FM,Pacific,Austronesian,threatened,ISO 639-3,kpg,Kirinit
 4438,Kumhali,,27.788,84.548,kumh1238,kra,,NP,South Asia,Indo-European,endangered,ISO 639-3,kra,Kumhale; Kumbale; Kumkale; Kumali
@@ -2813,7 +2814,7 @@ Ethnologue distinguishes Coatlán Mixe [mco], Mazatlán Mixe [mzl],  Isthmus Mix
 4900,Ngala,,-4.22804,142.5105,ngal1300,nud,,PG,Pacific,Sepik,endangered,ISO 639-3,nud,Gala; Kara; Nggala; Sogap; Swagup
 4901,Nungali,,-14.92708592,131.1442419,nung1291,nug,,AU,Australia,Mirndi,critically endangered,ISO 639-3,nug,Ilngali; Jilngali
 4902,Nusa Laut,,-6.7331,129.5288,nusa1245,nul,,ID,Southeast Asia,Austronesian,severely endangered,ISO 639-3,nul,Nusalaut
-4904,Anong,,27.2,98.6333,nung1282,nun,,CN MM,Southeast Asia; East Asia,Sino-Tibetan,critically endangered,ISO 639-3,nun,Anung; Anoong; Añú; Nu; Lu; Lutzu; Lutze; Kiutze; Khanung; Kwinp'ang; Khupang; Kwingsang; Fuch'ye; Anu; Nu-tzŭ; Kuhpang; 阿儂語; ရဝမ်
+4904,Anong,,27.1,98.7,nung1282,nun,,CN MM,Southeast Asia; East Asia,Sino-Tibetan,critically endangered,ISO 639-3,nun,Anung; Anoong; Añú; Nu; Lu; Lutzu; Lutze; Kiutze; Khanung; Kwinp'ang; Khupang; Kwingsang; Fuch'ye; Anu; Nu-tzŭ; Kuhpang; 阿儂語; ရဝမ်
 4906,Nawaru,,-9.43713,148.3008,nawa1258,nwr,,PG,Pacific,Trans-New Guinea,endangered,ISO 639-3,nwr,Sirio
 4907,Ngawun,,-20.00086144,141.7753193,ngaw1240,nxn,,AU,Australia,Pama-Nyungan,critically endangered,ISO 639-3,nxn,Ngaun; Ngaon; Nouun; Naungaun
 4908,Nyeu,,14.88,104.33,nyeu1238,nyl,,TH,Southeast Asia,Austro-Asiatic,endangered,ISO 639-3,nyl,Yeu; Yoe
@@ -2894,7 +2895,7 @@ INALI also has 9 ""variantes"" of Otomí.
 4971,Pankhu,,22.68,92.95,pank1249,pkh,,IN BD,South Asia,Sino-Tibetan,vulnerable,ISO 639-3,pkh,Pankho; Pankhua; Pang Khua; Pankua; Paang; Pang; Panko; Pangkhu; Pangkhua
 4972,Pakanh,,-15.274264,142.706775,paka1251,pkn,,AU,Australia,Pama-Nyungan,severely endangered,ISO 639-3,pkn,Bakanha; Bakanh; Ajabakan; Aiabakan; Bakanu; Baganu; Yir Mayan; Uw Ayan; Koko-Jan; YirrqMayvn; Uw-Ayan; Pakanha
 4973,Pukapuka,,-10.871,-165.8441,puka1242,pkp,,NZ CK,Pacific,Austronesian,endangered,ISO 639-3,pkp,Bukabukan; Pukapukan
-4975,Polci,,10.133333,9.6,polc1243,plj,,NG,Africa,Afro-Asiatic,vulnerable,ISO 639-3,plj,Posə; Posa; Posi; Palci; Pəlci; Palchi; Polchi; Polshi; Posanchi
+4975,Polci,,10.133333,9.6,,plj,,NG,Africa,Afro-Asiatic,vulnerable,ISO 639-3,plj,Posə; Posa; Posi; Palci; Pəlci; Palchi; Polchi; Polshi; Posanchi
 4976,Palenquero,,10.0952,-75.1142,pale1260,pln,,CO,South America,Pidgin or Creole,endangered,ISO 639-3,pln,Lengua; Palenque
 4977,Oluta Popoluca,,17.95,-95.0,olut1240,plo,,MX,"Mexico, Central America, Caribbean",Mixe-Zoquean,severely endangered,ISO 639-3,plo,Popoluca de Oluta; Oluteco (Popoluca de Oluta); Oluta Popoluca; Popoluca; Oluta; Oluta; Olutec; Popoluca (Oluta); Oluta Mixean; Oluta Popoluca
 4978,Northern Pame,,21.9955,-99.6458,nort2984,pmq,"Ethnologue distinguishes 3 Pame languages: 
@@ -3509,7 +3510,7 @@ Cora, Santa Teresa [cok] 7,000 (1993).",MX,"Mexico, Central America, Caribbean",
 648,Achuar,,-2.876318,-77.586775,achu1248,acu,"Kaufman (2007: 69) considers Jívaro a “language area” with two emergent languages, Jívaro and Aguaruna. Shuar, Achuar, Aguaruna, and Huambisa are closely related languages or dialects of a single language.",PE EC,South America,Chicham family (Jivaroan),threatened,ISO 639-3,acu,Achual; Achuar-Shiwiar; Achuale; Achuara; Jívaro; Maina
 650,Acoma-Laguna,,34.8964,-107.5816,west2632,kjq,,US,North America,Keresan,threatened,ISO 639-3,kjq,Western Keres Pueblo; Western Keresan; Acoma
 6509,Picuris,,36.1914,-105.7151,picu1248,,"Ethnologue puts Taos and Picuris together in its ""Northern Tiwa"", lists Taos and Picuris as dialects, but yet says that ""Taos and Picuris are not mutually intelligible (Golla 2007)."" Others distinguish these as two separate languages.",US,North America,Kiowa-Tanoan,threatened,LINGUIST List,twf-pic,Taos-Picuris
-651,Akateko,,16.7823,-93.1061,west2635,knj,,GT MX,"Mexico, Central America, Caribbean",Mayan,threatened,ISO 639-3,knj,Acatec; Kanjobal (Western); Kanjobal; Western; Acateco; Acatec; San Miguel Acatán Kanjobal; Conob; Western Kanjobal; Western Q'anjob'al; Kanjobal de San Miguel Acatán
+651,Akateko,,15.8333333333,-91.8333333333,west2635,knj,,GT MX,"Mexico, Central America, Caribbean",Mayan,threatened,ISO 639-3,knj,Acatec; Kanjobal (Western); Kanjobal; Western; Acateco; Acatec; San Miguel Acatán Kanjobal; Conob; Western Kanjobal; Western Q'anjob'al; Kanjobal de San Miguel Acatán
 6510,Taos,,36.4717,-105.5596,nort1550,twf,"Ethnologue puts Taos and Picuris together in its ""Northern Tiwa"" [twf], lists Taos and Picuris as dialects, but yet says that ""Taos and Picuris are not mutually intelligible (Golla 2007)."" Others distinguish these as two separate languages.",US,North America,Kiowa-Tanoan,endangered,,twf,Northern Tiwa; Tiwa; Northern; Tiwa; Tiwa (Northern)
 6511,Rio Grande Keresan,,35.4166666667,-106.666666667,east1472,kee,"Rio Grande Keresan is a complex of Keresan dialects spoken by members of five New Mexico Pueblos located near the Rio Grande or Jemez River north of Albuquerque: Zia, Santa Ana, San Felipe, Santo Domingo, and Cochiti. There is considerable local variation, but all varieties are mutually intelligible, as well as partially intelligible to speakers of Acoma-Laguna. (Golla et al. 2008.)",US,North America,Keresan,endangered,ISO 639-3,kee,Rio Grande Keresan; Eastern Keresan; Eastern Keres Pueblo; Santa Ana; Keres; Keresan (Santa Ana); Keresan; Keres; Eastern
 6512,Sioux,,43.0588,-102.5244,,,"     Sioux is the cover term for the varieties of the Dakotan dialect complex, with three well defined dialect areas:  Stoney, currently spoken in southwestern Alberta;  Assinibone, in southern Saskatchewan and northern Montana;  and Sioux, spoken widely in North and South Dakota, Minnesota, and in southern Manitoba and Saskatchewan.  Intelligibility between these dialect areas is low, although speakers can communicate after a while with some difficulty, and they are perhaps best considered emergent languages. Sioux is further divided into three major dialects, Santee-Sisseton (Dakota), Yankton-Yanktonai, and Teton (Lakota), between which there is a fair degree of mutual intelligibility.
@@ -3519,7 +3520,7 @@ Cora, Santa Teresa [cok] 7,000 (1993).",MX,"Mexico, Central America, Caribbean",
 652,Q'anjob'al,,15.3333333333,-91.6666666667,qanj1241,kjb,,GT,"Mexico, Central America, Caribbean",Mayan,vulnerable,ISO 639-3,kjb,Kanjobal (Eastern); Kanjobal; Kanjobal; Eastern; Kanhobal; Conob; Eastern Kanjobal; Qanjobal
 653,Kiowa Apache,,35.1018,-98.6033,kiow1264,apk,,US,North America,Athabaskan-Eyak-Tlingit,dormant,ISO 639-3,apk,Oklahoma Apache; Plains Apache; Kiowa-Apache; Na'isha; Llanero; Na-isha; Apache; Kiowa
 654,Lipan,,33.1513,-105.799,lipa1241,apl,"Golla et al. (2008): Lipan was an emergent language within the Southern Athabaskan dialect complex. There were 2 or three elderly speakers living as late as 1981, but the language is now dormant. It is very poorly documented.",US,North America,Athabaskan-Eyak-Tlingit,awakening,ISO 639-3,apl,Apache; Lipan; Eastern Apache; Lipan Apache
-655,Apalaí,,0.0,-54.0,apal1257,apy,,BR,South America,Cariban,endangered,ISO 639-3,apy,Apalai; Aparai; Apalay
+655,Apalaí,,1.2084,-55.1074,apal1257,apy,,BR,South America,Cariban,endangered,ISO 639-3,apy,Apalai; Aparai; Apalay
 656,Apiaká,,-11.1519,-57.3113,apia1248,api,,BR,South America,Tupian,dormant,ISO 639-3,api,Apiacá; Apiake
 6569,Huichol,,22.0,-104.0,huic1243,hch,,MX,"Mexico, Central America, Caribbean",Uto-Aztecan,vulnerable,ISO 639-3,hch,Vixaritari Vaniuqui; Vizaritari Vaniuki
 657,Apatani,,27.5228,93.8177,apat1240,apt,,IN,South Asia,Sino-Tibetan,vulnerable,ISO 639-3,apt,Apa; Patan; Apa Tani
@@ -3585,7 +3586,7 @@ Cora, Santa Teresa [cok] 7,000 (1993).",MX,"Mexico, Central America, Caribbean",
 6712,Ngarigu,,-36.30008261,148.7238073,ngar1297,xni,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,xni,Ngarigu; Ngarigo; Ngaruku; Ngaragu; Ngundura; Ngarego; Ngarago; Garego; Ngarruga; Bemeringal; Wolgal; Walgalu
 6717,Ngumbarl,,-17.53716033,122.4292371,ngum1253,,,AU,Australia,Nyulnyulan,dormant,LINGUIST List,08s,Ngombaru; Ngormbal
 6718,Nhirrpi,,-28.62910687,141.2759561,nhir1234,hrp,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,hrp,Nhirrpi
-672,Alutiiq,,58.1938,-155.6542,paci1278,ems,,US,North America,Eskimo-Aleut,severely endangered,ISO 639-3,ems,"Sugpiaq; Pacific Gulf Yupik; Sugpiak; ""Eskimo""; Chugach ""Eskimo""; Koniag-Chugach; Suk; Sugcestun; South Alaska ""Eskimo""; Yupik (Pacific Gulf ); šuk/suk Sugpiaq; ""Aleut""; アリュティーク語"
+672,Alutiiq,,57.793056,-152.394167,paci1278,ems,,US,North America,Eskimo-Aleut,severely endangered,ISO 639-3,ems,"Sugpiaq; Pacific Gulf Yupik; Sugpiak; ""Eskimo""; Chugach ""Eskimo""; Koniag-Chugach; Suk; Sugcestun; South Alaska ""Eskimo""; Yupik (Pacific Gulf ); šuk/suk Sugpiaq; ""Aleut""; アリュティーク語"
 6721,Pinjarup,,-32.7,115.7,pinj1244,pnj,,AU,Australia,Pama-Nyungan,awakening,ISO 639-3,pnj,Pinjarra; Bangoula; Banyoula; Banyowla; Binjarup; Kuriwongi; Peejine; Penjarra; Pidjain; Yaberoo
 6722,Punthamara,,-27.83959041,142.9447505,punt1240,xpt,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,xpt,Bundhamara; Bunthomarra; Buntamara; Banthamurra; Bunthaburra; Kungardutyi; Gungadidji
 6725,Umiida,,-16.48120833,124.1827128,umii1236,xud,,AU,Australia,Worrorran,dormant,ISO 639-3,xud,Umida; Umi:da; Oomida; Wumide; Aobidai of Ongkarango; O:ka:ta; O:kada; Okat; Oken; Okwata; Umeda; Umede; Umidi
@@ -3604,7 +3605,7 @@ Cora, Santa Teresa [cok] 7,000 (1993).",MX,"Mexico, Central America, Caribbean",
 6744,Yawijibaya,,-16.14740026,123.3986329,yawi1239,jbw,,AU,Australia,Worrorran,dormant,ISO 639-3,jbw,Jawdjobara; Yaudjibara; Yawjibarra; Jawdjibara; Jaudjibara; Jawdjibaia; Yaudjibaia; Yawjibara; Jawadjag; Winjawindjagu; Bergalgu; Jadjiba; Jadjibaia; Jaudjibaia; Jaudji-Bara; Jawutjubar; Yaujibaia
 6747,Yitha-Yitha,,-33.9470874,141.5854211,yith1234,xth,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,xth,Yitha Yitha; Eetha-eetha; Eethee Eethee; Eethie-eethie; Ita-ita; Ithi-ithi; Iti-iti; Tjuop; Yetho; Yitsa; Yit-tha
 675,Anal,,24.1517,93.9385,anal1239,anm,,IN MM,South Asia; Southeast Asia,Sino-Tibetan,endangered,ISO 639-3,anm,Namfau
-676,Andoque,,-0.666666666667,-72.0,ando1256,ano,,CO,South America,Isolate,critically endangered,ISO 639-3,ano,Andoke; Cho'oje; Patsiaehé; Businka; Cha'oie; Paasi-ahá; Paasiaja
+676,Andoque,,-0.769,-72.2351,ando1256,ano,,CO,South America,Isolate,critically endangered,ISO 639-3,ano,Andoke; Cho'oje; Patsiaehé; Businka; Cha'oie; Paasi-ahá; Paasiaja
 677,Assiniboine,,48.4466,-114.8783,assi1247,asb,"Dakotan is a Siouan dialect complex, with three well defined dialect areas:  Stoney, currently spoken in southwestern Alberta;  Assinibone, in southern Saskatchewan and northern Montana;  and Sioux, spoken widely in North and South Dakota, Minnesota, and in southern Manitoba and Saskatchewan.  Intelligibility between these dialect areas is low, although speakers can communicate after a while with some difficulty, and they are perhaps best considered emergent languages.",US CA,North America,Siouan,endangered,ISO 639-3,asb,Assiniboin; Stoney; Hohe; Assinaboin; Nakon
 6770,Ayerreyenge,,-23.699,133.88,ayer1246,axe,,AU,Australia,Pama-Nyungan,dormant,ISO 639-3,axe,Jaroinga; Jarionga; Yaroinga; Yarroinga; Yorrowinga; Yarrowin; Yuruwinga; Bularnu; Ayerrerenge; Aroinga; Yaringa; Yorrawinga; Jurangka; Manda; Pulanja; Bulanja; Bulanu; aroinga
 6772,Batyala,,-25.44486229,153.1539929,baty1234,xby,,AU,Australia,Pama-Nyungan,awakening,ISO 639-3,xby,Badtjala; Batjala; Ngulungbara; Butchulla; Badjela; Badtala; Badyala; Bidhala; Dulingbara; Gnoolongbara; Koolaburra; Olungbura; Patyala; Thoorgine
